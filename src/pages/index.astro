@@ -20,6 +20,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <a href="#trajectory">05 Trajectory</a>
           <a href="#agents">06 Agents</a>
           <a href="#contact">07 Contact</a>
+          <button class="theme-btn" id="theme-btn" type="button" aria-pressed="false" aria-label="Switch to day mode" title="Toggle day / night"><span id="theme-icon" aria-hidden="true">☾</span></button>
           <span class="clock" id="clock" aria-hidden="true">--:--:-- IST</span>
         </nav>
       </div>
@@ -784,6 +785,29 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       ];
       let i = 0;
       setInterval(() => { i = (i + 1) % msgs.length; el.textContent = msgs[i]; }, 3200);
+    })();
+
+    // 8e2 — day/night theme toggle
+    (function () {
+      const btn = document.getElementById('theme-btn');
+      const icon = document.getElementById('theme-icon');
+      const meta = document.querySelector('meta[name="theme-color"]');
+      function paint() {
+        const light = document.documentElement.getAttribute('data-theme') === 'light';
+        if (icon) icon.textContent = light ? '☀' : '☾';
+        if (btn) {
+          btn.setAttribute('aria-pressed', String(light));
+          btn.setAttribute('aria-label', light ? 'Switch to night mode' : 'Switch to day mode');
+        }
+        if (meta) meta.setAttribute('content', light ? '#edf1f7' : '#05070d');
+      }
+      paint();
+      if (btn) btn.addEventListener('click', () => {
+        const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('ks-theme', next); } catch {}
+        paint();
+      });
     })();
 
     // 9 — copy buttons (agent URLs + prompt pack)

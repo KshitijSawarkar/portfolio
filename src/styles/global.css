@@ -297,3 +297,45 @@ a.preview:hover .pv-shot { transform: scale(1.045); }
   .rv { opacity: 1; transform: none; }
   #lidar { display: none; }
 }
+
+/* ---------- day theme ---------- */
+[data-theme="light"] {
+  --bg: #edf1f7;
+  --bg-2: #e2e8f2;
+  --panel: rgba(255, 255, 255, 0.86);
+  --panel-solid: #ffffff;
+  --line: rgba(15, 35, 80, 0.12);
+  --line-strong: rgba(15, 35, 80, 0.24);
+  --ink: #0b1220;
+  --body: #3d4760;
+  --mute: #68738e;
+  --accent: #0a9b4e;
+  --accent-dim: rgba(10, 155, 78, 0.12);
+  --cyan: #0063d1;
+  --amber: #a86200;
+  --violet: #7c3aed;
+  color-scheme: light;
+}
+[data-theme="light"] body::before {
+  background-image: linear-gradient(rgba(15,35,80,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15,35,80,0.06) 1px, transparent 1px);
+}
+[data-theme="light"] .site-header { background: rgba(237, 241, 247, 0.82); }
+[data-theme="light"] .brand { color: var(--ink); }
+[data-theme="light"] .ticker { background: rgba(255, 255, 255, 0.72); }
+[data-theme="light"] a:hover { color: #00449e; }
+[data-theme="light"] .nav a:hover { color: var(--ink); }
+[data-theme="light"] .btn-secondary:hover { color: var(--ink); }
+[data-theme="light"] .chip:hover { color: var(--ink); }
+[data-theme="light"] .hero h1 .grad { background: linear-gradient(92deg, #0a9b4e 0%, #0063d1 45%, #7c3aed 90%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+[data-theme="light"] .ai-grad { background: linear-gradient(92deg, #0063d1, #7c3aed 55%, #0a9b4e); -webkit-background-clip: text; background-clip: text; color: transparent; }
+[data-theme="light"] .agent-grad { background: linear-gradient(92deg, #7c3aed, #0063d1 60%, #0a9b4e); -webkit-background-clip: text; background-clip: text; color: transparent; }
+[data-theme="light"] .manifesto { color: #33405a; }
+[data-theme="light"] .stat .num { color: var(--ink); }
+[data-theme="light"] .pipe-step strong { color: var(--ink); }
+[data-theme="light"] .float-orb { opacity: 0.18; filter: saturate(0.5) brightness(2.1); }
+[data-theme="light"] .bg-canvas, [data-theme="light"] #lidar, [data-theme="light"] #neural { opacity: 0.6; filter: saturate(1.6) brightness(0.62); }
+
+/* theme toggle button */
+.theme-btn { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; font-size: 1rem; line-height: 1; color: var(--body); background: rgba(148, 184, 255, 0.07); border: 1px solid var(--line-strong); border-radius: 50%; cursor: pointer; transition: all 0.2s; flex: none; }
+.theme-btn:hover { color: var(--ink); border-color: var(--accent); transform: translateY(-1px) rotate(12deg); }
