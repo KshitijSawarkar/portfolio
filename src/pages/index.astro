@@ -69,6 +69,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
     <!-- PILLARS -->
     <section class="section" id="pillars">
+      <canvas class="bg-canvas" id="fx-pillars" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
           <p class="eyebrow">01 // FDE Systems Pillars</p>
@@ -95,6 +96,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
     <!-- VAULT -->
     <section class="section" id="vault">
+      <canvas class="bg-canvas" id="fx-vault" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
           <p class="eyebrow">02 // Live Systems Vault</p>
@@ -160,6 +162,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
     <!-- RESEARCH -->
     <section class="section" id="research">
+      <canvas class="bg-canvas" id="fx-research" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
           <p class="eyebrow">03 // Research &amp; Hardware Moat</p>
@@ -237,6 +240,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
     <!-- TRAJECTORY -->
     <section class="section" id="trajectory">
+      <canvas class="bg-canvas" id="fx-trajectory" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
           <p class="eyebrow">05 // Trajectory &amp; Edge Assets</p>
@@ -263,6 +267,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
     <!-- AGENTS -->
     <section class="section agents" id="agents">
+      <canvas class="bg-canvas" id="fx-agents" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
           <p class="eyebrow eyebrow-agent">06 // Agent Interface</p>
@@ -334,6 +339,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
 
     <!-- CONTACT -->
     <section class="section" id="contact">
+      <canvas class="bg-canvas" id="fx-contact" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
           <p class="eyebrow">07 // Direct Commissioning Inbound</p>
@@ -576,6 +582,195 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
         requestAnimationFrame(draw);
       })();
     })();
+
+    // 8d — per-section fx engine (paints only while visible)
+    function fx(id, setup) {
+      const cv = document.getElementById(id);
+      if (!cv || reduceMotion) return;
+      const ctx = cv.getContext('2d');
+      let w = 0, h = 0, visible = false;
+      const S = setup() || {};
+      const size = () => {
+        const r = cv.parentElement.getBoundingClientRect();
+        w = cv.width = Math.max(1, r.width); h = cv.height = Math.max(1, r.height);
+        if (S.resize) S.resize(w, h);
+      };
+      size(); window.addEventListener('resize', size);
+      new IntersectionObserver((e) => { visible = e[0].isIntersecting; }, { threshold: 0 }).observe(cv);
+      if (S.frame0) S.frame0(ctx, w, h);
+      (function loop() {
+        requestAnimationFrame(loop);
+        if (!visible || document.visibilityState !== 'visible') return;
+        ctx.clearRect(0, 0, w, h);
+        S.draw(ctx, w, h);
+      })();
+    }
+
+    // PILLARS — telemetry waveforms (control-systems signal traces)
+    fx('fx-pillars', () => {
+      let t = 0;
+      const traces = [
+        { c: '61,255,143', amp: 26, fr: 0.012, sp: 0.03, y: 0.3 },
+        { c: '65,230,255', amp: 38, fr: 0.008, sp: 0.02, y: 0.55 },
+        { c: '167,139,250', amp: 20, fr: 0.017, sp: 0.042, y: 0.78 }
+      ];
+      return {
+        draw(ctx, w, h) {
+          t += 1;
+          traces.forEach((tr) => {
+            ctx.beginPath();
+            for (let x = 0; x <= w; x += 6) {
+              const y = h * tr.y + Math.sin(x * tr.fr + t * tr.sp) * tr.amp * Math.sin(x * 0.002 + t * 0.008);
+              x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.strokeStyle = `rgba(${tr.c},0.35)`; ctx.lineWidth = 1.5; ctx.stroke();
+          });
+        }
+      };
+    });
+
+    // VAULT — binary data rain (live systems streaming)
+    fx('fx-vault', () => {
+      let cols = [];
+      const resize = (w, h) => {
+        const n = Math.floor(w / 26);
+        cols = Array.from({ length: n }, () => ({ y: Math.random() * h, sp: 1 + Math.random() * 2.2 }));
+      };
+      return {
+        resize,
+        draw(ctx, w, h) {
+          ctx.font = '13px JetBrains Mono, monospace';
+          cols.forEach((c, i) => {
+            const x = i * 26 + 8;
+            ctx.fillStyle = 'rgba(61,255,143,0.28)';
+            ctx.fillText(Math.random() < 0.5 ? '1' : '0', x, c.y);
+            ctx.fillStyle = 'rgba(65,230,255,0.14)';
+            ctx.fillText(Math.random() < 0.5 ? '1' : '0', x, c.y - 20);
+            c.y += c.sp;
+            if (c.y > h + 20) { c.y = -20; c.sp = 1 + Math.random() * 2.2; }
+          });
+        }
+      };
+    });
+
+    // RESEARCH — orbital electrons (hardware + physics)
+    fx('fx-research', () => {
+      let t = 0;
+      return {
+        draw(ctx, w, h) {
+          t += 0.012;
+          const hubs = [
+            { x: w * 0.86, y: h * 0.28, r: 46, c: '65,230,255' },
+            { x: w * 0.08, y: h * 0.72, r: 60, c: '255,178,36' }
+          ];
+          hubs.forEach((hb, hi) => {
+            ctx.beginPath(); ctx.arc(hb.x, hb.y, 3.5, 0, 7);
+            ctx.fillStyle = `rgba(${hb.c},0.9)`; ctx.fill();
+            for (let o = 0; o < 2; o++) {
+              const rx = hb.r + o * 26, ry = rx * 0.45, rot = hi * 0.7 + o * 0.5;
+              ctx.beginPath(); ctx.ellipse(hb.x, hb.y, rx, ry, rot, 0, 7);
+              ctx.strokeStyle = `rgba(${hb.c},0.22)`; ctx.lineWidth = 1; ctx.stroke();
+              for (let e = 0; e < 2; e++) {
+                const a = t * (1 + o * 0.4) + e * 3.14 + hi;
+                const ex = hb.x + Math.cos(a) * rx * Math.cos(rot) - Math.sin(a) * ry * Math.sin(rot);
+                const ey = hb.y + Math.cos(a) * rx * Math.sin(rot) + Math.sin(a) * ry * Math.cos(rot);
+                ctx.beginPath(); ctx.arc(ex, ey, 2.6, 0, 7);
+                ctx.fillStyle = `rgba(${hb.c},0.85)`; ctx.fill();
+              }
+            }
+          });
+        }
+      };
+    });
+
+    // TRAJECTORY — forward stream (journey in motion)
+    fx('fx-trajectory', () => {
+      let parts = [];
+      const resize = (w, h) => {
+        parts = Array.from({ length: 46 }, () => ({
+          x: Math.random() * w, y: Math.random() * h,
+          s: 0.6 + Math.random() * 2.2, r: 1 + Math.random() * 1.8
+        }));
+      };
+      return {
+        resize,
+        draw(ctx, w, h) {
+          parts.forEach((p) => {
+            p.x += p.s;
+            if (p.x > w + 10) { p.x = -10; p.y = Math.random() * h; }
+            const tail = 26 * p.s;
+            const g = ctx.createLinearGradient(p.x - tail, p.y, p.x, p.y);
+            g.addColorStop(0, 'rgba(61,255,143,0)');
+            g.addColorStop(1, 'rgba(61,255,143,0.5)');
+            ctx.strokeStyle = g; ctx.lineWidth = p.r;
+            ctx.beginPath(); ctx.moveTo(p.x - tail, p.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+          });
+        }
+      };
+    });
+
+    // AGENTS — constellation mesh (agent swarm talking)
+    fx('fx-agents', () => {
+      let pts = [];
+      const resize = (w, h) => {
+        pts = Array.from({ length: 34 }, () => ({
+          x: Math.random() * w, y: Math.random() * h,
+          vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4
+        }));
+      };
+      return {
+        resize,
+        draw(ctx, w, h) {
+          pts.forEach((p) => {
+            p.x += p.vx; p.y += p.vy;
+            if (p.x < 0 || p.x > w) p.vx *= -1;
+            if (p.y < 0 || p.y > h) p.vy *= -1;
+          });
+          for (let i = 0; i < pts.length; i++) {
+            for (let j = i + 1; j < pts.length; j++) {
+              const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+              const d = Math.hypot(dx, dy);
+              if (d < 130) {
+                ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
+                ctx.strokeStyle = `rgba(167,139,250,${(0.28 * (1 - d / 130)).toFixed(3)})`;
+                ctx.lineWidth = 1; ctx.stroke();
+              }
+            }
+          }
+          pts.forEach((p) => {
+            ctx.beginPath(); ctx.arc(p.x, p.y, 2, 0, 7);
+            ctx.fillStyle = 'rgba(167,139,250,0.8)'; ctx.fill();
+          });
+        }
+      };
+    });
+
+    // CONTACT — uplink beacon (signal leaving the site)
+    fx('fx-contact', () => {
+      let rings = [], sparks = [], t = 0;
+      return {
+        draw(ctx, w, h) {
+          t += 1;
+          const ox = w / 2, oy = h + 10;
+          if (t % 46 === 0) rings.push({ r: 10, a: 0.5 });
+          rings = rings.filter((rg) => rg.a > 0.02);
+          rings.forEach((rg) => {
+            rg.r += 2.4; rg.a *= 0.985;
+            ctx.beginPath(); ctx.arc(ox, oy, rg.r, Math.PI, 2 * Math.PI);
+            ctx.strokeStyle = `rgba(61,255,143,${rg.a.toFixed(3)})`; ctx.lineWidth = 1.5; ctx.stroke();
+          });
+          if (t % 8 === 0 && sparks.length < 60) {
+            sparks.push({ x: ox + (Math.random() - 0.5) * 120, y: h - 6, s: 0.8 + Math.random() * 1.6 });
+          }
+          sparks = sparks.filter((sp) => sp.y > -10);
+          sparks.forEach((sp) => {
+            sp.y -= sp.s; sp.x += Math.sin(sp.y * 0.03) * 0.4;
+            ctx.beginPath(); ctx.arc(sp.x, sp.y, 1.6, 0, 7);
+            ctx.fillStyle = 'rgba(65,230,255,0.6)'; ctx.fill();
+          });
+        }
+      };
+    });
 
     // 8 — rotating telemetry line
     (function () {

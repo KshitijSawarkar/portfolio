@@ -226,6 +226,9 @@ ul.tight li::marker { color: var(--accent); }
 .float-orb { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.35; pointer-events: none; animation: drift 12s ease-in-out infinite alternate; }
 @keyframes drift { from { transform: translate(0,0) scale(1); } to { transform: translate(40px,-40px) scale(1.15); } }
 
+/* ---------- per-section fx canvases ---------- */
+.bg-canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.55; pointer-events: none; }
+
 /* ---------- AI theme ---------- */
 .ai-sec { position: relative; overflow: clip; background: linear-gradient(180deg, transparent, rgba(65,230,255,0.045) 35%, transparent); }
 #neural { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.6; }
