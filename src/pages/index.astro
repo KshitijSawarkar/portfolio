@@ -46,7 +46,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         <p class="eyebrow rv">Forward Deployed · Edge Vision · Floor Automation</p>
         <h1 class="rv rv-d1" style="margin-top:14px">Kshitij Ashok<br /><span class="grad">Sawarkar</span><span class="role">Forward Deployed Systems &amp; Robotics Engineer — M.Tech Control &amp; Instrumentation, MNNIT Allahabad</span></h1>
         <p class="type-line rv rv-d2" aria-live="polite"><span>&gt; </span><span id="typer"></span><span class="caret" aria-hidden="true"></span></p>
-        <p class="meta rv rv-d2" style="margin-top:6px">BENGALURU, IN — AVAILABLE FOR ON-SITE REGIONAL &amp; APAC FIELD DEPLOYMENTS</p>
+        <p class="location-focus rv rv-d2"><span class="dot" aria-hidden="true"></span><strong>⌖ Bengaluru, India</strong><span> — available for on-site regional &amp; APAC field deployments</span></p>
         <div class="manifesto rv rv-d2">
           Operating at the physical boundary where AMRs, edge vision pipelines, and production lines collide. I turn floor friction into sub-50ms deterministic schema engines, INT8-quantized edge neural nets, and robust ROS2 controllers. IEEE Xplore lead author (Doc 10627276) — focused on zero-downtime commissioning and closed-loop stability.
         </div>
@@ -101,62 +101,117 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       <div class="wrap">
         <div class="sec-head rv">
           <p class="eyebrow">02 // Live Systems Vault</p>
-          <span class="sec-index">PROOF.NOT_SLIDES — 03 DEPLOYED</span>
+          <span class="sec-index">MISSION.CONTROL — 05 DEPLOYED · AUTO-CYCLING</span>
         </div>
         <h2 class="rv rv-d1" style="margin:12px 0 6px">Deployed. Live. Clickable.</h2>
-        <div style="display:grid;gap:16px;margin-top:28px">
-          <article class="card vault-card rv">
-            <a class="preview" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open live BOM schema engine">
-              <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">npl-automation.pages.dev</span><span class="pv-open">↗</span></span>
-              <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/bom.png`} alt="Screenshot of the NPL Workbook Generator web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
-            </a>
-            <div class="vault-body">
-            <span class="tag live"><i></i>Live production system</span><span class="tag">&lt;50ms exec</span>
-            <h3 style="margin-top:10px">Finished Goods &amp; BOM Schema Transformation Engine</h3>
-            <p class="meta"><a href="https://npl-automation.pages.dev/">npl-automation.pages.dev</a> · Bommasandra facility</p>
-            <ul class="tight">
-              <li>Embedded on-site into high-throughput manufacturing ops to kill spreadsheet bottlenecks between production teams and ERP catalogs.</li>
-              <li>Recursive client-side schema parsing on Cloudflare Pages — multi-day backlogs → automated pipeline in sub-50ms.</li>
-              <li>Strict runtime types, 100% client-side privacy. Zero data leakage, zero cataloging drift.</li>
-            </ul>
-            <p class="stack"><strong>Stack:</strong> TypeScript · Cloudflare Pages · Pydantic schema principles · REST</p>
-            <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer">Open live system ↗</a></p>
+        <div class="dash rv rv-d1" id="dash">
+          <div class="dash-top">
+            <span class="dash-count"><b id="dash-cur">01</b><span> / 05</span></span>
+            <span class="dash-status"><span class="dot" aria-hidden="true"></span><span id="dash-name">BOM Schema Engine</span></span>
+            <div class="dash-btns">
+              <button class="dash-arrow" id="dash-prev" type="button" aria-label="Previous project">‹</button>
+              <button class="dash-arrow" id="dash-next" type="button" aria-label="Next project">›</button>
             </div>
-          </article>
-          <article class="card vault-card rv">
-            <a class="preview" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open live asset ingestion engine">
-              <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">image-sequence-renamer.pages.dev</span><span class="pv-open">↗</span></span>
-              <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/assets.png`} alt="Screenshot of the Image Sequence Renamer web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
-            </a>
-            <div class="vault-body">
-            <span class="tag live"><i></i>Live production utility</span><span class="tag">&gt;80% latency cut</span>
-            <h3 style="margin-top:10px">Batch Asset Ingestion &amp; Normalization Engine</h3>
-            <p class="meta"><a href="https://image-sequence-renamer.pages.dev/">image-sequence-renamer.pages.dev</a></p>
-            <ul class="tight">
-              <li>In-browser batch utility to normalize, sequence, and validate high-volume media assets for cataloging.</li>
-              <li>Cut onboarding latency &gt;80% with zero server compute or cloud ingestion cost.</li>
-            </ul>
-            <p class="stack"><strong>Stack:</strong> JavaScript · HTML5 File API · Cloudflare Pages</p>
-            <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a></p>
+          </div>
+          <div class="dash-view" id="dash-view" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Live projects dashboard. Use left and right arrow keys to navigate.">
+            <div class="dash-track" id="dash-track">
+              <article class="dash-slide" aria-label="1 of 5: BOM Schema Engine">
+                <a class="preview dash-media" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open live BOM schema engine" tabindex="-1">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">npl-automation.pages.dev</span><span class="pv-open">↗</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/bom.png`} alt="Screenshot of the NPL Workbook Generator web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
+                </a>
+                <div class="dash-info">
+                  <span class="tag live"><i></i>Live production system</span><span class="tag">&lt;50ms exec</span>
+                  <h3>Finished Goods &amp; BOM Schema Transformation Engine</h3>
+                  <p class="meta"><a href="https://npl-automation.pages.dev/" tabindex="-1">npl-automation.pages.dev</a> · Bommasandra facility</p>
+                  <ul class="tight">
+                    <li>Embedded on-site into high-throughput manufacturing ops to kill spreadsheet bottlenecks between production teams and ERP catalogs.</li>
+                    <li>Recursive client-side schema parsing on Cloudflare Pages — multi-day backlogs → automated pipeline in sub-50ms.</li>
+                    <li>Strict runtime types, 100% client-side privacy. Zero data leakage, zero cataloging drift.</li>
+                  </ul>
+                  <p class="stack"><strong>Stack:</strong> TypeScript · Cloudflare Pages · Pydantic schema principles · REST</p>
+                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer">Open live system ↗</a></p>
+                </div>
+              </article>
+              <article class="dash-slide" aria-label="2 of 5: Asset Ingestion Engine">
+                <a class="preview dash-media" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open live asset ingestion engine" tabindex="-1">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">image-sequence-renamer.pages.dev</span><span class="pv-open">↗</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/assets.png`} alt="Screenshot of the Image Sequence Renamer web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
+                </a>
+                <div class="dash-info">
+                  <span class="tag live"><i></i>Live production utility</span><span class="tag">&gt;80% latency cut</span>
+                  <h3>Batch Asset Ingestion &amp; Normalization Engine</h3>
+                  <p class="meta"><a href="https://image-sequence-renamer.pages.dev/" tabindex="-1">image-sequence-renamer.pages.dev</a></p>
+                  <ul class="tight">
+                    <li>In-browser batch utility to normalize, sequence, and validate high-volume media assets for cataloging.</li>
+                    <li>Cut onboarding latency &gt;80% with zero server compute or cloud ingestion cost.</li>
+                  </ul>
+                  <p class="stack"><strong>Stack:</strong> JavaScript · HTML5 File API · Cloudflare Pages</p>
+                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a></p>
+                </div>
+              </article>
+              <article class="dash-slide" aria-label="3 of 5: Repair Pricing Engine">
+                <a class="preview dash-media" href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" target="_blank" rel="noopener noreferrer" aria-label="Open live repair cost calculator" tabindex="-1">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">Wakefit_Repair_Calculator</span><span class="pv-open">↗</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/repair.png`} alt="Screenshot of the Wakefit Repair Cost Calculator web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
+                </a>
+                <div class="dash-info">
+                  <span class="tag live"><i></i>Live operational utility</span><span class="tag">margin guardrail</span>
+                  <h3>Deterministic Repair Cost Pricing Engine</h3>
+                  <p class="meta"><a href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" tabindex="-1">Wakefit Repair Calculator</a></p>
+                  <ul class="tight">
+                    <li>Multi-parameter furniture repair logic compiled into a deterministic calculation engine.</li>
+                    <li>Standardized factory-floor estimates — killed margin erosion from human calculation drift.</li>
+                  </ul>
+                  <p class="stack"><strong>Stack:</strong> JavaScript · Responsive CSS · Deterministic pricing logic</p>
+                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a></p>
+                </div>
+              </article>
+              <article class="dash-slide" aria-label="4 of 5: CardsFinders Platform">
+                <a class="preview dash-media" href="https://cardsfinders.com" target="_blank" rel="noopener noreferrer" aria-label="Open CardsFinders live platform" tabindex="-1">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">cardsfinders.com</span><span class="pv-open">↗</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/cardsfinders.png`} alt="Screenshot of the CardsFinders credit-card platform" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
+                </a>
+                <div class="dash-info">
+                  <span class="tag live"><i></i>Live edge platform</span><span class="tag">founder-built</span>
+                  <h3>CardsFinders — Credit-Card Discovery Platform</h3>
+                  <p class="meta"><a href="https://cardsfinders.com" tabindex="-1">cardsfinders.com</a> · Founder &amp; Full-Stack Edge Architect</p>
+                  <ul class="tight">
+                    <li>Credit-card comparison and discovery platform run as a sovereign edge property.</li>
+                    <li>Deployed globally via Cloudflare Pages and Workers — edge DNS, custom mail routing, sub-second TTFB.</li>
+                    <li>Zero recurring server runtime compute costs.</li>
+                  </ul>
+                  <p class="stack"><strong>Stack:</strong> Cloudflare Pages · Workers · Edge DNS</p>
+                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://cardsfinders.com" target="_blank" rel="noopener noreferrer">Open live platform ↗</a></p>
+                </div>
+              </article>
+              <article class="dash-slide" aria-label="5 of 5: MyUselessWeb Engine">
+                <a class="preview dash-media" href="https://myuselessweb.com" target="_blank" rel="noopener noreferrer" aria-label="Open MyUselessWeb live site" tabindex="-1">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">myuselessweb.com</span><span class="pv-open">↗</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/myuselessweb.png`} alt="Screenshot of the MyUselessWeb discovery engine" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
+                </a>
+                <div class="dash-info">
+                  <span class="tag live"><i></i>Live edge property</span><span class="tag">&lt;50ms responses</span>
+                  <h3>MyUselessWeb — Interactive Discovery Engine</h3>
+                  <p class="meta"><a href="https://myuselessweb.com" tabindex="-1">myuselessweb.com</a> · Creator &amp; Edge Infrastructure</p>
+                  <ul class="tight">
+                    <li>Ultra-minimalist, high-traffic interactive web discovery engine.</li>
+                    <li>Delivered across Cloudflare's global edge network at consistent &lt;50ms response times.</li>
+                  </ul>
+                  <p class="stack"><strong>Stack:</strong> Cloudflare Edge · Vanilla JS · Interactive toys directory</p>
+                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://myuselessweb.com" target="_blank" rel="noopener noreferrer">Open live site ↗</a></p>
+                </div>
+              </article>
             </div>
-          </article>
-          <article class="card vault-card rv">
-            <a class="preview" href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" target="_blank" rel="noopener noreferrer" aria-label="Open live repair cost calculator">
-              <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">Wakefit_Repair_Calculator</span><span class="pv-open">↗</span></span>
-              <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/repair.png`} alt="Screenshot of the Wakefit Repair Cost Calculator web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
-            </a>
-            <div class="vault-body">
-            <span class="tag live"><i></i>Live operational utility</span><span class="tag">margin guardrail</span>
-            <h3 style="margin-top:10px">Deterministic Repair Cost Pricing Engine</h3>
-            <p class="meta"><a href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/">Wakefit Repair Calculator</a></p>
-            <ul class="tight">
-              <li>Multi-parameter furniture repair logic compiled into a deterministic calculation engine.</li>
-              <li>Standardized factory-floor estimates — killed margin erosion from human calculation drift.</li>
-            </ul>
-            <p class="stack"><strong>Stack:</strong> JavaScript · Responsive CSS · Deterministic pricing logic</p>
-            <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a></p>
-            </div>
-          </article>
+          </div>
+          <div class="dash-progress" aria-hidden="true"><span id="dash-bar"></span></div>
+          <div class="dash-rail" id="dash-rail" role="group" aria-label="Jump to a project">
+            <button class="dash-thumb" type="button" data-i="0" aria-current="true" aria-label="Show BOM Schema Engine"><img src={`${base}previews/bom.png`} alt="" loading="lazy" /><span>01 · BOM Engine</span></button>
+            <button class="dash-thumb" type="button" data-i="1" aria-current="false" aria-label="Show Asset Ingestion Engine"><img src={`${base}previews/assets.png`} alt="" loading="lazy" /><span>02 · Asset Engine</span></button>
+            <button class="dash-thumb" type="button" data-i="2" aria-current="false" aria-label="Show Repair Pricing Engine"><img src={`${base}previews/repair.png`} alt="" loading="lazy" /><span>03 · Repair Calc</span></button>
+            <button class="dash-thumb" type="button" data-i="3" aria-current="false" aria-label="Show CardsFinders Platform"><img src={`${base}previews/cardsfinders.png`} alt="" loading="lazy" /><span>04 · CardsFinders</span></button>
+            <button class="dash-thumb" type="button" data-i="4" aria-current="false" aria-label="Show MyUselessWeb Engine"><img src={`${base}previews/myuselessweb.png`} alt="" loading="lazy" /><span>05 · MyUselessWeb</span></button>
+          </div>
         </div>
       </div>
     </section>
@@ -810,6 +865,69 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       });
     })();
 
+    // 8e3 — projects dashboard (auto-rotating carousel)
+    (function () {
+      const dash = document.getElementById('dash');
+      const track = document.getElementById('dash-track');
+      const view = document.getElementById('dash-view');
+      const cur = document.getElementById('dash-cur');
+      const nameEl = document.getElementById('dash-name');
+      const bar = document.getElementById('dash-bar');
+      if (!dash || !track || !view || !cur || !nameEl || !bar) return;
+      const thumbs = Array.from(document.querySelectorAll('.dash-thumb'));
+      const names = ['BOM Schema Engine', 'Asset Ingestion Engine', 'Repair Pricing Engine', 'CardsFinders Platform', 'MyUselessWeb Engine'];
+      const N = names.length, DUR = 6000;
+      let idx = 0, timer = null, inView = false;
+      function paintBar() {
+        if (reduceMotion) return;
+        bar.style.transition = 'none'; bar.style.width = '0%';
+        void bar.offsetWidth;
+        bar.style.transition = `width ${DUR}ms linear`; bar.style.width = '100%';
+      }
+      function show(i, manual) {
+        idx = ((i % N) + N) % N;
+        track.style.transform = `translateX(-${idx * 100}%)`;
+        cur.textContent = String(idx + 1).padStart(2, '0');
+        nameEl.textContent = names[idx];
+        thumbs.forEach((t, ti) => t.setAttribute('aria-current', String(ti === idx)));
+        if (manual) restart();
+        else paintBar();
+      }
+      function restart() {
+        stop();
+        if (reduceMotion || !inView || document.hidden) { paintBar(); return; }
+        paintBar();
+        timer = setInterval(() => show(idx + 1, false), DUR);
+      }
+      function stop() { if (timer) { clearInterval(timer); timer = null; } }
+      function freezeBar() {
+        stop();
+        if (reduceMotion) return;
+        const w = getComputedStyle(bar).width;
+        bar.style.transition = 'none'; bar.style.width = w;
+      }
+      document.getElementById('dash-prev').addEventListener('click', () => show(idx - 1, true));
+      document.getElementById('dash-next').addEventListener('click', () => show(idx + 1, true));
+      thumbs.forEach((t) => t.addEventListener('click', () => show(parseInt(t.dataset.i || '0', 10), true)));
+      view.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') { e.preventDefault(); show(idx - 1, true); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); show(idx + 1, true); }
+      });
+      let sx = null;
+      view.addEventListener('pointerdown', (e) => { sx = e.clientX; });
+      view.addEventListener('pointerup', (e) => {
+        if (sx === null) return;
+        const dx = e.clientX - sx; sx = null;
+        if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1), true);
+      });
+      dash.addEventListener('pointerenter', freezeBar);
+      dash.addEventListener('pointerleave', restart);
+      dash.addEventListener('focusin', freezeBar);
+      dash.addEventListener('focusout', restart);
+      document.addEventListener('visibilitychange', () => { document.hidden ? freezeBar() : restart(); });
+      new IntersectionObserver((e) => { inView = e[0].isIntersecting; inView ? restart() : stop(); }, { threshold: 0.15 }).observe(dash);
+    })();
+
     // 9 — copy buttons (agent URLs + prompt pack)
     (function () {
       const status = document.getElementById('copy-status');
@@ -853,7 +971,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       if (!log || !form || !input) return;
       const KB = [
         { k: ['ieee', 'paper', 'publish', 'research', 'yolo', 'quantiz', 'edge vision', 'retail'], a: 'Lead-author <b>IEEE Xplore Doc 10627276</b> (Mar 2026): quantized YOLOv5 on Raspberry Pi via ONNX Runtime INT8 — &lt;1% mAP loss, sub-second inference, no discrete GPU. <a href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener">Verify ↗</a>' },
-        { k: ['live', 'production', 'system', 'deploy', 'vault', 'project', 'bom', 'schema', 'npl'], a: 'Three live systems: <b>BOM schema engine</b> (&lt;50ms, npl-automation.pages.dev) · <b>asset ingestion engine</b> (&gt;80% faster) · <b>repair pricing engine</b> (margin guardrail). Scroll to <b>02 // Vault</b> — every one is clickable.' },
+        { k: ['live', 'production', 'system', 'deploy', 'vault', 'project', 'bom', 'schema', 'npl', 'cardsfinder', 'uselessweb'], a: 'Five live builds rotate on the <b>02 // Vault</b> dashboard: <b>BOM schema engine</b> (&lt;50ms) · <b>asset ingestion engine</b> (&gt;80% faster) · <b>repair pricing engine</b> (margin guardrail) · <b>CardsFinders</b> (cardsfinders.com) · <b>MyUselessWeb</b> (myuselessweb.com). Every slide is clickable.' },
         { k: ['robot', 'ros', 'slam', 'amr', 'mentorpi', 'embedded', 'hardware', 'solar', 'hil'], a: 'Robotics: <b>HiWonder MentorPi M1</b> on ROS2 + Pi 5 (SLAM, monocular vision) · sensorless solar tracking (PV-voltage sensing, no LDRs) · HIL twins with interrupt-driven safety interlocks.' },
         { k: ['contact', 'email', 'hire', 'commission', 'deploy him', 'reach', 'phone', 'linkedin'], a: 'Open for on-site APAC sprints → <b>kshitijsawarkar333@gmail.com</b> · <a href="https://linkedin.com/in/kshitijas" target="_blank" rel="noopener">LinkedIn</a> · response &lt;24h. Jump to <b>07 // Contact</b> to establish the link.' },
         { k: ['stack', 'tech', 'skill', 'typescript', 'cloudflare', 'matlab'], a: 'Core stack: <b>ROS2 · YOLOv5 INT8 · ONNX · TypeScript · Cloudflare edge · FastAPI · MATLAB/Simulink · ESP32/CAN/I2C</b>. Four pillars in <b>01 // Systems</b>.' },
