@@ -16,9 +16,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <a href="#pillars">01 Systems</a>
           <a href="#vault">02 Vault</a>
           <a href="#research">03 Research</a>
-          <a href="#trajectory">04 Trajectory</a>
-          <a href="#agents">05 Agents</a>
-          <a href="#contact">06 Contact</a>
+          <a href="#ai">04 AI</a>
+          <a href="#trajectory">05 Trajectory</a>
+          <a href="#agents">06 Agents</a>
+          <a href="#contact">07 Contact</a>
           <span class="clock" id="clock" aria-hidden="true">--:--:-- IST</span>
         </nav>
       </div>
@@ -186,11 +187,59 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       </div>
     </section>
 
+    <!-- AI -->
+    <section class="section ai-sec" id="ai">
+      <canvas id="neural" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="eyebrow eyebrow-ai">04 // Machine Intelligence</p>
+          <span class="sec-index">MODELS.DEPLOYED — INT8 · ONNX · EDGE</span>
+        </div>
+        <h2 class="rv rv-d1" style="margin:12px 0 6px">Intelligence that runs<br /><span class="ai-grad">on the edge, not the cloud.</span></h2>
+        <p class="rv rv-d1" style="max-width:62ch">Custom-trained detection models, squeezed through INT8 quantization onto ARM silicon — peer-reviewed, published, and inferring in the real world with no discrete GPU in sight.</p>
+
+        <div class="pipe rv rv-d1" aria-label="Edge AI deployment pipeline">
+          <div class="pipe-step"><span class="pipe-no">01</span><strong>TRAIN</strong><span>Custom YOLOv5 · retail checkout dataset</span></div>
+          <div class="pipe-link" aria-hidden="true"></div>
+          <div class="pipe-step"><span class="pipe-no">02</span><strong>QUANTIZE</strong><span>INT8 post-training · calibrated ranges</span></div>
+          <div class="pipe-link" aria-hidden="true"></div>
+          <div class="pipe-step"><span class="pipe-no">03</span><strong>DEPLOY</strong><span>ONNX Runtime · Raspberry Pi ARM</span></div>
+          <div class="pipe-link" aria-hidden="true"></div>
+          <div class="pipe-step live"><span class="pipe-no">04</span><strong>SERVE</strong><span>Sub-second inference · no GPU</span></div>
+        </div>
+
+        <div class="grid-2" style="margin-top:16px">
+          <div class="card rv">
+            <p class="pillar-no ai-mono">PRECISION TRADEOFF — MEASURED</p>
+            <h3>Why INT8 wins on the floor</h3>
+            <div class="quant">
+              <div class="q-row"><span class="q-lbl">FP32 baseline</span><span class="q-track"><span class="q-fill q-fp" data-w="100"></span></span><span class="q-val">32-bit</span></div>
+              <div class="q-row"><span class="q-lbl">INT8 deployed</span><span class="q-track"><span class="q-fill q-int" data-w="25"></span></span><span class="q-val">8-bit · 4× smaller</span></div>
+            </div>
+            <p class="stack"><strong>Result:</strong> &lt;1% mAP degradation for 4× weight compression — verified in IEEE Xplore Doc 10627276.</p>
+          </div>
+          <div class="card rv rv-d1">
+            <p class="pillar-no ai-mono">INFERENCE PROFILE</p>
+            <h3>Checkout vision, untethered</h3>
+            <ul class="tight">
+              <li><strong style="color:var(--ink)">Automated retail checkout</strong> — camera-to-decision pipeline on embedded hardware.</li>
+              <li><strong style="color:var(--ink)">ARM-only execution</strong> — ONNX Runtime graphs tuned for Pi-class silicon.</li>
+              <li><strong style="color:var(--ink)">Deterministic latency</strong> — sub-second frames with zero cloud round-trips.</li>
+            </ul>
+            <p style="margin-top:14px"><a class="btn btn-secondary btn-sm" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">Read the paper ↗</a></p>
+          </div>
+        </div>
+        <div class="chips rv">
+          <span class="chip">YOLOv5</span><span class="chip">PyTorch</span><span class="chip">INT8 PTQ</span><span class="chip">ONNX Runtime</span><span class="chip">OpenCV</span><span class="chip">ARM / Pi 5</span><span class="chip">mAP eval</span>
+        </div>
+      </div>
+    </section>
+
     <!-- TRAJECTORY -->
     <section class="section" id="trajectory">
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow">04 // Trajectory &amp; Edge Assets</p>
+          <p class="eyebrow">05 // Trajectory &amp; Edge Assets</p>
           <span class="sec-index">LOG.2019 → PRESENT</span>
         </div>
         <h2 class="rv rv-d1" style="margin:12px 0 6px">Where I've been deployed.</h2>
@@ -216,7 +265,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     <section class="section agents" id="agents">
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow eyebrow-agent">05 // Agent Interface</p>
+          <p class="eyebrow eyebrow-agent">06 // Agent Interface</p>
           <span class="sec-index">AGENT.READY — MCP · LLM · RAG</span>
         </div>
         <h2 class="rv rv-d1" style="margin:12px 0 6px">Built for humans.<br /><span class="agent-grad">Grounded for agents.</span></h2>
@@ -287,7 +336,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
     <section class="section" id="contact">
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow">06 // Direct Commissioning Inbound</p>
+          <p class="eyebrow">07 // Direct Commissioning Inbound</p>
           <span class="sec-index">CH.OPEN — RESPONSE &lt;24H</span>
         </div>
         <h2 class="rv rv-d1" style="margin:12px 0 24px">Establish the link.</h2>
@@ -314,7 +363,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
 
   <footer class="site-footer">
     <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
-      <span>© 2026 KSHITIJ SAWARKAR · FDE OPS CONSOLE v3.0 · AGENT-NATIVE</span>
+      <span>© 2026 KSHITIJ SAWARKAR · FDE OPS CONSOLE v3.1 · AGENT-NATIVE · AI-READY</span>
       <span>BUILT WITH ASTRO · <a href={`${base}llms.txt`}>llms.txt</a> · <a href={`${base}api/profile.json`}>profile.json</a></span>
     </div>
   </footer>
@@ -441,6 +490,93 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       })();
     })();
 
+    // 8b — quantization bars animate on scroll
+    (function () {
+      const fills = document.querySelectorAll('.q-fill');
+      if (!fills.length) return;
+      const qio = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (!en.isIntersecting) return;
+          qio.unobserve(en.target);
+          requestAnimationFrame(() => { en.target.style.width = (en.target.getAttribute('data-w') || '100') + '%'; });
+        });
+      }, { threshold: 0.5 });
+      fills.forEach((f) => qio.observe(f));
+    })();
+
+    // 8c — neural network canvas (layered forward-flow)
+    (function () {
+      const cv = document.getElementById('neural');
+      if (!cv || reduceMotion) return;
+      const ctx = cv.getContext('2d');
+      let w, h, nodes = [], pulses = [];
+      const COLORS = ['65,230,255', '167,139,250', '61,255,143'];
+      function size() {
+        const r = cv.parentElement.getBoundingClientRect();
+        w = cv.width = r.width; h = cv.height = r.height;
+        const layers = [5, 8, 8, 5];
+        nodes = [];
+        layers.forEach((count, li) => {
+          for (let n = 0; n < count; n++) {
+            nodes.push({
+              bx: w * (0.12 + (0.76 * li) / (layers.length - 1)),
+              by: h * ((n + 1) / (count + 1)),
+              x: 0, y: 0, li,
+              ph: Math.random() * 6.28,
+              sp: 0.004 + Math.random() * 0.008,
+              r: 2.2 + Math.random() * 1.6,
+              c: COLORS[li % 3]
+            });
+          }
+        });
+        nodes.forEach((nd) => { nd.x = nd.bx; nd.y = nd.by; });
+      }
+      size(); window.addEventListener('resize', size);
+      let tick = 0;
+      function spawn() {
+        const left = nodes.filter((n) => n.li === 0);
+        const a = left[Math.floor(Math.random() * left.length)];
+        if (a) pulses.push({ n: a, t: 0 });
+      }
+      setInterval(() => { if (document.visibilityState === 'visible' && Math.random() < 0.7) spawn(); }, 500);
+      (function draw() {
+        tick += 0.016;
+        ctx.clearRect(0, 0, w, h);
+        nodes.forEach((nd) => {
+          nd.x = nd.bx + Math.sin(tick * nd.sp * 60 + nd.ph) * 7;
+          nd.y = nd.by + Math.cos(tick * nd.sp * 50 + nd.ph) * 9;
+        });
+        // edges: each node links to all nodes in next layer
+        nodes.forEach((a) => {
+          nodes.forEach((b) => {
+            if (b.li !== a.li + 1) return;
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
+            ctx.strokeStyle = `rgba(${a.c},0.13)`; ctx.lineWidth = 1; ctx.stroke();
+          });
+        });
+        // pulses travel layer to layer
+        pulses = pulses.filter((p) => p.t <= 1.6);
+        pulses.forEach((p) => {
+          p.t += 0.03;
+          const li = Math.min(2, Math.floor(p.t));
+          const k = p.t - li;
+          const A = nodes.filter((n) => n.li === li);
+          const B = nodes.filter((n) => n.li === li + 1);
+          if (!A.length || !B.length) return;
+          const a = A[Math.floor((p.t * 13) % A.length)], b = B[Math.floor((p.t * 7) % B.length)];
+          const x = a.x + (b.x - a.x) * Math.min(1, k), y = a.y + (b.y - a.y) * Math.min(1, k);
+          ctx.beginPath(); ctx.arc(x, y, 3, 0, 7);
+          ctx.fillStyle = 'rgba(61,255,143,0.95)'; ctx.shadowColor = '#3dff8f'; ctx.shadowBlur = 14; ctx.fill(); ctx.shadowBlur = 0;
+        });
+        // nodes
+        nodes.forEach((nd) => {
+          ctx.beginPath(); ctx.arc(nd.x, nd.y, nd.r, 0, 7);
+          ctx.fillStyle = `rgba(${nd.c},0.85)`; ctx.shadowColor = `rgb(${nd.c})`; ctx.shadowBlur = 10; ctx.fill(); ctx.shadowBlur = 0;
+        });
+        requestAnimationFrame(draw);
+      })();
+    })();
+
     // 8 — rotating telemetry line
     (function () {
       const el = document.getElementById('tele-text');
@@ -500,7 +636,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
         { k: ['ieee', 'paper', 'publish', 'research', 'yolo', 'quantiz', 'edge vision', 'retail'], a: 'Lead-author <b>IEEE Xplore Doc 10627276</b> (Mar 2026): quantized YOLOv5 on Raspberry Pi via ONNX Runtime INT8 — &lt;1% mAP loss, sub-second inference, no discrete GPU. <a href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener">Verify ↗</a>' },
         { k: ['live', 'production', 'system', 'deploy', 'vault', 'project', 'bom', 'schema', 'npl'], a: 'Three live systems: <b>BOM schema engine</b> (&lt;50ms, npl-automation.pages.dev) · <b>asset ingestion engine</b> (&gt;80% faster) · <b>repair pricing engine</b> (margin guardrail). Scroll to <b>02 // Vault</b> — every one is clickable.' },
         { k: ['robot', 'ros', 'slam', 'amr', 'mentorpi', 'embedded', 'hardware', 'solar', 'hil'], a: 'Robotics: <b>HiWonder MentorPi M1</b> on ROS2 + Pi 5 (SLAM, monocular vision) · sensorless solar tracking (PV-voltage sensing, no LDRs) · HIL twins with interrupt-driven safety interlocks.' },
-        { k: ['contact', 'email', 'hire', 'commission', 'deploy him', 'reach', 'phone', 'linkedin'], a: 'Open for on-site APAC sprints → <b>kshitijsawarkar333@gmail.com</b> · <a href="https://linkedin.com/in/kshitijas" target="_blank" rel="noopener">LinkedIn</a> · response &lt;24h. Jump to <b>06 // Contact</b> to establish the link.' },
+        { k: ['contact', 'email', 'hire', 'commission', 'deploy him', 'reach', 'phone', 'linkedin'], a: 'Open for on-site APAC sprints → <b>kshitijsawarkar333@gmail.com</b> · <a href="https://linkedin.com/in/kshitijas" target="_blank" rel="noopener">LinkedIn</a> · response &lt;24h. Jump to <b>07 // Contact</b> to establish the link.' },
         { k: ['stack', 'tech', 'skill', 'typescript', 'cloudflare', 'matlab'], a: 'Core stack: <b>ROS2 · YOLOv5 INT8 · ONNX · TypeScript · Cloudflare edge · FastAPI · MATLAB/Simulink · ESP32/CAN/I2C</b>. Four pillars in <b>01 // Systems</b>.' },
         { k: ['educat', 'mtech', 'mnnit', 'degree', 'college', 'btech', 'study'], a: '<b>M.Tech Control &amp; Instrumentation, MNNIT Allahabad (2025–27)</b> + Graduate TA for 100+ students · B.Tech ECE, RCOEM Nagpur (2021–24).' },
         { k: ['wakefit', 'work', 'job', 'intern', 'experience', 'trajectory'], a: 'Now: <b>Wakefit Systems &amp; Automation Intern</b> (NPL ops, Bengaluru) + MNNIT TA. Previously: AICTE/AWS MLOps, Sharon IoT, UCN networks. Full log in <b>04 // Trajectory</b>.' },
