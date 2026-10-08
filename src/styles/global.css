@@ -226,8 +226,12 @@ ul.tight li::marker { color: var(--accent); }
 .float-orb { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.35; pointer-events: none; animation: drift 12s ease-in-out infinite alternate; }
 @keyframes drift { from { transform: translate(0,0) scale(1); } to { transform: translate(40px,-40px) scale(1.15); } }
 
-/* ---------- vault previews ---------- */
-.vault-card { padding: 0; display: grid; }
+/* ---------- education logos ---------- */
+.edu-card { display: flex; gap: 18px; align-items: center; }
+.edu-logo { width: 96px; height: 72px; object-fit: contain; background: #fff; border-radius: 14px; padding: 8px 10px; flex: none; border: 1px solid var(--line-strong); box-shadow: 0 6px 20px -8px rgba(0,0,0,0.7); transition: transform .25s; }
+.edu-card:hover .edu-logo { transform: scale(1.05) rotate(-1deg); }
+
+/* ---------- vault previews ---------- */.vault-card { padding: 0; display: grid; }
 .vault-body { padding: 26px; min-width: 0; }
 @media (min-width: 860px) {
   .vault-card { grid-template-columns: 300px 1fr; }
