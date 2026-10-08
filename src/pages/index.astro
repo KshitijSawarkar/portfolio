@@ -1,0 +1,239 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- SECTION 1: HEADER & TELEMETRY NAV -->
+  <header class="site-header">
+    <div class="wrap">
+      <div class="header-row">
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+          <a class="brand" href="#top" translate="no">kshitij.sawarkar <small>// forward-deployed</small></a>
+          <span class="telemetry"><span class="dot" aria-hidden="true"></span><span>Active: Manufacturing Systems Automation @ Wakefit | M.Tech Control &amp; Instrumentation @ MNNIT Allahabad</span></span>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          <a href="#pillars">01 // Systems Vault</a>
+          <a href="#research">02 // Hardware &amp; Research</a>
+          <a href="#trajectory">03 // Trajectory</a>
+          <a href="#contact">Resume (PDF)</a>
+          <a href="https://github.com/KshitijSawarkar" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/kshitijas" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+      <div class="machine-strip">● AI Agent Context: GET <a href="/llms.txt">/llms.txt</a> | GET <a href="/api/profile.json">/api/profile.json</a> (Deterministic ground truth preventing agent hallucination)</div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- SECTION 2: HERO & OPERATIONAL MANIFESTO -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">Forward Deployed · Edge Vision · Floor Automation</p>
+        <h1>Kshitij Ashok Sawarkar<span class="role">Forward Deployed Systems &amp; Robotics Engineer</span></h1>
+        <p class="lead" style="margin-top:16px;color:var(--body)"><strong style="color:var(--ink)">M.Tech Candidate in Control &amp; Instrumentation, MNNIT Allahabad</strong></p>
+        <p class="meta" style="margin-top:8px">Bengaluru, India (Available for On-Site Regional &amp; APAC Field Deployments)</p>
+        <p class="coords">kshitijsawarkar333@gmail.com | +91-9823252972 | <a href="https://linkedin.com/in/kshitijas">linkedin.com/in/kshitijas</a> | <a href="https://github.com/KshitijSawarkar">github.com/KshitijSawarkar</a></p>
+        <div class="manifesto">
+          “Operating at the physical boundary where autonomous mobile robots (AMRs), edge vision pipelines, and manufacturing production lines collide. Translating operational floor friction into sub-50ms deterministic client-side schema engines, INT8 quantized edge neural networks, and robust ROS2 controllers. Lead-author IEEE Xplore researcher (Doc ID: 10627276) focused on zero-downtime field commissioning, rapid site integration, and closed-loop systems stability.”
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#vault">Explore Live Systems ↓</a>
+          <a class="btn btn-secondary" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">Read IEEE Publication (Doc 10627276)</a>
+          <a class="btn btn-secondary" href="#contact">Download 1-Page Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE 4 FDE SYSTEMS PILLARS -->
+    <section class="section" id="pillars">
+      <div class="wrap">
+        <p class="eyebrow">01 // The 4 FDE Systems Pillars</p>
+        <h2 style="margin:8px 0">Systems that survive the floor</h2>
+        <div class="grid-2" style="margin-top:24px">
+          <div class="card">
+            <h3>Pillar 01: Field Commissioning &amp; Mobile Robotics</h3>
+            <p><strong>Core Competencies:</strong> Robot Operating System 2 (ROS2), Embedded Linux (Raspberry Pi 5), Autonomous Mobile Robots (AMRs/AGVs), Hardware-in-the-Loop (HIL) Testing, Sensor Fusion, CAN/UART/I2C Buses, Microcontrollers (ESP32, ARM).</p>
+            <p class="stack"><strong>Operational Scope:</strong> Site acceptance testing (SAT), floor map calibration, obstacle avoidance triage, and sensor-to-middleware integration.</p>
+          </div>
+          <div class="card">
+            <h3>Pillar 02: Edge AI &amp; Low-Latency Vision</h3>
+            <p><strong>Core Competencies:</strong> YOLOv5, OpenCV, Post-Training Quantization (INT8), ONNX Runtime Engine, Low-Latency Real-Time Inference, Edge Hardware Acceleration (ARM Cortex/RPi).</p>
+            <p class="stack"><strong>Operational Scope:</strong> Deploying quantized detection models directly to edge nodes without cloud compute reliance.</p>
+          </div>
+          <div class="card">
+            <h3>Pillar 03: Customer Systems &amp; Floor Integration</h3>
+            <p><strong>Core Competencies:</strong> Deterministic Schema Engines, Sub-50ms In-Browser Validation, Pydantic v2 Guardrails, REST APIs, Cloudflare Pages &amp; Workers, TypeScript, Python (FastAPI).</p>
+            <p class="stack"><strong>Operational Scope:</strong> Eliminating enterprise spreadsheet friction, catalog ingestion latency, and client-side data leaks.</p>
+          </div>
+          <div class="card">
+            <h3>Pillar 04: Closed-Loop Control Theory</h3>
+            <p><strong>Core Competencies:</strong> State-Space Modeling, Closed-Loop Feedback Stability, Root Locus, Dynamic System Calibration, Transfer Functions, MATLAB, Simulink.</p>
+            <p class="stack"><strong>Operational Scope:</strong> Mathematical verification of plant dynamics, state observers, and closed-loop motor/actuator controllers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE LIVE SYSTEMS VAULT -->
+    <section class="section" id="vault">
+      <div class="wrap">
+        <p class="eyebrow">02 // The Live Systems Vault (Production Proof)</p>
+        <h2 style="margin:8px 0">Deployed. Live. Clickable.</h2>
+        <div style="display:grid;gap:16px;margin-top:24px">
+          <article class="card">
+            <span class="tag live">● Live Production System</span><span class="tag">&lt;50ms Execution Latency</span>
+            <h3 style="margin-top:12px">Card A: Finished Goods &amp; BOM Schema Transformation Engine</h3>
+            <p class="meta"><a href="https://npl-automation.pages.dev/">https://npl-automation.pages.dev/</a></p>
+            <ul class="tight">
+              <li>Embedded on-site into high-throughput manufacturing operations (Bommasandra facility) to diagnose and eliminate critical spreadsheet processing bottlenecks between physical production teams and ERP catalogs.</li>
+              <li>Engineered a recursive, client-side schema parsing and validation engine running on Cloudflare Pages that turned multi-day reconciliation backlogs into an automated pipeline executing in sub-50ms.</li>
+              <li>Enforced strict runtime data types with 100% client-side privacy, eliminating data leakage and human cataloging errors.</li>
+            </ul>
+            <p class="stack" style="margin-top:12px"><strong>Tech Stack:</strong> TypeScript, Cloudflare Pages, Pydantic Schema Principles, Client-Side DOM Engine, REST APIs.</p>
+            <p style="margin-top:12px"><a class="btn btn-primary btn-sm" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer">Open live system ↗</a></p>
+          </article>
+          <article class="card">
+            <span class="tag live">● Live Production Utility</span><span class="tag">&gt;80% Latency Reduction</span>
+            <h3 style="margin-top:12px">Card B: Batch Asset Ingestion &amp; Normalization Engine</h3>
+            <p class="meta"><a href="https://image-sequence-renamer.pages.dev/">https://image-sequence-renamer.pages.dev/</a></p>
+            <ul class="tight">
+              <li>Built an in-browser batch processing utility to normalize, sequence, and validate high-volume media asset naming schemas for product cataloging.</li>
+              <li>Cut asset onboarding latency by over 80% while imposing zero server compute overhead or cloud ingestion costs.</li>
+            </ul>
+            <p class="stack" style="margin-top:12px"><strong>Tech Stack:</strong> JavaScript, HTML5 File API, Cloudflare Pages, In-Browser Processing.</p>
+            <p style="margin-top:12px"><a class="btn btn-primary btn-sm" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a></p>
+          </article>
+          <article class="card">
+            <span class="tag live">● Live Operational Utility</span><span class="tag">Margin Protection Guardrail</span>
+            <h3 style="margin-top:12px">Card C: Deterministic Repair Cost Pricing Engine</h3>
+            <p class="meta"><a href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/">https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/</a></p>
+            <ul class="tight">
+              <li>Translated complex multi-parameter furniture repair and material replacement logic into a deterministic calculation engine.</li>
+              <li>Standardized factory-floor service estimations, eliminating margin erosion caused by human calculation drift.</li>
+            </ul>
+            <p class="stack" style="margin-top:12px"><strong>Tech Stack:</strong> JavaScript, Responsive CSS3, Deterministic Pricing Logic.</p>
+            <p style="margin-top:12px"><a class="btn btn-primary btn-sm" href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: RESEARCH & HARDWARE MOAT -->
+    <section class="section" id="research">
+      <div class="wrap">
+        <p class="eyebrow">03 // Peer-Reviewed Research &amp; Physical Hardware Moat</p>
+        <h2 style="margin:8px 0">Research + rigs</h2>
+        <div class="grid-2" style="margin-top:24px">
+          <div class="card">
+            <h3>Block A: Published Edge AI Research (IEEE Xplore)</h3>
+            <p class="meta">Published Lead Author | IEEE Xplore | Document ID: 10627276 (Published March 2026)</p>
+            <p style="margin-top:12px"><strong>Paper Title:</strong> Automated Edge Vision &amp; Retail Checkout System using Quantized YOLOv5 on Embedded Hardware</p>
+            <p><strong>Technical Contribution:</strong> Designed an autonomous edge computer vision pipeline utilizing custom YOLOv5 models deployed on ARM-based Raspberry Pi hardware.</p>
+            <p>Implemented INT8 Post-Training Quantization via ONNX Runtime to balance activation dynamic ranges, preserving &lt;1% mean Average Precision (mAP) loss while delivering sub-second real-time inference without discrete GPUs.</p>
+            <p><a href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">Verification Link: ieeexplore.ieee.org/document/10627276 ↗</a></p>
+          </div>
+          <div class="card">
+            <h3>Block B: Mobile Robotics &amp; Embedded Systems</h3>
+            <p><strong>HiWonder MentorPi M1 Autonomous Mobile Robot (ROS2):</strong> Assembled chassis, configured battery management subsystems, and flashed custom Linux kernels on Raspberry Pi 5 under Robot Operating System 2 (ROS2).</p>
+            <p>Integrated monocular vision telemetry with SLAM navigation packages for autonomous indoor obstacle avoidance and path planning.</p>
+            <p><strong>Sensorless Solar Photovoltaic Tracking System:</strong> Designed a closed-loop solar tracking mechanism utilizing the photovoltaic output voltage of the solar panels themselves to sense light gradients, eliminating fragile external LDR sensors and mechanical failure points.</p>
+            <p>Programmed closed-loop servo actuation logic to adjust tracking angle toward maximum power points.</p>
+            <p><strong>Hardware-in-the-Loop Simulation &amp; Safety Telemetry:</strong> Built live Wokwi digital twin simulations for Arduino Uno and MQ-2 sensor arrays, implementing interrupt-driven safety interlocks and audio/visual alarm triggers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SOVEREIGN EDGE ASSETS & TRAJECTORY -->
+    <section class="section" id="trajectory">
+      <div class="wrap">
+        <p class="eyebrow">04 // Sovereign Edge Assets &amp; Professional Trajectory</p>
+        <h2 style="margin:8px 0">Trajectory</h2>
+
+        <h3 style="margin-top:24px">Sovereign Distributed Web Assets</h3>
+        <div class="grid-2" style="margin-top:12px">
+          <div class="card">
+            <h3>cardsfinders.com</h3>
+            <p class="meta">Founder &amp; Full-Stack Edge Systems Architect (Jul 2026 – Present)</p>
+            <p>Platform deployed globally via Cloudflare Pages and Workers. Configured edge DNS records, custom email routing, and sub-second Time-to-First-Byte (TTFB) delivery pipelines with zero recurring server runtime compute costs.</p>
+            <p><a href="https://cardsfinders.com" target="_blank" rel="noopener noreferrer">cardsfinders.com ↗</a></p>
+          </div>
+          <div class="card">
+            <h3>myuselessweb.com</h3>
+            <p class="meta">Creator &amp; Edge Infrastructure Engineer (Jan 2024 – Present)</p>
+            <p>Engineered an ultra-minimalist, high-traffic interactive web discovery engine deployed across Cloudflare’s global edge network, delivering consistent &lt;50ms response times.</p>
+            <p><a href="https://myuselessweb.com" target="_blank" rel="noopener noreferrer">myuselessweb.com ↗</a></p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:32px">Professional Trajectory &amp; Institutional Pedigree</h3>
+        <div style="display:grid;gap:16px;margin-top:12px">
+          <div class="card">
+            <h3>Wakefit Innovations Ltd | Systems &amp; Automation Engineering Intern (Intern-PGET)</h3>
+            <p class="meta">Aug 2026 – Present | Bengaluru</p>
+            <p>Embedded on-site in manufacturing and NPL operations; deployed client-side schema engines and automated pipelines resolving floor backlogs.</p>
+          </div>
+          <div class="card">
+            <h3>Motilal Nehru National Institute of Technology (MNNIT) Allahabad | Graduate Teaching Assistant</h3>
+            <p class="meta">Aug 2025 – Present | Prayagraj</p>
+            <p>Assisting faculty in conducting Control Systems and Instrumentation lectures, tutorials, and laboratory sessions for 100+ undergraduate engineering students. Mentoring on state feedback, root locus, and Hardware-in-the-Loop testbenches.</p>
+          </div>
+          <div class="card">
+            <h3>AICTE (AWS) | Cloud Infrastructure &amp; MLOps Intern</h3>
+            <p class="meta">May 2023 – Jul 2023 | Remote</p>
+            <p>Architected serverless ETL pipelines using AWS S3 triggers and Lambda functions (~99.9% uptime); deployed SageMaker endpoints.</p>
+          </div>
+          <div class="card">
+            <h3>Sharon Innovations (RCOEM TBI Foundation) | IoT &amp; Embedded Systems Intern</h3>
+            <p class="meta">Dec 2023 – Feb 2024 | Nagpur</p>
+            <p>Interfaced microcontroller sensor nodes (ESP32/Arduino) with environmental sensors, calibrating ADC conversion curves and debugging I2C/SPI/UART bus communications.</p>
+          </div>
+          <div class="card">
+            <h3>UCN Cable Network Pvt Ltd | Network Infrastructure &amp; Hardware Intern</h3>
+            <p class="meta">Jun 2022 – Jul 2022 | Nagpur</p>
+            <p>Configured optical distribution frames, managed switches, and routers; performed SNR audits and fiber-optic continuity troubleshooting.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:32px">Academic Credentials</h3>
+        <div class="grid-2" style="margin-top:12px">
+          <div class="card">
+            <h3>Master of Technology (M.Tech) in Control &amp; Instrumentation</h3>
+            <p class="meta">Motilal Nehru National Institute of Technology (MNNIT) Allahabad (2025 – 2027)</p>
+          </div>
+          <div class="card">
+            <h3>Bachelor of Technology (B.Tech) in Electronics &amp; Communication Engineering</h3>
+            <p class="meta">Shri Ramdeobaba College of Engineering and Management (RCOEM), Nagpur (2021 – 2024)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: DIRECT COMMISSIONING INBOUND -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <p class="eyebrow">05 // Direct Commissioning Inbound</p>
+        <h2 style="margin:8px 0 24px">Establish the link</h2>
+        <div class="terminal" role="region" aria-label="Contact terminal">
+          <div><span class="prompt">[ESTABLISH DIRECT FIELD COMMISSIONING LINK]</span></div>
+          <div>&gt; Available for on-site commissioning sprints, autonomous mobile robot deployments,</div>
+          <div>&nbsp;&nbsp;and deterministic floor automation integration across India and APAC.</div>
+          <br />
+          <div>Email: &nbsp;&nbsp;&nbsp;<a href="mailto:kshitijsawarkar333@gmail.com">kshitijsawarkar333@gmail.com</a></div>
+          <div>LinkedIn: <a href="https://linkedin.com/in/kshitijas" target="_blank" rel="noopener noreferrer">linkedin.com/in/kshitijas</a></div>
+          <div>GitHub: &nbsp;&nbsp;<a href="https://github.com/KshitijSawarkar" target="_blank" rel="noopener noreferrer">github.com/KshitijSawarkar</a></div>
+          <div>Location: Bengaluru / Nagpur, India</div>
+          <br />
+          <div>Agent Ground Truth: [<a href="/llms.txt">/llms.txt</a>] · [<a href="/api/profile.json">/api/profile.json</a>]</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <span>© 2026 Kshitij Ashok Sawarkar · Forward Deployed Systems &amp; Robotics Engineer</span>
+      <span>Built with Astro · <a href="/llms.txt">llms.txt</a> · <a href="/api/profile.json">profile.json</a></span>
+    </div>
+  </footer>
+</Layout>

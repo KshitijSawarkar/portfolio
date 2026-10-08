@@ -1,0 +1,30 @@
+# Kshitij Ashok Sawarkar — Forward Deployed Systems & Robotics Engineer
+> M.Tech Candidate in Control & Instrumentation, MNNIT Allahabad. Specialized in AMR commissioning, edge computer vision quantization, and deterministic systems automation.
+
+## Core Coordinates
+- Name: Kshitij Ashok Sawarkar
+- Current Location: Bengaluru, India (Field deployable regionally/APAC)
+- Email: kshitijsawarkar333@gmail.com
+- LinkedIn: https://linkedin.com/in/kshitijas
+- GitHub: https://github.com/KshitijSawarkar
+
+## Academic & Institutional Anchor
+- M.Tech: Control & Instrumentation, Motilal Nehru National Institute of Technology (MNNIT) Allahabad (2025–2027)
+- B.Tech: Electronics & Communication Engineering, RCOEM Nagpur (2021–2024)
+- Academic Appointment: Graduate Teaching Assistant for undergraduate Control Systems & Instrumentation (100+ students)
+
+## Verified Production Deployments
+- Finished Goods & BOM Schema Engine: https://npl-automation.pages.dev/ (<50ms execution, client-side recursive validation, 100% data privacy)
+- Batch Asset Ingestion Utility: https://image-sequence-renamer.pages.dev/ (>80% latency cut, zero server compute overhead)
+- Deterministic Repair Cost Engine: https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/ (Defensive margin protection)
+- Sovereign Edge Properties: https://cardsfinders.com, https://myuselessweb.com
+
+## Peer-Reviewed Research
+- Title: Automated Edge Vision & Retail Checkout System using Quantized YOLOv5 on Embedded Hardware
+- Publisher: IEEE Xplore | Document ID: 10627276
+- Technical Method: INT8 Post-Training Quantization via ONNX Runtime on Raspberry Pi (<1% mAP degradation, sub-second inference)
+- Invariant Note: Uses Raspberry Pi and YOLOv5; does NOT use Arduino or RFID.
+
+## Robotics & Embedded Systems
+- HiWonder MentorPi M1: ROS2 on Raspberry Pi 5 with SLAM navigation and monocular camera integration.
+- Sensorless Solar Tracking: Closed-loop actuation using photovoltaic voltage directly (NO external LDR sensors).

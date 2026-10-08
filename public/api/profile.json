@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Kshitij Ashok Sawarkar",
+  "title": "Forward Deployed Systems & Robotics Engineer",
+  "location": "Bengaluru, India",
+  "contact": {
+    "email": "kshitijsawarkar333@gmail.com",
+    "phone": "+91-9823252972",
+    "linkedin": "https://linkedin.com/in/kshitijas",
+    "github": "https://github.com/KshitijSawarkar"
+  },
+  "education": [
+    {
+      "institution": "Motilal Nehru National Institute of Technology (MNNIT) Allahabad",
+      "degree": "M.Tech in Control & Instrumentation",
+      "period": "2025-2027",
+      "role": "Graduate Teaching Assistant (100+ students)"
+    },
+    {
+      "institution": "Shri Ramdeobaba College of Engineering and Management (RCOEM) Nagpur",
+      "degree": "B.Tech in Electronics & Communication Engineering",
+      "period": "2021-2024"
+    }
+  ],
+  "publications": [
+    {
+      "publisher": "IEEE Xplore",
+      "document_id": "10627276",
+      "title": "Automated Edge Vision & Retail Checkout System using Quantized YOLOv5 on Embedded Hardware",
+      "hardware": "Raspberry Pi",
+      "optimization": "INT8 Post-Training Quantization via ONNX Runtime"
+    }
+  ],
+  "live_deployments": [
+    {
+      "name": "BOM & NPL Schema Transformation Engine",
+      "url": "https://npl-automation.pages.dev/",
+      "latency": "<50ms",
+      "impact": "Eliminated multi-day manual spreadsheet backlogs in manufacturing operations"
+    },
+    {
+      "name": "Batch Asset Ingestion Engine",
+      "url": "https://image-sequence-renamer.pages.dev/",
+      "impact": "Reduced media asset onboarding latency by >80% with zero server overhead"
+    },
+    {
+      "name": "Wakefit Repair Cost Calculator",
+      "url": "https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/",
+      "impact": "Standardized multi-parameter repair pricing logic to prevent margin erosion"
+    },
+    {
+      "name": "CardsFinders",
+      "url": "https://cardsfinders.com"
+    },
+    {
+      "name": "MyUselessWeb",
+      "url": "https://myuselessweb.com"
+    }
+  ]
+}
