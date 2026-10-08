@@ -104,13 +104,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <article class="card vault-card rv">
             <a class="preview" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open live BOM schema engine">
               <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">npl-automation.pages.dev</span><span class="pv-open">↗</span></span>
-              <span class="pv-screen">
-                <span class="pv-row"><span class="pv-cell w40"></span><span class="pv-cell w25"></span><span class="pv-pill ok">VALID</span></span>
-                <span class="pv-row"><span class="pv-cell w40"></span><span class="pv-cell w25"></span><span class="pv-pill ok">VALID</span></span>
-                <span class="pv-row scan"><span class="pv-cell w40"></span><span class="pv-cell w25"></span><span class="pv-pill ok">VALID</span></span>
-                <span class="pv-row"><span class="pv-cell w40"></span><span class="pv-cell w25"></span><span class="pv-pill ok">VALID</span></span>
-                <span class="pv-foot"><span class="pv-badge">12,408 rows · 41ms</span></span>
-              </span>
+              <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/bom.png`} alt="Screenshot of the NPL Workbook Generator web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
             </a>
             <div class="vault-body">
             <span class="tag live"><i></i>Live production system</span><span class="tag">&lt;50ms exec</span>
@@ -128,14 +122,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <article class="card vault-card rv">
             <a class="preview" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open live asset ingestion engine">
               <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">image-sequence-renamer.pages.dev</span><span class="pv-open">↗</span></span>
-              <span class="pv-screen">
-                <span class="pv-tiles">
-                  <span class="pv-tile"><b>001</b></span><span class="pv-tile"><b>002</b></span><span class="pv-tile"><b>003</b></span>
-                  <span class="pv-tile"><b>004</b></span><span class="pv-tile"><b>005</b></span><span class="pv-tile"><b>006</b></span>
-                </span>
-                <span class="pv-progress"><span class="pv-fill"></span></span>
-                <span class="pv-foot"><span class="pv-badge">248 files · renamed ✓</span></span>
-              </span>
+              <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/assets.png`} alt="Screenshot of the Image Sequence Renamer web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
             </a>
             <div class="vault-body">
             <span class="tag live"><i></i>Live production utility</span><span class="tag">&gt;80% latency cut</span>
@@ -152,11 +139,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <article class="card vault-card rv">
             <a class="preview" href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" target="_blank" rel="noopener noreferrer" aria-label="Open live repair cost calculator">
               <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">Wakefit_Repair_Calculator</span><span class="pv-open">↗</span></span>
-              <span class="pv-screen">
-                <span class="pv-display">₹ 2,450<span class="pv-caret"></span></span>
-                <span class="pv-keys"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="hl"></span></span>
-                <span class="pv-foot"><span class="pv-badge">deterministic · 0 drift</span></span>
-              </span>
+              <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/repair.png`} alt="Screenshot of the Wakefit Repair Cost Calculator web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
             </a>
             <div class="vault-body">
             <span class="tag live"><i></i>Live operational utility</span><span class="tag">margin guardrail</span>
