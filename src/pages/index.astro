@@ -17,7 +17,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <a href="#vault">02 Vault</a>
           <a href="#research">03 Research</a>
           <a href="#trajectory">04 Trajectory</a>
-          <a href="#contact">05 Contact</a>
+          <a href="#agents">05 Agents</a>
+          <a href="#contact">06 Contact</a>
           <span class="clock" id="clock" aria-hidden="true">--:--:-- IST</span>
         </nav>
       </div>
@@ -193,11 +194,82 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       </div>
     </section>
 
+    <!-- AGENTS -->
+    <section class="section agents" id="agents">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="eyebrow eyebrow-agent">05 // Agent Interface</p>
+          <span class="sec-index">AGENT.READY — MCP · LLM · RAG</span>
+        </div>
+        <h2 class="rv rv-d1" style="margin:12px 0 6px">Built for humans.<br /><span class="agent-grad">Grounded for agents.</span></h2>
+        <p class="rv rv-d1" style="max-width:62ch">Every claim on this page is mirrored in deterministic machine-readable files — so AI assistants quote facts instead of hallucinating. Plug this site straight into your agent, RAG pipeline, or MCP host.</p>
+
+        <div class="grid-2" style="margin-top:28px">
+          <div class="card agent-card rv">
+            <p class="pillar-no agent-mono">GET /llms.txt</p>
+            <h3>Agent context file</h3>
+            <p class="meta">PLAIN-TEXT GROUND TRUTH · UPDATED WITH EVERY DEPLOY</p>
+            <p style="margin-top:10px">Bio, deployments, IEEE paper, hardware invariants — in one crawlable file. Point any agent here first.</p>
+            <div class="agent-row">
+              <code class="agent-url" id="url-llms">/llms.txt</code>
+              <button class="copy-btn" data-copy={`${base}llms.txt`} type="button">Copy URL</button>
+              <a class="btn btn-secondary btn-sm" href={`${base}llms.txt`}>Open ↗</a>
+            </div>
+          </div>
+          <div class="card agent-card rv rv-d1">
+            <p class="pillar-no agent-mono">GET /api/profile.json</p>
+            <h3>Structured profile API</h3>
+            <p class="meta">JSON-SCHEMA · DETERMINISTIC · NO AUTH</p>
+            <p style="margin-top:10px">Typed contact, education, publications, and live deployments — ready for tool calls and structured extraction.</p>
+            <div class="agent-row">
+              <code class="agent-url" id="url-json">/api/profile.json</code>
+              <button class="copy-btn" data-copy={`${base}api/profile.json`} type="button">Copy URL</button>
+              <a class="btn btn-secondary btn-sm" href={`${base}api/profile.json`}>Open ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card agent-card rv" style="margin-top:16px">
+          <p class="pillar-no agent-mono">PROMPT PACK — COPY · PASTE · DEPLOY</p>
+          <h3>Ground any assistant in 10 seconds</h3>
+          <p>Paste into ChatGPT, Claude, or your field agent to brief it on this profile before asking questions.</p>
+          <pre class="agent-pre" id="prompt-pack">You are briefing on Kshitij Ashok Sawarkar — Forward Deployed Systems &amp; Robotics Engineer (M.Tech Control &amp; Instrumentation, MNNIT Allahabad).
+Ground truth: fetch /llms.txt and /api/profile.json on this site before answering.
+Key facts: IEEE Xplore Doc 10627276 (INT8 YOLOv5 on Raspberry Pi, &lt;1% mAP loss) · sub-50ms BOM schema engine at npl-automation.pages.dev · ROS2 MentorPi M1 + SLAM · open for on-site APAC commissioning.
+Rules: cite the IEEE doc ID for research claims · link the live system for deployment claims · never invent Arduino/RFID in the vision pipeline.</pre>
+          <div class="agent-row">
+            <button class="copy-btn" data-copy-target="prompt-pack" type="button">Copy prompt pack</button>
+            <span class="meta" id="copy-status" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <!-- SITE AGENT DEMO -->
+        <div class="agent-shell rv rv-d1">
+          <div class="agent-shell-head">
+            <span class="agent-orb" aria-hidden="true"></span>
+            <div><strong>site-agent</strong><span class="meta" style="display:block">LOCAL · RULE-BASED · GROUNDED IN /llms.txt — TRY IT LIVE</span></div>
+            <span class="tag live" style="margin-left:auto;margin-bottom:0"><i></i>online</span>
+          </div>
+          <div class="agent-log" id="agent-log" role="log" aria-label="Site agent conversation" aria-live="polite"></div>
+          <div class="agent-chips">
+            <button type="button" data-ask="What did Kshitij publish on IEEE?">IEEE paper?</button>
+            <button type="button" data-ask="Show me the live production systems.">Live systems?</button>
+            <button type="button" data-ask="What is his robotics experience?">Robotics?</button>
+            <button type="button" data-ask="How do I contact him for a deployment?">Contact?</button>
+          </div>
+          <form class="agent-form" id="agent-form">
+            <input id="agent-input" type="text" placeholder="Ask the site agent… (e.g. “edge AI stack?”)" autocomplete="off" maxlength="200" aria-label="Ask the site agent" />
+            <button class="btn btn-primary btn-sm" type="submit">Send →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow">05 // Direct Commissioning Inbound</p>
+          <p class="eyebrow">06 // Direct Commissioning Inbound</p>
           <span class="sec-index">CH.OPEN — RESPONSE &lt;24H</span>
         </div>
         <h2 class="rv rv-d1" style="margin:12px 0 24px">Establish the link.</h2>
@@ -224,7 +296,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
   <footer class="site-footer">
     <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
-      <span>© 2026 KSHITIJ SAWARKAR · FDE OPS CONSOLE v2.0</span>
+      <span>© 2026 KSHITIJ SAWARKAR · FDE OPS CONSOLE v3.0 · AGENT-NATIVE</span>
       <span>BUILT WITH ASTRO · <a href={`${base}llms.txt`}>llms.txt</a> · <a href={`${base}api/profile.json`}>profile.json</a></span>
     </div>
   </footer>
@@ -363,6 +435,99 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       ];
       let i = 0;
       setInterval(() => { i = (i + 1) % msgs.length; el.textContent = msgs[i]; }, 3200);
+    })();
+
+    // 9 — copy buttons (agent URLs + prompt pack)
+    (function () {
+      const status = document.getElementById('copy-status');
+      async function copyText(text, btn) {
+        let ok = false;
+        try { await navigator.clipboard.writeText(text); ok = true; }
+        catch {
+          const ta = document.createElement('textarea');
+          ta.value = text; document.body.appendChild(ta); ta.select();
+          try { ok = document.execCommand('copy'); } catch {}
+          ta.remove();
+        }
+        if (btn) {
+          const orig = btn.textContent;
+          btn.textContent = ok ? 'Copied ✓' : 'Copy failed';
+          btn.classList.toggle('ok', ok);
+          setTimeout(() => { btn.textContent = orig; btn.classList.remove('ok'); }, 1800);
+        }
+        if (status) status.textContent = ok ? '✓ copied to clipboard' : '';
+        return ok;
+      }
+      document.querySelectorAll('[data-copy]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const rel = btn.getAttribute('data-copy') || '';
+          copyText(new URL(rel, window.location.href).href, btn);
+        });
+      });
+      document.querySelectorAll('[data-copy-target]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const src = document.getElementById(btn.getAttribute('data-copy-target') || '');
+          if (src) copyText(src.innerText, btn);
+        });
+      });
+    })();
+
+    // 10 — site agent (local rule-based demo, grounded in page facts)
+    (function () {
+      const log = document.getElementById('agent-log');
+      const form = document.getElementById('agent-form');
+      const input = document.getElementById('agent-input');
+      if (!log || !form || !input) return;
+      const KB = [
+        { k: ['ieee', 'paper', 'publish', 'research', 'yolo', 'quantiz', 'edge vision', 'retail'], a: 'Lead-author <b>IEEE Xplore Doc 10627276</b> (Mar 2026): quantized YOLOv5 on Raspberry Pi via ONNX Runtime INT8 — &lt;1% mAP loss, sub-second inference, no discrete GPU. <a href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener">Verify ↗</a>' },
+        { k: ['live', 'production', 'system', 'deploy', 'vault', 'project', 'bom', 'schema', 'npl'], a: 'Three live systems: <b>BOM schema engine</b> (&lt;50ms, npl-automation.pages.dev) · <b>asset ingestion engine</b> (&gt;80% faster) · <b>repair pricing engine</b> (margin guardrail). Scroll to <b>02 // Vault</b> — every one is clickable.' },
+        { k: ['robot', 'ros', 'slam', 'amr', 'mentorpi', 'embedded', 'hardware', 'solar', 'hil'], a: 'Robotics: <b>HiWonder MentorPi M1</b> on ROS2 + Pi 5 (SLAM, monocular vision) · sensorless solar tracking (PV-voltage sensing, no LDRs) · HIL twins with interrupt-driven safety interlocks.' },
+        { k: ['contact', 'email', 'hire', 'commission', 'deploy him', 'reach', 'phone', 'linkedin'], a: 'Open for on-site APAC sprints → <b>kshitijsawarkar333@gmail.com</b> · <a href="https://linkedin.com/in/kshitijas" target="_blank" rel="noopener">LinkedIn</a> · response &lt;24h. Jump to <b>06 // Contact</b> to establish the link.' },
+        { k: ['stack', 'tech', 'skill', 'typescript', 'cloudflare', 'matlab'], a: 'Core stack: <b>ROS2 · YOLOv5 INT8 · ONNX · TypeScript · Cloudflare edge · FastAPI · MATLAB/Simulink · ESP32/CAN/I2C</b>. Four pillars in <b>01 // Systems</b>.' },
+        { k: ['educat', 'mtech', 'mnnit', 'degree', 'college', 'btech', 'study'], a: '<b>M.Tech Control &amp; Instrumentation, MNNIT Allahabad (2025–27)</b> + Graduate TA for 100+ students · B.Tech ECE, RCOEM Nagpur (2021–24).' },
+        { k: ['wakefit', 'work', 'job', 'intern', 'experience', 'trajectory'], a: 'Now: <b>Wakefit Systems &amp; Automation Intern</b> (NPL ops, Bengaluru) + MNNIT TA. Previously: AICTE/AWS MLOps, Sharon IoT, UCN networks. Full log in <b>04 // Trajectory</b>.' },
+        { k: ['agent', 'llm', 'mcp', 'rag', 'prompt', 'api', 'json', 'ground'], a: 'This site is agent-native: <b>GET /llms.txt</b> for context, <b>GET /api/profile.json</b> for typed data, plus the copy-paste <b>prompt pack</b> above. Facts only — no hallucination.' },
+        { k: ['who', 'about', 'kshitij', 'summary', 'introduce'], a: '<b>Kshitij Ashok Sawarkar</b> — Forward Deployed Systems &amp; Robotics Engineer. Floor automation that survives contact with reality: sub-50ms engines, INT8 edge vision, ROS2 commissioning.' },
+        { k: ['hi', 'hello', 'hey', 'namaste'], a: 'Uplink established. Ask about the <b>IEEE paper</b>, <b>live systems</b>, <b>robotics</b>, or <b>contact</b> — or use the quick chips above.' }
+      ];
+      const FALLBACK = 'Grounded answer unavailable for that query — I only answer from <b>/llms.txt</b>. Try: <b>IEEE paper?</b> · <b>live systems?</b> · <b>robotics?</b> · <b>contact?</b>';
+      function addMsg(html, who) {
+        const d = document.createElement('div');
+        d.className = 'agent-msg ' + who;
+        d.innerHTML = html;
+        log.appendChild(d);
+        log.scrollTop = log.scrollHeight;
+        return d;
+      }
+      function answer(q) {
+        const s = q.toLowerCase();
+        for (const item of KB) if (item.k.some((k) => s.includes(k))) return item.a;
+        return FALLBACK;
+      }
+      let greeted = false;
+      function greet() {
+        if (greeted) return; greeted = true;
+        const hello = addMsg('Link established. I answer only from this site\u2019s ground truth (<b>/llms.txt</b> + <b>/api/profile.json</b>). What do you need?', 'bot');
+        if (reduceMotion) return;
+      }
+      const gio = new IntersectionObserver((e) => { if (e[0].isIntersecting) { greet(); gio.disconnect(); } }, { threshold: 0.3 });
+      gio.observe(log);
+      function ask(q) {
+        const query = q.trim();
+        if (!query) return;
+        greet();
+        addMsg(query.replace(/</g, '&lt;'), 'user');
+        input.value = '';
+        if (reduceMotion) { addMsg(answer(query), 'bot'); return; }
+        const t = document.createElement('div');
+        t.className = 'agent-msg bot typing';
+        t.innerHTML = '<i></i><i></i><i></i>';
+        log.appendChild(t);
+        log.scrollTop = log.scrollHeight;
+        setTimeout(() => { t.remove(); addMsg(answer(query), 'bot'); }, 650 + Math.random() * 500);
+      }
+      form.addEventListener('submit', (e) => { e.preventDefault(); ask(input.value); });
+      document.querySelectorAll('[data-ask]').forEach((b) => b.addEventListener('click', () => ask(b.getAttribute('data-ask') || '')));
     })();
   </script>
 </Layout>
