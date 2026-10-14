@@ -133,7 +133,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
               <article class="dash-slide" aria-label="1 of 6: MentorPi M1 Autonomous Robot">
                 <a class="preview dash-media" href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Open MentorPi Chassis Video" tabindex="-1">
                   <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">mentorpi-m1.ros2</span><span class="pv-open">↗</span></span>
-                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/mentorpi.jpg`} alt="HiWonder MentorPi M1 Autonomous Mobile Robot" loading="lazy" /><span class="pv-live"><i></i>ROBOTICS BENCH</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot pv-contain" src={`${base}previews/mentorpi.png`} alt="HiWonder MentorPi M1 Autonomous Mobile Robot" loading="lazy" /><span class="pv-live"><i></i>ROBOTICS BENCH</span></span>
                 </a>
                 <div class="dash-info">
                   <span class="tag live"><i></i>ROS2 on Pi 5</span><span class="tag">AMR Commissioning</span>
@@ -227,7 +227,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
                     <li>Built closed-loop control algorithms ensuring robust tracking performance in high-dust and extreme industrial environmental conditions.</li>
                   </ul>
                   <p class="stack"><strong>Stack:</strong> Embedded Control · Dynamic MPPT · Closed-Loop Actuation · Servo Positioning</p>
-                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://docs.google.com/presentation/d/1WsoxJpkOGv4GCKoAZFYMt03jj_0Yq4AvVkb0T4s2bPY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View architecture presentation ↗</a></p>
+                  <p style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+                    <a class="btn btn-primary btn-sm" href="https://docs.google.com/presentation/d/1WsoxJpkOGv4GCKoAZFYMt03jj_0Yq4AvVkb0T4s2bPY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View architecture presentation ↗</a>
+                    <a class="btn btn-secondary btn-sm" href="https://drive.google.com/file/d/1fcZVVkoQ_b0vqO3GWKNmk0JH5dNND53V/view?usp=sharing" target="_blank" rel="noopener noreferrer">Watch video demonstration ↗</a>
+                  </p>
                 </div>
               </article>
 
@@ -247,14 +250,17 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
                     <li>Cut digital asset onboarding cycle time by &gt;80%, resolving plant-floor data bottlenecks with zero external software installation.</li>
                   </ul>
                   <p class="stack"><strong>Stack:</strong> Forward Deployed Engineering · JavaScript · HTML5 File API · Client-Side Tooling</p>
-                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a></p>
+                  <p style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+                    <a class="btn btn-primary btn-sm" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a>
+                    <a class="btn btn-secondary btn-sm" href="https://myuselessweb.com/" target="_blank" rel="noopener noreferrer">Explore web experiments ↗</a>
+                  </p>
                 </div>
               </article>
             </div>
           </div>
           <div class="dash-progress" aria-hidden="true"><span id="dash-bar"></span></div>
           <div class="dash-rail" id="dash-rail" role="group" aria-label="Jump to a project">
-            <button class="dash-thumb" type="button" data-i="0" aria-current="true" aria-label="Show MentorPi M1 Robot"><img src={`${base}previews/mentorpi.jpg`} alt="" loading="lazy" /><span>01 · MentorPi ROS2</span></button>
+            <button class="dash-thumb" type="button" data-i="0" aria-current="true" aria-label="Show MentorPi M1 Robot"><img class="contain" src={`${base}previews/mentorpi.png`} alt="" loading="lazy" /><span>01 · MentorPi ROS2</span></button>
             <button class="dash-thumb" type="button" data-i="1" aria-current="false" aria-label="Show BOM Schema Engine"><img src={`${base}previews/bom.png`} alt="" loading="lazy" /><span>02 · BOM Engine (FDE)</span></button>
             <button class="dash-thumb" type="button" data-i="2" aria-current="false" aria-label="Show Drone RF Classification"><img src={`${base}previews/drone-rf.jpg`} alt="" loading="lazy" /><span>03 · Drone RF SDR</span></button>
             <button class="dash-thumb" type="button" data-i="3" aria-current="false" aria-label="Show Smart Shopping Cart"><img src={`${base}previews/repair.png`} alt="" loading="lazy" /><span>04 · Edge Vision (IEEE)</span></button>

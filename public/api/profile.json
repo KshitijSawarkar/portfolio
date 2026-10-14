@@ -127,6 +127,7 @@
   "flagship_projects": [
     {
       "name": "HiWonder MentorPi M1 Autonomous Robotics Platform",
+      "image": "previews/mentorpi.png",
       "stack": ["Raspberry Pi 5", "ROS2 Humble", "2D LiDAR", "OpenCV", "Robotics Telemetry"],
       "telemetry_url": "https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing",
       "highlights": [
