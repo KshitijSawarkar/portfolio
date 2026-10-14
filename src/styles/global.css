@@ -94,6 +94,8 @@ section[id] { scroll-margin-top: 84px; }
 @keyframes scan { 0% { transform: translateY(-120px); opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { transform: translateY(110vh); opacity: 0; } }
 .eyebrow { font-family: var(--mono); font-size: 0.74rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.22em; color: var(--accent); display: flex; align-items: center; gap: 10px; }
 .eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--accent); display: inline-block; }
+.hero h1 { font-size: clamp(1.9rem, 4.9vw, 4.2rem); line-height: 1.08; letter-spacing: -0.04em; }
+.hero-name { display: inline-block; white-space: nowrap; }
 .hero h1 .grad { background: linear-gradient(92deg, #3dff8f 0%, #41e6ff 45%, #a78bfa 90%); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .role { display: block; font-size: clamp(1.05rem, 2.4vw, 1.5rem); letter-spacing: -0.01em; font-weight: 500; color: var(--body); margin-top: 14px; }
 .type-line { font-family: var(--mono); font-size: clamp(0.85rem, 2vw, 1rem); color: var(--cyan); min-height: 1.8em; margin-top: 18px; }
