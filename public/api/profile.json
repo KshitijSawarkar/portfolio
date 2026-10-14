@@ -126,8 +126,31 @@
   ],
   "flagship_projects": [
     {
+      "name": "HiWonder MentorPi M1 Autonomous Robotics Platform",
+      "stack": ["Raspberry Pi 5", "ROS2 Humble", "2D LiDAR", "OpenCV", "Robotics Telemetry"],
+      "telemetry_url": "https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing",
+      "highlights": [
+        "Programmed and tuned an autonomous mobile robot (AMR) unit powered by a Raspberry Pi 5 single-board computer running Robot Operating System 2 (ROS2 Humble).",
+        "Configured modular ROS2 publisher/subscriber nodes for real-time motor actuation, PWM driver loops, and telemetry streaming on embedded Linux.",
+        "Interfaced onboard monocular camera feeds with OpenCV pipelines for visual marker tracking, target acquisition, and spatial orientation.",
+        "Bench-tested sensor synchronization across 2D LiDAR, IMU, and motor encoders for indoor SLAM map generation and obstacle triage."
+      ]
+    },
+    {
+      "name": "Manufacturing Schema & BOM Automation Engine (NPL Automation)",
+      "stack": ["Forward Deployed Engineering", "JavaScript", "Cloudflare Pages", "Deterministic Parsing"],
+      "live_url": "https://npl-automation.pages.dev/",
+      "latency": "<50ms",
+      "highlights": [
+        "Forward-deployed industrial client-side schema engine on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and New Product Launch (NPL) parameter trees across dynamic seater variants and colorways.",
+        "Solved combinatorial explosion bottlenecks using recursive client-side parsing algorithms, compressing 72+ operational hours of manual ERP reconciliation into deterministic sub-minute execution with sub-50ms latency.",
+        "Authored formal system constraints (AGENTS.md) and deterministic validation guardrails to prevent SKU collisions and upstream ERP data ingestion errors across active manufacturing assembly lines.",
+        "Structured zero-compute infrastructure running 100% client-side with full data isolation and zero server overhead."
+      ]
+    },
+    {
       "name": "Real-Time Drone Detection & RF Signal Classification",
-      "stack": ["Python", "SDR", "RF Signal Processing", "Machine Learning"],
+      "stack": ["Python", "Software-Defined Radio (SDR)", "RF Signal Processing", "Machine Learning"],
       "telemetry_url": "https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing",
       "highlights": [
         "Built an automated edge spectral sensing pipeline intercepting communication bursts between commercial UAV flight controllers and Ground Control Stations (GCS) across 2.4 GHz and 5.8 GHz ISM bands.",
@@ -136,20 +159,8 @@
       ]
     },
     {
-      "name": "Manufacturing Schema & BOM Automation Engine (NPL Automation)",
-      "stack": ["JavaScript", "Cloudflare Pages", "Deterministic Parsing"],
-      "live_url": "https://npl-automation.pages.dev/",
-      "latency": "<50ms",
-      "highlights": [
-        "Engineered an industrial client-side schema engine deployed on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and New Product Launch (NPL) parameter trees across dynamic seater variants and colorways.",
-        "Solved combinatorial explosion bottlenecks using recursive client-side parsing algorithms, compressing 72+ operational hours of manual ERP reconciliation into deterministic sub-minute execution with sub-50ms latency.",
-        "Authored formal system constraints (AGENTS.md) and deterministic validation guardrails to prevent SKU collisions and upstream ERP data ingestion errors across active manufacturing assembly lines.",
-        "Structured zero-compute infrastructure running 100% client-side with full data isolation and zero server overhead."
-      ]
-    },
-    {
       "name": "Smart Shopping Cart: Real-Time Edge Object Detection",
-      "stack": ["Raspberry Pi", "YOLOv5", "OpenCV", "Python"],
+      "stack": ["Raspberry Pi", "YOLOv5", "OpenCV", "INT8 Quantization", "Python"],
       "publication_url": "https://ieeexplore.ieee.org/document/10627276",
       "document_id": "10627276",
       "highlights": [
@@ -160,59 +171,51 @@
       ]
     },
     {
-      "name": "HiWonder MentorPi M1 Autonomous Robotics Platform",
-      "stack": ["Raspberry Pi 5", "ROS2 Humble", "2D LiDAR", "OpenCV", "Robotics Telemetry"],
-      "telemetry_url": "https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing",
-      "highlights": [
-        "Programmed and tuned an autonomous mobile robot (AMR) unit powered by a Raspberry Pi 5 single-board computer running Robot Operating System 2 (ROS2 Humble).",
-        "Configured modular ROS2 publisher/subscriber nodes for real-time motor actuation, PWM driver loops, and telemetry streaming on embedded Linux.",
-        "Interfaced onboard monocular camera feeds with OpenCV pipelines for visual marker tracking, target acquisition, and spatial orientation."
-      ]
-    },
-    {
-      "name": "TrendGuard-200: Multi-Asset Quantitative Risk Engine",
-      "stack": ["Python", "NumPy", "Pandas", "Vectorized Backtesting"],
-      "highlights": [
-        "Architected a quantitative signal generation and backtesting engine in Python, evaluating multi-asset momentum regimes across an 8-year OHLC dataset.",
-        "Accelerated computation cycles by 90% through vectorized NumPy and Pandas operations, achieving a 72.7% win rate.",
-        "Structured strict drawdown-containment filters using dynamic position sizing and multi-timeframe moving average boundaries (21, 50, 200 SMA) alongside RSI and VWAP triggers."
-      ]
-    },
-    {
-      "name": "CardsFinders Financial Tool Suite",
-      "stack": ["Cloudflare Pages", "DNS Architecture", "Web Engineering"],
-      "live_url": "https://cardsfinders.com/",
-      "highlights": [
-        "Deployed a financial comparison and evaluation web engine on Cloudflare Pages, configuring custom DNS architectures, edge-caching layers, and domain-level email routing.",
-        "Engineered structured data tables and client-side filtering tools to evaluate credit card rewards and financial products."
-      ]
-    },
-    {
-      "name": "Event-Driven Web Experiments & Production Utilities",
-      "stack": ["Cloudflare Pages", "Client-Side Tooling"],
-      "live_url": "https://image-sequence-renamer.pages.dev/",
-      "highlights": [
-        "Built interactive client-side web applications exploring asynchronous API polling, event-driven frontend interaction models, and distributed edge delivery.",
-        "Developed industrial production micro-utilities including image-sequence-renamer.pages.dev to automate asset management workflows for manufacturing and digital catalog teams."
-      ]
-    },
-    {
       "name": "Photovoltaic Sensorless Solar Tracker",
-      "stack": ["Embedded Control", "Dynamic MPPT Tracking"],
+      "stack": ["Embedded Control", "Dynamic MPPT Tracking", "Servos"],
       "architecture_url": "https://docs.google.com/presentation/d/1WsoxJpkOGv4GCKoAZFYMt03jj_0Yq4AvVkb0T4s2bPY/edit?usp=sharing",
       "demonstration_url": "https://drive.google.com/file/d/1fcZVVkoQ_b0vqO3GWKNmk0JH5dNND53V/view?usp=sharing",
       "highlights": [
         "Engineered a dual-axis solar tracking algorithm that eliminates external light-dependent resistors (LDRs) and auxiliary optical sensors.",
-        "Utilized the intrinsic photovoltaic voltage and current characteristics of the solar panel itself as the diagnostic light-intensity sensor, dynamically calculating maximum power point vectors to actuate motor positioners with minimal component overhead."
+        "Utilized the intrinsic photovoltaic voltage and current characteristics of the solar panel itself as the diagnostic light-intensity sensor, dynamically calculating maximum power point vectors to actuate motor positioners with minimal component overhead.",
+        "Built closed-loop control algorithms ensuring robust tracking performance in high-dust and extreme industrial environmental conditions."
       ]
     },
     {
-      "name": "Gas Detection Safety System",
-      "stack": ["Arduino", "MQ-2", "Embedded Diagnostics"],
+      "name": "Industrial Plant-Floor Production Micro-Utilities",
+      "stack": ["Forward Deployed Engineering", "Cloudflare Pages", "HTML5 File API", "Client-Side Tooling"],
+      "live_url": "https://image-sequence-renamer.pages.dev/",
+      "highlights": [
+        "Developed industrial production micro-utilities including image-sequence-renamer.pages.dev to automate asset management workflows for manufacturing and digital catalog teams.",
+        "Processed batch image renaming and sequencing completely in-browser with zero upload bandwidth or cloud storage overhead, cutting onboarding latency by >80%."
+      ]
+    },
+    {
+      "name": "Gas Detection Safety Interlock System",
+      "stack": ["Arduino", "MQ-2", "Embedded Diagnostics", "Hardware Simulation"],
       "simulation_url": "https://wokwi.com/projects/453321379118788609",
       "highlights": [
         "Built an embedded gas-hazard detection circuit integrating an Arduino Uno with an MQ-2 electrochemical gas sensor.",
-        "Programmed analog-to-digital threshold comparison logic, automatic alarm actuation, and sensor calibration routines to trigger emergency alerts under volatile gas leak scenarios."
+        "Programmed analog-to-digital threshold comparison logic, automatic alarm actuation, and sensor calibration routines to trigger emergency alerts under volatile gas leak scenarios.",
+        "Verified through interactive digital twin hardware simulation on Wokwi with zero physical risk."
+      ]
+    },
+    {
+      "name": "TrendGuard-200: Vectorized State & Signal Engine",
+      "stack": ["Python", "NumPy", "Pandas", "Vectorized State Modeling"],
+      "highlights": [
+        "Architected a quantitative signal generation and backtesting engine in Python, evaluating multi-asset momentum regimes across an 8-year OHLC dataset.",
+        "Accelerated computation cycles by 90% through vectorized NumPy and Pandas operations, achieving a 72.7% win rate.",
+        "Structured strict drawdown-containment filters using dynamic position sizing and multi-timeframe moving average boundaries."
+      ]
+    },
+    {
+      "name": "Distributed Edge Systems & Runtime Infrastructure (CardsFinders)",
+      "stack": ["Cloudflare Pages", "DNS Architecture", "High-Availability Systems"],
+      "live_url": "https://cardsfinders.com/",
+      "highlights": [
+        "Deployed high-availability edge systems on Cloudflare Pages, configuring custom DNS architectures, edge-caching layers, and domain-level email routing.",
+        "Engineered structured data tables and client-side filtering tools operating with zero server compute runtime costs."
       ]
     }
   ],
