@@ -1,60 +1,220 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "Kshitij Ashok Sawarkar",
-  "title": "Forward Deployed Systems & Robotics Engineer",
-  "location": "Bengaluru, India",
+  "title": "Autonomous Robotics, Embedded Systems & Forward Deployed Engineering",
+  "location": "Bengaluru / Hosur, India",
   "contact": {
     "email": "kshitijsawarkar333@gmail.com",
     "phone": "+91-9823252972",
-    "linkedin": "https://linkedin.com/in/kshitijas",
-    "github": "https://github.com/KshitijSawarkar"
+    "linkedin": "https://www.linkedin.com/in/kshitijas/",
+    "github": "https://github.com/KshitijSawarkar",
+    "portfolio": "https://kshitijsawarkar.github.io/portfolio/#top"
+  },
+  "summary": "Autonomous systems and forward-deployed automation engineer with an M.Tech in Control and Instrumentation from MNNIT Allahabad and a B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Operates at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial systems automation. Lead author of peer-reviewed edge-perception research published in IEEE Xplore (Document ID: 10627276). Proven track record of delivering production-grade client-side engines executing under 50ms latency (npl-automation.pages.dev), software-defined radio (SDR) spectral sensing pipelines for UAV RF classification, and ROS2 embedded robotics control stacks.",
+  "core_competencies": {
+    "autonomous_robotics_and_embedded": [
+      "ROS2 (composition nodes, lifecycle management)",
+      "Embedded Linux",
+      "Microcontrollers (Raspberry Pi, Arduino)",
+      "Serial Protocols (CAN, UART, SPI, I2C)",
+      "Sensor Synchronization (LiDAR, Monocular Vision, IMU)",
+      "Hardware-in-the-Loop (HIL)"
+    ],
+    "applied_ai_and_edge_perception": [
+      "Real-Time Computer Vision (YOLOv5, OpenCV)",
+      "Model Quantization (INT8)",
+      "Edge Compute Optimization",
+      "Spectral Feature Extraction",
+      "Machine Learning (TensorFlow, Keras, Scikit-Learn)"
+    ],
+    "rf_telemetry_and_signal_processing": [
+      "Software-Defined Radio (SDR)",
+      "RF Signal Classification",
+      "Spectrogram Analysis",
+      "IQ Signal Parsing",
+      "UAV Flight Controller Telemetry Interception"
+    ],
+    "production_systems_and_cloud": [
+      "Cloudflare Pages",
+      "Deterministic Parsing Algorithms",
+      "Client-Side Runtime Optimization",
+      "AWS (EC2, Lambda, S3, SageMaker)",
+      "RESTful APIs",
+      "Git",
+      "Docker",
+      "Shell Scripting"
+    ]
   },
   "education": [
     {
       "institution": "Motilal Nehru National Institute of Technology (MNNIT) Allahabad",
-      "degree": "M.Tech in Control & Instrumentation",
-      "period": "2025-2027",
-      "role": "Graduate Teaching Assistant (100+ students)"
+      "degree": "Master of Technology (M.Tech) in Control and Instrumentation",
+      "period": "2025 – Present",
+      "specialization": "High-order dynamic systems, state-space modeling, multivariable feedback control, and real-time embedded signal processing.",
+      "academic_leadership": "Serving as Teaching Assistant for undergraduate control systems lectures and laboratory tutorials.",
+      "coursework": "NPTEL Introduction to Multi-Agent Systems (IIT Certification)"
     },
     {
-      "institution": "Shri Ramdeobaba College of Engineering and Management (RCOEM) Nagpur",
-      "degree": "B.Tech in Electronics & Communication Engineering",
-      "period": "2020-2024"
+      "institution": "Shri Ramdeobaba College of Engineering and Management (RCOEM), Nagpur",
+      "degree": "Bachelor of Technology (B.Tech) in Electronics and Communication Engineering",
+      "period": "2020 – 2024",
+      "foundations": "Microprocessors & Microcontrollers, Digital Signal Processing (DSP), RF & Microwave Systems, Embedded Hardware Design, and Communication Networks."
+    }
+  ],
+  "experience": [
+    {
+      "company": "Wakefit Innovations Ltd.",
+      "location": "Bengaluru / Hosur, India",
+      "role": "Systems Automation Intern – PGET",
+      "period": "August 2026 – Present",
+      "live_systems": [
+        "https://npl-automation.pages.dev/",
+        "https://image-sequence-renamer.pages.dev/"
+      ],
+      "highlights": [
+        "Architected and deployed a production client-side application (npl-automation.pages.dev) on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and New Product Launch (NPL) schema logic across complex seater variants and dynamic colorways.",
+        "Eliminated multi-day manual ERP spreadsheet reconciliation bottlenecks by implementing recursive client-side parsing algorithms, compressing end-to-end BOM derivation from 72+ operational hours into deterministic sub-minute runs with sub-50ms execution latency.",
+        "Authored formal system constraints (AGENTS.md) and deterministic validation guardrails, preventing parameter collisions, duplicate SKU generation, and upstream ERP data ingestion errors across active manufacturing assembly lines.",
+        "Engineered the entire schema pipeline to execute strictly client-side with 100% data isolation and zero server compute overhead, eliminating cloud infrastructure maintenance and ensuring uninterrupted offline plant-floor readiness."
+      ]
+    },
+    {
+      "company": "AICTE Virtual Internship",
+      "location": "Remote, India",
+      "role": "AWS Cloud Intern / AI Developer",
+      "period": "May 2023 – July 2023",
+      "highlights": [
+        "Architected and executed the migration of local machine learning workflows and structured datasets to AWS infrastructure, configuring EC2 instances, security groups, and IAM role policies for distributed execution.",
+        "Designed asynchronous, serverless ETL data pipelines using AWS Lambda triggered by Amazon S3 bucket storage events, automating data ingestion, validation, and real-time preprocessing with zero idle compute costs.",
+        "Managed full model training lifecycles and deployed hosted inference endpoints using AWS SageMaker, optimizing distributed algorithms (XGBoost, Linear Learner) for scalable real-time inference against production datasets.",
+        "Implemented CloudWatch monitoring, automated alerts, and resource scaling policies to ensure continuous endpoint availability while preventing resource waste."
+      ]
+    },
+    {
+      "company": "RCOEM TBI Foundation Cell (Sharon Innovations)",
+      "location": "Nagpur, India",
+      "role": "IoT Systems & Embedded Firmware Intern",
+      "period": "January 2021 – February 2022",
+      "highlights": [
+        "Developed embedded firmware and sensor interfacing routines across microcontrollers and IoT development boards for connected hardware products incubated under Sharon Innovations.",
+        "Integrated serial communication protocols (UART, SPI, I2C) to link environmental and operational sensors with edge communication modules, ensuring low-power telemetry transmission with zero packet loss.",
+        "Built internal test automation scripts and hardware debugging routines to profile voltage stability, sensor drift, and signal noise across early prototype iterations.",
+        "Resolved hardware-software integration bottlenecks across partner ventures, increasing overall prototype operational reliability prior to pilot field trials."
+      ]
+    },
+    {
+      "company": "UCN Cable Networks",
+      "location": "Nagpur, India",
+      "role": "Computer Networking Intern",
+      "period": "March 2023 – April 2023",
+      "highlights": [
+        "Configured and provisioned enterprise routing hardware, managed Layer 2 and Layer 3 (L2/L3) network switches, and established static and dynamic routing topologies across regional distribution points.",
+        "Implemented IPv4 CIDR subnetting, VLAN segmentation, and DHCP/DNS server configurations to isolate operational traffic and optimize bandwidth allocation across mixed client networks.",
+        "Conducted physical Layer 1 and Layer 2 troubleshooting using packet-capture analyzers and cable-fault testers, identifying signal attenuation, packet drops, and MTU mismatch bottlenecks across physical trunk lines.",
+        "Built and deployed automated network monitoring check-scripts to trace gateway latency, resolve broadcast storms, and maintain high-availability network operations for downstream distribution nodes."
+      ]
+    }
+  ],
+  "flagship_projects": [
+    {
+      "name": "Real-Time Drone Detection & RF Signal Classification",
+      "stack": ["Python", "SDR", "RF Signal Processing", "Machine Learning"],
+      "telemetry_url": "https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing",
+      "highlights": [
+        "Built an automated edge spectral sensing pipeline intercepting communication bursts between commercial UAV flight controllers and Ground Control Stations (GCS) across 2.4 GHz and 5.8 GHz ISM bands.",
+        "Configured Software-Defined Radio (SDR) hardware to stream raw I/Q signal data, applying Fast Fourier Transforms (FFT) and spectrogram processing to isolate low-power transmission spikes against ambient radio noise.",
+        "Trained lightweight neural classification models to differentiate drone telemetry from Wi-Fi/Bluetooth interference with sub-second classification latency."
+      ]
+    },
+    {
+      "name": "Manufacturing Schema & BOM Automation Engine (NPL Automation)",
+      "stack": ["JavaScript", "Cloudflare Pages", "Deterministic Parsing"],
+      "live_url": "https://npl-automation.pages.dev/",
+      "latency": "<50ms",
+      "highlights": [
+        "Engineered an industrial client-side schema engine deployed on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and New Product Launch (NPL) parameter trees across dynamic seater variants and colorways.",
+        "Solved combinatorial explosion bottlenecks using recursive client-side parsing algorithms, compressing 72+ operational hours of manual ERP reconciliation into deterministic sub-minute execution with sub-50ms latency.",
+        "Authored formal system constraints (AGENTS.md) and deterministic validation guardrails to prevent SKU collisions and upstream ERP data ingestion errors across active manufacturing assembly lines.",
+        "Structured zero-compute infrastructure running 100% client-side with full data isolation and zero server overhead."
+      ]
+    },
+    {
+      "name": "Smart Shopping Cart: Real-Time Edge Object Detection",
+      "stack": ["Raspberry Pi", "YOLOv5", "OpenCV", "Python"],
+      "publication_url": "https://ieeexplore.ieee.org/document/10627276",
+      "document_id": "10627276",
+      "highlights": [
+        "Curated a custom retail dataset and fine-tuned YOLOv5 models for multi-class edge detection running directly on ARM-constrained Raspberry Pi hardware.",
+        "Implemented INT8 model parameter quantization and cache optimization to balance thermal throttling limits against frames-per-second (FPS) throughput.",
+        "Designed an OpenCV pipeline executing local billing logic with zero server dependencies, guaranteeing full offline operational readiness.",
+        "Published as Lead Author in IEEE Xplore (Document ID: 10627276)."
+      ]
+    },
+    {
+      "name": "HiWonder MentorPi M1 Autonomous Robotics Platform",
+      "stack": ["Raspberry Pi 5", "ROS2", "Computer Vision", "Robotics Telemetry"],
+      "telemetry_url": "https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing",
+      "highlights": [
+        "Programmed and tuned an autonomous mobile robot (AMR) unit powered by a Raspberry Pi 5 single-board computer running Robot Operating System 2 (ROS2).",
+        "Configured modular ROS2 publisher/subscriber nodes for real-time motor actuation, PWM driver loops, and telemetry streaming on embedded Linux.",
+        "Interfaced onboard monocular camera feeds with OpenCV pipelines for visual marker tracking, target acquisition, and spatial orientation."
+      ]
+    },
+    {
+      "name": "TrendGuard-200: Multi-Asset Quantitative Risk Engine",
+      "stack": ["Python", "NumPy", "Pandas", "Vectorized Backtesting"],
+      "highlights": [
+        "Architected a quantitative signal generation and backtesting engine in Python, evaluating multi-asset momentum regimes across an 8-year OHLC dataset.",
+        "Accelerated computation cycles by 90% through vectorized NumPy and Pandas operations, achieving a 72.7% win rate.",
+        "Structured strict drawdown-containment filters using dynamic position sizing and multi-timeframe moving average boundaries (21, 50, 200 SMA) alongside RSI and VWAP triggers."
+      ]
+    },
+    {
+      "name": "CardsFinders Financial Tool Suite",
+      "stack": ["Cloudflare Pages", "DNS Architecture", "Web Engineering"],
+      "live_url": "https://cardsfinders.com/",
+      "highlights": [
+        "Deployed a financial comparison and evaluation web engine on Cloudflare Pages, configuring custom DNS architectures, edge-caching layers, and domain-level email routing.",
+        "Engineered structured data tables and client-side filtering tools to evaluate credit card rewards and financial products."
+      ]
+    },
+    {
+      "name": "Event-Driven Web Experiments & Production Utilities",
+      "stack": ["Cloudflare Pages", "Client-Side Tooling"],
+      "live_url": "https://image-sequence-renamer.pages.dev/",
+      "highlights": [
+        "Built interactive client-side web applications exploring asynchronous API polling, event-driven frontend interaction models, and distributed edge delivery.",
+        "Developed industrial production micro-utilities including image-sequence-renamer.pages.dev to automate asset management workflows for manufacturing and digital catalog teams."
+      ]
+    },
+    {
+      "name": "Photovoltaic Sensorless Solar Tracker",
+      "stack": ["Embedded Control", "Dynamic MPPT Tracking"],
+      "architecture_url": "https://docs.google.com/presentation/d/1WsoxJpkOGv4GCKoAZFYMt03jj_0Yq4AvVkb0T4s2bPY/edit?usp=sharing",
+      "demonstration_url": "https://drive.google.com/file/d/1fcZVVkoQ_b0vqO3GWKNmk0JH5dNND53V/view?usp=sharing",
+      "highlights": [
+        "Engineered a dual-axis solar tracking algorithm that eliminates external light-dependent resistors (LDRs) and auxiliary optical sensors.",
+        "Utilized the intrinsic photovoltaic voltage and current characteristics of the solar panel itself as the diagnostic light-intensity sensor, dynamically calculating maximum power point vectors to actuate motor positioners with minimal component overhead."
+      ]
+    },
+    {
+      "name": "Gas Detection Safety System",
+      "stack": ["Arduino", "MQ-2", "Embedded Diagnostics"],
+      "simulation_url": "https://wokwi.com/projects/453321379118788609",
+      "highlights": [
+        "Built an embedded gas-hazard detection circuit integrating an Arduino Uno with an MQ-2 electrochemical gas sensor.",
+        "Programmed analog-to-digital threshold comparison logic, automatic alarm actuation, and sensor calibration routines to trigger emergency alerts under volatile gas leak scenarios."
+      ]
     }
   ],
   "publications": [
     {
       "publisher": "IEEE Xplore",
       "document_id": "10627276",
-      "title": "Automated Edge Vision & Retail Checkout System using Quantized YOLOv5 on Embedded Hardware",
-      "hardware": "Raspberry Pi",
-      "optimization": "INT8 Post-Training Quantization via ONNX Runtime"
-    }
-  ],
-  "live_deployments": [
-    {
-      "name": "BOM & NPL Schema Transformation Engine",
-      "url": "https://npl-automation.pages.dev/",
-      "latency": "<50ms",
-      "impact": "Eliminated multi-day manual spreadsheet backlogs in manufacturing operations"
-    },
-    {
-      "name": "Batch Asset Ingestion Engine",
-      "url": "https://image-sequence-renamer.pages.dev/",
-      "impact": "Reduced media asset onboarding latency by >80% with zero server overhead"
-    },
-    {
-      "name": "Wakefit Repair Cost Calculator",
-      "url": "https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/",
-      "impact": "Standardized multi-parameter repair pricing logic to prevent margin erosion"
-    },
-    {
-      "name": "CardsFinders",
-      "url": "https://cardsfinders.com"
-    },
-    {
-      "name": "MyUselessWeb",
-      "url": "https://myuselessweb.com"
+      "role": "Lead Author",
+      "title": "Automated Object Detection and Billing Architecture for Smart Retail Systems",
+      "url": "https://ieeexplore.ieee.org/document/10627276",
+      "research_focus": "Real-time edge inference, constrained ARM compute optimization, INT8 quantization tradeoffs, and embedded computer vision pipelines under thermal boundaries."
     }
   ]
 }

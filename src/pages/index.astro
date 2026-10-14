@@ -9,30 +9,30 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     <div class="wrap">
       <div class="header-row">
         <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
-          <a class="brand" href="#top" translate="no"><span class="sig">KS</span>kshitij.sawarkar <small>// forward-deployed</small></a>
+          <a class="brand" href="#top" translate="no"><span class="sig">KS</span>kshitij.sawarkar <small>// autonomous-robotics &amp; FDE</small></a>
           <span class="telemetry"><span class="dot" aria-hidden="true"></span><span id="tele-text">SYS.ONLINE — Wakefit NPL Ops · MNNIT M.Tech</span></span>
         </div>
         <nav class="nav" aria-label="Primary">
-          <a href="#pillars">01 Systems</a>
-          <a href="#vault">02 Vault</a>
+          <a href="#competencies">01 Competencies</a>
+          <a href="#vault">02 Deployments</a>
           <a href="#research">03 Research</a>
-          <a href="#ai">04 AI</a>
-          <a href="#trajectory">05 Trajectory</a>
+          <a href="#ai">04 AI &amp; RF</a>
+          <a href="#trajectory">05 Experience</a>
           <a href="#agents">06 Agents</a>
           <a href="#contact">07 Contact</a>
           <button class="theme-btn" id="theme-btn" type="button" aria-pressed="false" aria-label="Switch to day mode" title="Toggle day / night"><span id="theme-icon" aria-hidden="true">☾</span></button>
           <span class="clock" id="clock" aria-hidden="true">--:--:-- IST</span>
         </nav>
       </div>
-      <div class="machine-strip"><span><b>▸ AI CONTEXT</b> GET <a href={`${base}llms.txt`}>/llms.txt</a> · GET <a href={`${base}api/profile.json`}>/api/profile.json</a></span><span style="margin-left:auto" id="build-tag">BUILD STABLE · EDGE-READY</span></div>
+      <div class="machine-strip"><span><b>▸ AI GROUND TRUTH</b> GET <a href={`${base}llms.txt`}>/llms.txt</a> · GET <a href={`${base}api/profile.json`}>/api/profile.json</a></span><span style="margin-left:auto" id="build-tag">BUILD STABLE · EDGE-DEPLOYED</span></div>
     </div>
   </header>
 
   <!-- TICKER -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-inner" id="ticker">
-      <span><b>● LIVE</b> SUB-50MS SCHEMA ENGINE — NPL BOMMASANDRA</span><span>INT8 YOLOv5 · &lt;1% mAP LOSS · IEEE 10627276</span><span><b>● ROS2</b> MENTORPI M1 · SLAM · HIL SAFETY INTERLOCKS</span><span>&gt;80% ASSET LATENCY CUT · ZERO SERVER COST</span><span><b>● OPEN</b> FOR ON-SITE APAC COMMISSIONING SPRINTS</span>
-      <span><b>● LIVE</b> SUB-50MS SCHEMA ENGINE — NPL BOMMASANDRA</span><span>INT8 YOLOv5 · &lt;1% mAP LOSS · IEEE 10627276</span><span><b>● ROS2</b> MENTORPI M1 · SLAM · HIL SAFETY INTERLOCKS</span><span>&gt;80% ASSET LATENCY CUT · ZERO SERVER COST</span><span><b>● OPEN</b> FOR ON-SITE APAC COMMISSIONING SPRINTS</span>
+      <span><b>● LIVE</b> SUB-50MS SCHEMA ENGINE — WAKEFIT NPL OPS</span><span><b>● SDR RF</b> SPECTRAL SENSING · 2.4/5.8 GHZ UAV CLASSIFICATION</span><span><b>● IEEE 10627276</b> LEAD AUTHOR · INT8 YOLOv5 ON ARM</span><span><b>● ROS2</b> MENTORPI M1 · MONOCULAR VISION · SLAM</span><span><b>● SENSORLESS</b> PV SOLAR TRACKING · DYNAMIC MPPT</span><span><b>● OPEN</b> FOR ON-SITE FIELD DEPLOYMENTS &amp; COMMISSIONING</span>
+      <span><b>● LIVE</b> SUB-50MS SCHEMA ENGINE — WAKEFIT NPL OPS</span><span><b>● SDR RF</b> SPECTRAL SENSING · 2.4/5.8 GHZ UAV CLASSIFICATION</span><span><b>● IEEE 10627276</b> LEAD AUTHOR · INT8 YOLOv5 ON ARM</span><span><b>● ROS2</b> MENTORPI M1 · MONOCULAR VISION · SLAM</span><span><b>● SENSORLESS</b> PV SOLAR TRACKING · DYNAMIC MPPT</span><span><b>● OPEN</b> FOR ON-SITE FIELD DEPLOYMENTS &amp; COMMISSIONING</span>
     </div>
   </div>
 
@@ -43,54 +43,66 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       <div class="float-orb" style="width:340px;height:340px;left:-80px;top:10%;background:#123f2c"></div>
       <div class="float-orb" style="width:280px;height:280px;right:-60px;top:40%;background:#0e2a3f;animation-delay:-6s"></div>
       <div class="wrap" style="width:100%">
-        <p class="eyebrow rv">Forward Deployed · Edge Vision · Floor Automation</p>
-        <h1 class="rv rv-d1" style="margin-top:14px">Kshitij Ashok<br /><span class="grad">Sawarkar</span><span class="role">Forward Deployed Systems &amp; Robotics Engineer — M.Tech Control &amp; Instrumentation, MNNIT Allahabad</span></h1>
+        <p class="eyebrow rv">Autonomous Robotics · Embedded Systems · Forward Deployed Engineering</p>
+        <h1 class="rv rv-d1" style="margin-top:14px"><span class="hero-name">Kshitij Ashok <span class="grad">Sawarkar</span></span><span class="role">Autonomous Robotics, Embedded Systems &amp; Forward Deployed Engineering — M.Tech Control &amp; Instrumentation, MNNIT Allahabad</span></h1>
         <p class="type-line rv rv-d2" aria-live="polite"><span>&gt; </span><span id="typer"></span><span class="caret" aria-hidden="true"></span></p>
-        <p class="location-focus rv rv-d2"><span class="dot" aria-hidden="true"></span><strong>⌖ Bengaluru, India</strong><span> — available for on-site regional &amp; APAC field deployments</span></p>
+        <p class="location-focus rv rv-d2"><span class="dot" aria-hidden="true"></span><strong>⌖ Bengaluru / Hosur, India</strong><span> — available for on-site engineering &amp; field commissioning sprints</span></p>
         <div class="manifesto rv rv-d2">
-          Operating at the physical boundary where AMRs, edge vision pipelines, and production lines collide. I turn floor friction into sub-50ms deterministic schema engines, INT8-quantized edge neural nets, and robust ROS2 controllers. IEEE Xplore lead author (Doc 10627276) — focused on zero-downtime commissioning and closed-loop stability.
+          Autonomous systems and forward-deployed automation engineer with an M.Tech in Control and Instrumentation from MNNIT Allahabad and a B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Operates at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial systems automation. Lead author of peer-reviewed edge-perception research published in IEEE Xplore (Document ID: 10627276). Proven track record of delivering production-grade client-side engines executing under 50ms latency (npl-automation.pages.dev), software-defined radio (SDR) spectral sensing pipelines for UAV RF classification, and ROS2 embedded robotics control stacks.
         </div>
-        <p class="coords rv rv-d3">kshitijsawarkar333@gmail.com · +91-9823252972 · <a href="https://linkedin.com/in/kshitijas">linkedin.com/in/kshitijas</a> · <a href="https://github.com/KshitijSawarkar">github.com/KshitijSawarkar</a></p>
+        <p class="coords rv rv-d3">kshitijsawarkar333@gmail.com · +91-9823252972 · Bengaluru / Hosur, India · <a href="https://linkedin.com/in/kshitijas/" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="https://github.com/KshitijSawarkar" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://kshitijsawarkar.github.io/portfolio/#top">Portfolio</a></p>
         <div class="cta-row rv rv-d3">
-          <a class="btn btn-primary" href="#vault">Explore live systems ↓</a>
+          <a class="btn btn-primary" href="#vault">Explore flagship systems ↓</a>
           <a class="btn btn-secondary" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">IEEE paper 10627276 ↗</a>
-          <a class="btn btn-secondary" href="#contact">Establish link</a>
+          <a class="btn btn-secondary" href="#contact">Direct link</a>
         </div>
         <div class="stats rv rv-d3">
           <div class="stat"><div class="num"><em>&lt;</em><span data-count="50">0</span>ms</div><div class="lbl">Schema exec latency</div></div>
+          <div class="stat"><div class="num"><span data-count="5">0</span>.8G</div><div class="lbl">SDR spectral sensing</div></div>
           <div class="stat"><div class="num"><em>&lt;</em><span data-count="1">0</span>%</div><div class="lbl">mAP loss after INT8</div></div>
-          <div class="stat"><div class="num"><em>&gt;</em><span data-count="80">0</span>%</div><div class="lbl">Asset latency cut</div></div>
           <div class="stat"><div class="num">10627276</div><div class="lbl">IEEE Xplore doc ID</div></div>
         </div>
         <div class="chips rv rv-d3">
-          <span class="chip">ROS2</span><span class="chip">Raspberry Pi 5</span><span class="chip">YOLOv5 INT8</span><span class="chip">ONNX Runtime</span><span class="chip">TypeScript</span><span class="chip">Cloudflare Edge</span><span class="chip">MATLAB / Simulink</span><span class="chip">ESP32 · CAN · I2C</span>
+          <span class="chip">ROS2 (nodes &amp; lifecycle)</span><span class="chip">Embedded Linux / Pi 5</span><span class="chip">SDR / RF Spectral Sensing</span><span class="chip">YOLOv5 INT8 Quantization</span><span class="chip">CAN · UART · SPI · I2C</span><span class="chip">Sensor Sync (LiDAR, IMU, Vision)</span><span class="chip">Cloudflare Edge</span><span class="chip">AWS SageMaker &amp; Lambda</span><span class="chip">Hardware-in-the-Loop (HIL)</span>
         </div>
       </div>
     </section>
 
-    <!-- PILLARS -->
-    <section class="section" id="pillars">
+    <!-- COMPETENCIES (PILLARS) -->
+    <section class="section" id="competencies">
       <canvas class="bg-canvas" id="fx-pillars" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow">01 // FDE Systems Pillars</p>
-          <span class="sec-index">SYS.PILLARS — 04 ACTIVE</span>
+          <p class="eyebrow">01 // Core Technical Competencies</p>
+          <span class="sec-index">SYS.COMPETENCIES — 04 DOMAINS</span>
         </div>
-        <h2 class="rv rv-d1" style="margin:12px 0 6px">Systems that survive the floor.</h2>
-        <p class="rv rv-d1" style="max-width:62ch">Not demos — commissionable stacks. Each pillar maps to hardware I've touched, models I've quantized, or lines I've kept running.</p>
+        <h2 class="rv rv-d1" style="margin:12px 0 6px">Deterministic foundations from silicon to cloud.</h2>
+        <p class="rv rv-d1" style="max-width:64ch">Robust engineering stacks built to operate at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial automation.</p>
         <div class="grid-2" style="margin-top:28px">
-          <div class="card rv"><p class="pillar-no">PILLAR 01</p><h3>Field Commissioning &amp; Mobile Robotics</h3>
-            <p>ROS2 · Embedded Linux (Pi 5) · AMRs/AGVs · HIL testing · sensor fusion · CAN/UART/I2C · ESP32 &amp; ARM.</p>
-            <p class="stack"><strong>Scope:</strong> site acceptance testing, floor-map calibration, obstacle-avoidance triage, sensor-to-middleware integration.</p></div>
-          <div class="card rv rv-d1"><p class="pillar-no">PILLAR 02</p><h3>Edge AI &amp; Low-Latency Vision</h3>
-            <p>YOLOv5 · OpenCV · INT8 post-training quantization · ONNX Runtime · ARM edge acceleration.</p>
-            <p class="stack"><strong>Scope:</strong> quantized detection on edge nodes with no cloud dependency — sub-second inference, no discrete GPU.</p></div>
-          <div class="card rv"><p class="pillar-no">PILLAR 03</p><h3>Customer Systems &amp; Floor Integration</h3>
-            <p>Deterministic schema engines · sub-50ms in-browser validation · Pydantic v2 guardrails · REST · Cloudflare Pages/Workers · TypeScript · FastAPI.</p>
-            <p class="stack"><strong>Scope:</strong> kill spreadsheet friction, catalog-ingestion latency, and client-side data leaks.</p></div>
-          <div class="card rv rv-d1"><p class="pillar-no">PILLAR 04</p><h3>Closed-Loop Control Theory</h3>
-            <p>State-space modeling · feedback stability · root locus · transfer functions · MATLAB/Simulink.</p>
-            <p class="stack"><strong>Scope:</strong> mathematical verification of plant dynamics, observers, and motor/actuator controllers.</p></div>
+          <div class="card rv">
+            <p class="pillar-no">DOMAIN 01</p>
+            <h3>Autonomous Robotics &amp; Embedded</h3>
+            <p>ROS2 (composition nodes, lifecycle management), Embedded Linux, Microcontrollers (Raspberry Pi, Arduino), Serial Protocols (CAN, UART, SPI, I2C), Sensor Synchronization (LiDAR, Monocular Vision, IMU), Hardware-in-the-Loop (HIL).</p>
+            <p class="stack"><strong>Scope &amp; Impact:</strong> Site acceptance testing, floor-map calibration, obstacle-avoidance triage, motor actuation loops, and deterministic sensor-to-middleware integration.</p>
+          </div>
+          <div class="card rv rv-d1">
+            <p class="pillar-no">DOMAIN 02</p>
+            <h3>Applied AI &amp; Edge Perception</h3>
+            <p>Real-Time Computer Vision (YOLOv5, OpenCV), Model Quantization (INT8), Edge Compute Optimization, Spectral Feature Extraction, Machine Learning (TensorFlow, Keras, Scikit-Learn).</p>
+            <p class="stack"><strong>Scope &amp; Impact:</strong> INT8 quantized detection on ARM-constrained hardware with &lt;1% mAP degradation, zero server dependencies, and sub-second inference.</p>
+          </div>
+          <div class="card rv">
+            <p class="pillar-no">DOMAIN 03</p>
+            <h3>RF Telemetry &amp; Signal Processing</h3>
+            <p>Software-Defined Radio (SDR), RF Signal Classification, Spectrogram Analysis, IQ Signal Parsing, UAV Flight Controller Telemetry Interception.</p>
+            <p class="stack"><strong>Scope &amp; Impact:</strong> Intercepting drone flight controller communications across 2.4 GHz &amp; 5.8 GHz ISM bands, FFT spectrogram processing, and low-power transmission isolation.</p>
+          </div>
+          <div class="card rv rv-d1">
+            <p class="pillar-no">DOMAIN 04</p>
+            <h3>Production Systems &amp; Cloud</h3>
+            <p>Cloudflare Pages, Deterministic Parsing Algorithms, Client-Side Runtime Optimization, AWS (EC2, Lambda, S3, SageMaker), RESTful APIs, Git, Docker, Shell Scripting.</p>
+            <p class="stack"><strong>Scope &amp; Impact:</strong> Eliminating multi-day manual ERP spreadsheet reconciliation bottlenecks, zero server compute overhead, and serverless MLOps deployments.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -100,106 +112,141 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       <canvas class="bg-canvas" id="fx-vault" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow">02 // Live Systems Vault</p>
-          <span class="sec-index">MISSION.CONTROL — 05 DEPLOYED · AUTO-CYCLING</span>
+          <p class="eyebrow">02 // Flagship Systems &amp; Deployments</p>
+          <span class="sec-index">MISSION.CONTROL — 06 INTERACTIVE · AUTO-CYCLING</span>
         </div>
-        <h2 class="rv rv-d1" style="margin:12px 0 6px">Deployed. Live. Clickable.</h2>
+        <h2 class="rv rv-d1" style="margin:12px 0 6px">Deployed. Bench-tested. Clickable.</h2>
+        <p class="rv rv-d1" style="max-width:64ch">Interactive mission console showcasing live production client-side engines, SDR spectral pipelines, and autonomous robotics platforms.</p>
+        
         <div class="dash rv rv-d1" id="dash">
           <div class="dash-top">
-            <span class="dash-count"><b id="dash-cur">01</b><span> / 05</span></span>
+            <span class="dash-count"><b id="dash-cur">01</b><span> / 06</span></span>
             <span class="dash-status"><span class="dot" aria-hidden="true"></span><span id="dash-name">BOM Schema Engine</span></span>
             <div class="dash-btns">
               <button class="dash-arrow" id="dash-prev" type="button" aria-label="Previous project">‹</button>
               <button class="dash-arrow" id="dash-next" type="button" aria-label="Next project">›</button>
             </div>
           </div>
-          <div class="dash-view" id="dash-view" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Live projects dashboard. Use left and right arrow keys to navigate.">
+          <div class="dash-view" id="dash-view" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Flagship projects dashboard. Use left and right arrow keys to navigate.">
             <div class="dash-track" id="dash-track">
-              <article class="dash-slide" aria-label="1 of 5: BOM Schema Engine">
+              <!-- Slide 1: BOM Schema Engine -->
+              <article class="dash-slide" aria-label="1 of 6: BOM Schema Engine">
                 <a class="preview dash-media" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open live BOM schema engine" tabindex="-1">
                   <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">npl-automation.pages.dev</span><span class="pv-open">↗</span></span>
-                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/bom.png`} alt="Screenshot of the NPL Workbook Generator web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/bom.png`} alt="Screenshot of the NPL Automation Engine" loading="lazy" /><span class="pv-live"><i></i>LIVE PRODUCTION</span></span>
                 </a>
                 <div class="dash-info">
-                  <span class="tag live"><i></i>Live production system</span><span class="tag">&lt;50ms exec</span>
-                  <h3>Finished Goods &amp; BOM Schema Transformation Engine</h3>
-                  <p class="meta"><a href="https://npl-automation.pages.dev/" tabindex="-1">npl-automation.pages.dev</a> · Bommasandra facility</p>
+                  <span class="tag live"><i></i>Live production engine</span><span class="tag">&lt;50ms exec</span>
+                  <h3>Manufacturing Schema &amp; BOM Automation Engine (NPL Automation)</h3>
+                  <p class="meta"><a href="https://npl-automation.pages.dev/" tabindex="-1">npl-automation.pages.dev</a> · Wakefit Innovations Ltd.</p>
                   <ul class="tight">
-                    <li>Embedded on-site into high-throughput manufacturing ops to kill spreadsheet bottlenecks between production teams and ERP catalogs.</li>
-                    <li>Recursive client-side schema parsing on Cloudflare Pages — multi-day backlogs → automated pipeline in sub-50ms.</li>
-                    <li>Strict runtime types, 100% client-side privacy. Zero data leakage, zero cataloging drift.</li>
+                    <li>Architected production client-side application deployed on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and NPL parameter trees across dynamic seater variants and colorways.</li>
+                    <li>Eliminated multi-day manual ERP spreadsheet reconciliation bottlenecks via recursive parsing algorithms, compressing BOM derivation from 72+ operational hours into deterministic sub-minute runs with sub-50ms latency.</li>
+                    <li>Authored formal system constraints (<code>AGENTS.md</code>) and deterministic validation guardrails preventing parameter collisions and upstream ERP ingestion errors.</li>
+                    <li>Zero server compute overhead with 100% data isolation and full offline plant-floor readiness.</li>
                   </ul>
-                  <p class="stack"><strong>Stack:</strong> TypeScript · Cloudflare Pages · Pydantic schema principles · REST</p>
+                  <p class="stack"><strong>Stack:</strong> JavaScript · Cloudflare Pages · Deterministic Parsing · AGENTS.md guardrails</p>
                   <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer">Open live system ↗</a></p>
                 </div>
               </article>
-              <article class="dash-slide" aria-label="2 of 5: CardsFinders Platform">
-                <a class="preview dash-media" href="https://cardsfinders.com" target="_blank" rel="noopener noreferrer" aria-label="Open CardsFinders live platform" tabindex="-1">
-                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">cardsfinders.com</span><span class="pv-open">↗</span></span>
-                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/cardsfinders.png`} alt="Screenshot of the CardsFinders credit-card platform" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
+
+              <!-- Slide 2: Drone RF Classification -->
+              <article class="dash-slide" aria-label="2 of 6: Drone RF Classification">
+                <a class="preview dash-media" href="https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Open Drone RF Presentation" tabindex="-1">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">rf-telemetry-pipeline</span><span class="pv-open">↗</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/drone-rf.jpg`} alt="Real-Time Drone Detection and RF Signal Classification Dashboard" loading="lazy" /><span class="pv-live"><i></i>TELEMETRY PIPELINE</span></span>
                 </a>
                 <div class="dash-info">
-                  <span class="tag live"><i></i>Live edge platform</span><span class="tag">founder-built</span>
-                  <h3>CardsFinders — Credit-Card Discovery Platform</h3>
-                  <p class="meta"><a href="https://cardsfinders.com" tabindex="-1">cardsfinders.com</a> · Founder &amp; Full-Stack Edge Architect</p>
+                  <span class="tag live"><i></i>SDR Telemetry</span><span class="tag">2.4 / 5.8 GHz</span>
+                  <h3>Real-Time Drone Detection &amp; RF Signal Classification</h3>
+                  <p class="meta">Automated Edge Spectral Sensing Pipeline · UAV Interception</p>
                   <ul class="tight">
-                    <li>Credit-card comparison and discovery platform run as a sovereign edge property.</li>
-                    <li>Deployed globally via Cloudflare Pages and Workers — edge DNS, custom mail routing, sub-second TTFB.</li>
-                    <li>Zero recurring server runtime compute costs.</li>
+                    <li>Built an automated edge spectral sensing pipeline intercepting communication bursts between commercial UAV flight controllers and Ground Control Stations (GCS) across 2.4 GHz and 5.8 GHz ISM bands.</li>
+                    <li>Configured Software-Defined Radio (SDR) hardware to stream raw I/Q signal data, applying Fast Fourier Transforms (FFT) and spectrogram processing to isolate low-power transmission spikes against ambient radio noise.</li>
+                    <li>Trained lightweight neural classification models to differentiate drone telemetry from Wi-Fi/Bluetooth interference with sub-second classification latency.</li>
                   </ul>
-                  <p class="stack"><strong>Stack:</strong> Cloudflare Pages · Workers · Edge DNS</p>
+                  <p class="stack"><strong>Stack:</strong> Python · Software-Defined Radio (SDR) · RF Signal Processing · Machine Learning</p>
+                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View technical presentation ↗</a></p>
+                </div>
+              </article>
+
+              <!-- Slide 3: MentorPi M1 Robot -->
+              <article class="dash-slide" aria-label="3 of 6: MentorPi M1 Autonomous Robot">
+                <a class="preview dash-media" href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Open MentorPi Chassis Video" tabindex="-1">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">mentorpi-m1.ros2</span><span class="pv-open">↗</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/mentorpi.jpg`} alt="HiWonder MentorPi M1 Autonomous Mobile Robot" loading="lazy" /><span class="pv-live"><i></i>HARDWARE BENCH</span></span>
+                </a>
+                <div class="dash-info">
+                  <span class="tag live"><i></i>ROS2 on Pi 5</span><span class="tag">AMR Commissioning</span>
+                  <h3>HiWonder MentorPi M1 Autonomous Robotics Platform</h3>
+                  <p class="meta">Raspberry Pi 5 · ROS2 Navigation &amp; Vision Stack</p>
+                  <ul class="tight">
+                    <li>Programmed and tuned an autonomous mobile robot (AMR) unit powered by a Raspberry Pi 5 single-board computer running Robot Operating System 2 (ROS2).</li>
+                    <li>Configured modular ROS2 publisher/subscriber nodes for real-time motor actuation, PWM driver loops, and telemetry streaming on embedded Linux.</li>
+                    <li>Interfaced onboard monocular camera feeds with OpenCV pipelines for visual marker tracking, target acquisition, and spatial orientation.</li>
+                  </ul>
+                  <p class="stack"><strong>Stack:</strong> Raspberry Pi 5 · ROS2 · Computer Vision · Robotics Telemetry · SLAM</p>
+                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Inspect chassis &amp; assembly ↗</a></p>
+                </div>
+              </article>
+
+              <!-- Slide 4: CardsFinders -->
+              <article class="dash-slide" aria-label="4 of 6: CardsFinders Platform">
+                <a class="preview dash-media" href="https://cardsfinders.com" target="_blank" rel="noopener noreferrer" aria-label="Open CardsFinders live platform" tabindex="-1">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">cardsfinders.com</span><span class="pv-open">↗</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/cardsfinders.png`} alt="Screenshot of CardsFinders" loading="lazy" /><span class="pv-live"><i></i>LIVE EDGE PROPERTY</span></span>
+                </a>
+                <div class="dash-info">
+                  <span class="tag live"><i></i>Live edge engine</span><span class="tag">DNS architecture</span>
+                  <h3>CardsFinders Financial Tool Suite</h3>
+                  <p class="meta"><a href="https://cardsfinders.com" tabindex="-1">cardsfinders.com</a> · Founder &amp; Web Architect</p>
+                  <ul class="tight">
+                    <li>Deployed a financial comparison and evaluation web engine on Cloudflare Pages, configuring custom DNS architectures, edge-caching layers, and domain-level email routing.</li>
+                    <li>Engineered structured data tables and client-side filtering tools to evaluate credit card rewards and financial products.</li>
+                    <li>High-availability global edge delivery with sub-second TTFB and zero recurring server compute runtime costs.</li>
+                  </ul>
+                  <p class="stack"><strong>Stack:</strong> Cloudflare Pages · DNS Architecture · Web Engineering</p>
                   <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://cardsfinders.com" target="_blank" rel="noopener noreferrer">Open live platform ↗</a></p>
                 </div>
               </article>
-              <article class="dash-slide" aria-label="3 of 5: Repair Pricing Engine">
-                <a class="preview dash-media" href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" target="_blank" rel="noopener noreferrer" aria-label="Open live repair cost calculator" tabindex="-1">
-                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">Wakefit_Repair_Calculator</span><span class="pv-open">↗</span></span>
-                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/repair.png`} alt="Screenshot of the Wakefit Repair Cost Calculator web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
-                </a>
-                <div class="dash-info">
-                  <span class="tag live"><i></i>Live operational utility</span><span class="tag">margin guardrail</span>
-                  <h3>Deterministic Repair Cost Pricing Engine</h3>
-                  <p class="meta"><a href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" tabindex="-1">Wakefit Repair Calculator</a></p>
-                  <ul class="tight">
-                    <li>Multi-parameter furniture repair logic compiled into a deterministic calculation engine.</li>
-                    <li>Standardized factory-floor estimates — killed margin erosion from human calculation drift.</li>
-                  </ul>
-                  <p class="stack"><strong>Stack:</strong> JavaScript · Responsive CSS · Deterministic pricing logic</p>
-                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a></p>
-                </div>
-              </article>
-              <article class="dash-slide" aria-label="4 of 5: MyUselessWeb Engine">
-                <a class="preview dash-media" href="https://myuselessweb.com" target="_blank" rel="noopener noreferrer" aria-label="Open MyUselessWeb live site" tabindex="-1">
-                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">myuselessweb.com</span><span class="pv-open">↗</span></span>
-                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/myuselessweb.png`} alt="Screenshot of the MyUselessWeb discovery engine" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
-                </a>
-                <div class="dash-info">
-                  <span class="tag live"><i></i>Live edge property</span><span class="tag">&lt;50ms responses</span>
-                  <h3>MyUselessWeb — Interactive Discovery Engine</h3>
-                  <p class="meta"><a href="https://myuselessweb.com" tabindex="-1">myuselessweb.com</a> · Creator &amp; Edge Infrastructure</p>
-                  <ul class="tight">
-                    <li>Ultra-minimalist, high-traffic interactive web discovery engine.</li>
-                    <li>Delivered across Cloudflare's global edge network at consistent &lt;50ms response times.</li>
-                  </ul>
-                  <p class="stack"><strong>Stack:</strong> Cloudflare Edge · Vanilla JS · Interactive toys directory</p>
-                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://myuselessweb.com" target="_blank" rel="noopener noreferrer">Open live site ↗</a></p>
-                </div>
-              </article>
-              <article class="dash-slide" aria-label="5 of 5: Asset Ingestion Engine">
+
+              <!-- Slide 5: Asset Ingestion Engine -->
+              <article class="dash-slide" aria-label="5 of 6: Asset Ingestion Engine">
                 <a class="preview dash-media" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open live asset ingestion engine" tabindex="-1">
                   <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">image-sequence-renamer.pages.dev</span><span class="pv-open">↗</span></span>
-                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/assets.png`} alt="Screenshot of the Image Sequence Renamer web app" loading="lazy" /><span class="pv-live"><i></i>LIVE</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/assets.png`} alt="Screenshot of Image Sequence Renamer" loading="lazy" /><span class="pv-live"><i></i>LIVE UTILITY</span></span>
                 </a>
                 <div class="dash-info">
                   <span class="tag live"><i></i>Live production utility</span><span class="tag">&gt;80% latency cut</span>
-                  <h3>Batch Asset Ingestion &amp; Normalization Engine</h3>
-                  <p class="meta"><a href="https://image-sequence-renamer.pages.dev/" tabindex="-1">image-sequence-renamer.pages.dev</a></p>
+                  <h3>Event-Driven Web Experiments &amp; Production Utilities</h3>
+                  <p class="meta"><a href="https://image-sequence-renamer.pages.dev/" tabindex="-1">image-sequence-renamer.pages.dev</a> · Manufacturing Operations</p>
                   <ul class="tight">
-                    <li>In-browser batch utility to normalize, sequence, and validate high-volume media assets for cataloging.</li>
-                    <li>Cut onboarding latency &gt;80% with zero server compute or cloud ingestion cost.</li>
+                    <li>Built interactive client-side web applications exploring asynchronous API polling, event-driven frontend interaction models, and distributed edge delivery.</li>
+                    <li>Developed industrial production micro-utilities including <code>image-sequence-renamer.pages.dev</code> to automate asset management workflows for manufacturing and digital catalog teams.</li>
+                    <li>Processed batch image renaming and sequencing completely in-browser with zero upload bandwidth or cloud storage overhead.</li>
                   </ul>
-                  <p class="stack"><strong>Stack:</strong> JavaScript · HTML5 File API · Cloudflare Pages</p>
+                  <p class="stack"><strong>Stack:</strong> Cloudflare Pages · JavaScript · HTML5 File API · Client-Side Tooling</p>
                   <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer">Open live utility ↗</a></p>
+                </div>
+              </article>
+
+              <!-- Slide 6: Smart Shopping Cart (IEEE) -->
+              <article class="dash-slide" aria-label="6 of 6: Smart Shopping Cart">
+                <a class="preview dash-media" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer" aria-label="Open IEEE Xplore publication" tabindex="-1">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">ieee.org/document/10627276</span><span class="pv-open">↗</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/repair.png`} alt="Smart Shopping Cart Edge Vision Architecture" loading="lazy" /><span class="pv-live"><i></i>IEEE PEER-REVIEWED</span></span>
+                </a>
+                <div class="dash-info">
+                  <span class="tag live"><i></i>IEEE Xplore Doc 10627276</span><span class="tag">&lt;1% mAP loss</span>
+                  <h3>Smart Shopping Cart: Real-Time Edge Object Detection</h3>
+                  <p class="meta">Lead author · Published in IEEE Xplore</p>
+                  <ul class="tight">
+                    <li>Curated a custom retail dataset and fine-tuned YOLOv5 models for multi-class edge detection running directly on ARM-constrained Raspberry Pi hardware.</li>
+                    <li>Implemented INT8 model parameter quantization and cache optimization to balance thermal throttling limits against frames-per-second (FPS) throughput.</li>
+                    <li>Designed an OpenCV pipeline executing local billing logic with zero server dependencies, guaranteeing full offline operational readiness.</li>
+                  </ul>
+                  <p class="stack"><strong>Stack:</strong> Raspberry Pi · YOLOv5 · OpenCV · Python · INT8 Quantization</p>
+                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">Verify on IEEE Xplore ↗</a></p>
                 </div>
               </article>
             </div>
@@ -207,10 +254,137 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <div class="dash-progress" aria-hidden="true"><span id="dash-bar"></span></div>
           <div class="dash-rail" id="dash-rail" role="group" aria-label="Jump to a project">
             <button class="dash-thumb" type="button" data-i="0" aria-current="true" aria-label="Show BOM Schema Engine"><img src={`${base}previews/bom.png`} alt="" loading="lazy" /><span>01 · BOM Engine</span></button>
-            <button class="dash-thumb" type="button" data-i="1" aria-current="false" aria-label="Show CardsFinders Platform"><img src={`${base}previews/cardsfinders.png`} alt="" loading="lazy" /><span>02 · CardsFinders</span></button>
-            <button class="dash-thumb" type="button" data-i="2" aria-current="false" aria-label="Show Repair Pricing Engine"><img src={`${base}previews/repair.png`} alt="" loading="lazy" /><span>03 · Repair Calc</span></button>
-            <button class="dash-thumb" type="button" data-i="3" aria-current="false" aria-label="Show MyUselessWeb Engine"><img src={`${base}previews/myuselessweb.png`} alt="" loading="lazy" /><span>04 · MyUselessWeb</span></button>
-            <button class="dash-thumb" type="button" data-i="4" aria-current="false" aria-label="Show Asset Ingestion Engine"><img src={`${base}previews/assets.png`} alt="" loading="lazy" /><span>05 · Asset Engine</span></button>
+            <button class="dash-thumb" type="button" data-i="1" aria-current="false" aria-label="Show Drone RF Classification"><img src={`${base}previews/drone-rf.jpg`} alt="" loading="lazy" /><span>02 · Drone RF SDR</span></button>
+            <button class="dash-thumb" type="button" data-i="2" aria-current="false" aria-label="Show MentorPi M1 Robot"><img src={`${base}previews/mentorpi.jpg`} alt="" loading="lazy" /><span>03 · MentorPi ROS2</span></button>
+            <button class="dash-thumb" type="button" data-i="3" aria-current="false" aria-label="Show CardsFinders Platform"><img src={`${base}previews/cardsfinders.png`} alt="" loading="lazy" /><span>04 · CardsFinders</span></button>
+            <button class="dash-thumb" type="button" data-i="4" aria-current="false" aria-label="Show Asset Ingestion Engine"><img src={`${base}previews/assets.png`} alt="" loading="lazy" /><span>05 · Asset Renamer</span></button>
+            <button class="dash-thumb" type="button" data-i="5" aria-current="false" aria-label="Show Smart Shopping Cart"><img src={`${base}previews/repair.png`} alt="" loading="lazy" /><span>06 · Smart Retail Cart</span></button>
+          </div>
+        </div>
+
+        <!-- FULL 9-PROJECT DEPLOYMENT MATRIX -->
+        <div style="margin-top:48px">
+          <div class="sec-head rv" style="margin-bottom:16px">
+            <p class="eyebrow" style="color:var(--cyan)">Flagship Engineering Systems</p>
+            <span class="sec-index">FULL SPECTRUM · 09 VERIFIED HARDWARE &amp; SOFTWARE BUILDS</span>
+          </div>
+          <div class="grid-3" style="margin-top:20px">
+            <!-- 1. Drone RF -->
+            <div class="card rv">
+              <span class="tag live"><i></i>SDR Spectral Pipeline</span>
+              <h3 style="margin-top:8px">Real-Time Drone Detection &amp; RF Signal Classification</h3>
+              <p class="meta">Python · SDR · RF Signal Processing · Machine Learning</p>
+              <ul class="tight">
+                <li>Automated edge spectral sensing pipeline intercepting UAV flight controller bursts across 2.4 GHz and 5.8 GHz ISM bands.</li>
+                <li>Raw I/Q signal data processed via FFT and spectrograms to isolate transmission spikes from ambient RF noise.</li>
+                <li>Lightweight neural classifier differentiating drone telemetry from Wi-Fi/Bluetooth with sub-second latency.</li>
+              </ul>
+              <p class="stack"><strong>Telemetry Link:</strong> <a href="https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Technical Presentation ↗</a></p>
+            </div>
+
+            <!-- 2. NPL Automation -->
+            <div class="card rv rv-d1">
+              <span class="tag live"><i></i>Production Cloudflare Engine</span>
+              <h3 style="margin-top:8px">Manufacturing Schema &amp; BOM Automation Engine</h3>
+              <p class="meta">JavaScript · Cloudflare Pages · Deterministic Parsing</p>
+              <ul class="tight">
+                <li>Automates multi-tier Finished Goods (FG) codes and NPL parameter trees across dynamic seater variants and colorways.</li>
+                <li>Compressed 72+ operational hours into deterministic sub-minute runs with sub-50ms execution latency.</li>
+                <li>Formal system constraints (<code>AGENTS.md</code>) prevent SKU collisions and ERP data ingestion errors.</li>
+              </ul>
+              <p class="stack"><strong>Live Application:</strong> <a href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer">npl-automation.pages.dev ↗</a></p>
+            </div>
+
+            <!-- 3. Smart Shopping Cart -->
+            <div class="card rv rv-d2">
+              <span class="tag live"><i></i>IEEE Xplore Doc 10627276</span>
+              <h3 style="margin-top:8px">Smart Shopping Cart: Real-Time Edge Object Detection</h3>
+              <p class="meta">Raspberry Pi · YOLOv5 · OpenCV · Python</p>
+              <ul class="tight">
+                <li>Curated custom retail dataset fine-tuning YOLOv5 models for multi-class detection on ARM-constrained Raspberry Pi.</li>
+                <li>INT8 parameter quantization balancing thermal throttling against frames-per-second throughput.</li>
+                <li>OpenCV pipeline executing local billing logic with zero server dependencies and full offline readiness.</li>
+              </ul>
+              <p class="stack"><strong>Publication:</strong> <a href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">IEEE Conference Publication ↗</a></p>
+            </div>
+
+            <!-- 4. MentorPi M1 -->
+            <div class="card rv">
+              <span class="tag">ROS2 · Embedded Linux</span>
+              <h3 style="margin-top:8px">HiWonder MentorPi M1 Autonomous Robotics Platform</h3>
+              <p class="meta">Raspberry Pi 5 · ROS2 · Computer Vision · Robotics Telemetry</p>
+              <ul class="tight">
+                <li>Programmed and tuned autonomous mobile robot (AMR) unit powered by Raspberry Pi 5 running ROS2.</li>
+                <li>Configured modular ROS2 publisher/subscriber nodes for motor actuation, PWM loops, and telemetry streaming.</li>
+                <li>Interfaced monocular camera feeds with OpenCV for visual marker tracking and spatial orientation.</li>
+              </ul>
+              <p class="stack"><strong>Hardware Inspection:</strong> <a href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Chassis &amp; Sensor Assembly ↗</a></p>
+            </div>
+
+            <!-- 5. TrendGuard-200 -->
+            <div class="card rv rv-d1">
+              <span class="tag">Quantitative Backtesting</span>
+              <h3 style="margin-top:8px">TrendGuard-200: Multi-Asset Quantitative Risk Engine</h3>
+              <p class="meta">Python · NumPy · Pandas · Vectorized Backtesting</p>
+              <ul class="tight">
+                <li>Architected quantitative signal generation engine evaluating multi-asset momentum regimes across an 8-year OHLC dataset.</li>
+                <li>Vectorized NumPy and Pandas operations accelerated computation cycles by 90%, achieving a 72.7% win rate.</li>
+                <li>Drawdown-containment filters using dynamic position sizing and multi-timeframe boundaries (21, 50, 200 SMA).</li>
+              </ul>
+              <p class="stack"><strong>Methodology:</strong> Multi-timeframe moving averages · RSI &amp; VWAP triggers</p>
+            </div>
+
+            <!-- 6. CardsFinders -->
+            <div class="card rv rv-d2">
+              <span class="tag live"><i></i>Edge Web Architecture</span>
+              <h3 style="margin-top:8px">CardsFinders Financial Tool Suite</h3>
+              <p class="meta">Cloudflare Pages · DNS Architecture · Web Engineering</p>
+              <ul class="tight">
+                <li>Deployed financial comparison web engine on Cloudflare Pages with edge-caching and domain-level email routing.</li>
+                <li>Engineered structured data tables and client-side filtering tools to evaluate credit card rewards.</li>
+                <li>Zero-maintenance serverless infrastructure operating globally with sub-second response times.</li>
+              </ul>
+              <p class="stack"><strong>Live Platform:</strong> <a href="https://cardsfinders.com/" target="_blank" rel="noopener noreferrer">cardsfinders.com ↗</a></p>
+            </div>
+
+            <!-- 7. Image Sequence Renamer -->
+            <div class="card rv">
+              <span class="tag live"><i></i>Industrial Micro-Utility</span>
+              <h3 style="margin-top:8px">Event-Driven Web Experiments &amp; Production Utilities</h3>
+              <p class="meta">Cloudflare Pages · Client-Side Tooling · File API</p>
+              <ul class="tight">
+                <li>Built interactive client-side web utilities exploring asynchronous polling and event-driven frontend models.</li>
+                <li>Engineered <code>image-sequence-renamer.pages.dev</code> automating asset management workflows for manufacturing teams.</li>
+                <li>Cut media asset onboarding latency by &gt;80% with zero server compute or cloud transfer cost.</li>
+              </ul>
+              <p class="stack"><strong>Live Utility:</strong> <a href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer">image-sequence-renamer.pages.dev ↗</a></p>
+            </div>
+
+            <!-- 8. Solar Tracker -->
+            <div class="card rv rv-d1">
+              <span class="tag">Embedded Closed-Loop Control</span>
+              <h3 style="margin-top:8px">Photovoltaic Sensorless Solar Tracker</h3>
+              <p class="meta">Embedded Control · Dynamic MPPT Tracking · Servos</p>
+              <ul class="tight">
+                <li>Engineered dual-axis solar tracking algorithm eliminating external LDRs and optical sensors.</li>
+                <li>Utilized intrinsic PV voltage and current as the diagnostic light sensor, dynamically calculating MPPT vectors.</li>
+                <li>Actuates dual-axis positioners with minimal component count and high reliability in dusty environments.</li>
+              </ul>
+              <p class="stack"><strong>Artifacts:</strong> <a href="https://docs.google.com/presentation/d/1WsoxJpkOGv4GCKoAZFYMt03jj_0Yq4AvVkb0T4s2bPY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Architecture ↗</a> · <a href="https://drive.google.com/file/d/1fcZVVkoQ_b0vqO3GWKNmk0JH5dNND53V/view?usp=sharing" target="_blank" rel="noopener noreferrer">Demonstration ↗</a></p>
+            </div>
+
+            <!-- 9. Gas Detection -->
+            <div class="card rv rv-d2">
+              <span class="tag">Hardware &amp; Firmware Twin</span>
+              <h3 style="margin-top:8px">Gas Detection Safety System</h3>
+              <p class="meta">Arduino · MQ-2 · Embedded Diagnostics · Simulation</p>
+              <ul class="tight">
+                <li>Built embedded gas-hazard detection circuit integrating Arduino Uno with MQ-2 electrochemical sensor.</li>
+                <li>Programmed analog-to-digital threshold comparison logic, automatic alarm actuation, and calibration routines.</li>
+                <li>Verified through interactive digital twin hardware simulation on Wokwi with zero physical risk.</li>
+              </ul>
+              <p class="stack"><strong>Circuit Simulation:</strong> <a href="https://wokwi.com/projects/453321379118788609" target="_blank" rel="noopener noreferrer">Wokwi Simulation Twin ↗</a></p>
+            </div>
           </div>
         </div>
       </div>
@@ -221,102 +395,199 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       <canvas class="bg-canvas" id="fx-research" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow">03 // Research &amp; Hardware Moat</p>
-          <span class="sec-index">PEER-REVIEWED + BENCH-TESTED</span>
+          <p class="eyebrow">03 // Publications &amp; Research Credentials</p>
+          <span class="sec-index">PEER-REVIEWED · IEEE XPLORE</span>
         </div>
-        <h2 class="rv rv-d1" style="margin:12px 0 6px">Research + rigs.</h2>
+        <h2 class="rv rv-d1" style="margin:12px 0 6px">Peer-reviewed edge perception research.</h2>
+        <p class="rv rv-d1" style="max-width:64ch">Published lead-author research validating INT8 quantization tradeoffs and deterministic computer vision on resource-constrained embedded ARM compute.</p>
+        
         <div class="grid-2" style="margin-top:28px">
           <div class="card rv">
-            <span class="tag live"><i></i>IEEE Xplore · Doc 10627276</span>
-            <h3 style="margin-top:10px">Automated Edge Vision &amp; Retail Checkout with Quantized YOLOv5</h3>
-            <p class="meta">Lead author · Published March 2026</p>
-            <p style="margin-top:12px">Custom YOLOv5 on ARM Raspberry Pi. INT8 post-training quantization via ONNX Runtime — balanced activation ranges, preserved &lt;1% mAP loss, sub-second inference, no discrete GPU.</p>
-            <p style="margin-top:12px"><a class="btn btn-secondary btn-sm" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">Verify on IEEE ↗</a></p>
+            <span class="tag live"><i></i>IEEE Xplore · Document ID: 10627276</span>
+            <h3 style="margin-top:10px">"Automated Object Detection and Billing Architecture for Smart Retail Systems"</h3>
+            <p class="meta">Lead Author · IEEE Conference Publication · Published in IEEE Xplore</p>
+            <ul class="tight" style="margin-top:14px">
+              <li><strong style="color:var(--ink)">Research Focus:</strong> Real-time edge inference, constrained ARM compute optimization, INT8 quantization tradeoffs, and embedded computer vision pipelines under thermal boundaries.</li>
+              <li><strong style="color:var(--ink)">Model Optimization:</strong> INT8 Post-Training Quantization (PTQ) via ONNX Runtime balanced activation ranges and preserved &lt;1% mAP degradation while achieving 4× weight compression.</li>
+              <li><strong style="color:var(--ink)">Deterministic Edge Execution:</strong> Designed on ARM-constrained Raspberry Pi hardware with zero cloud round-trip latency, eliminating network drop vulnerability in physical retail checkouts.</li>
+            </ul>
+            <p style="margin-top:16px"><a class="btn btn-secondary btn-sm" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">Verify on IEEE Xplore (Doc ID: 10627276) ↗</a></p>
           </div>
           <div class="card rv rv-d1">
-            <span class="tag">ROS2 · HIL · CLOSED-LOOP</span>
-            <h3 style="margin-top:10px">Mobile Robotics &amp; Embedded Systems</h3>
+            <span class="tag">ROS2 · EMBEDDED BENCH · SPECTRAL SENSING</span>
+            <h3 style="margin-top:10px">Hardware Rigs &amp; Instrumentation Telemetry</h3>
             <ul class="tight">
-              <li><strong style="color:var(--ink)">HiWonder MentorPi M1 (ROS2):</strong> chassis assembly, battery subsystems, custom Pi 5 kernels; monocular vision + SLAM for indoor avoidance &amp; path planning.</li>
-              <li><strong style="color:var(--ink)">Sensorless solar tracking:</strong> closed-loop tracking from PV output voltage itself — no fragile LDRs; servo logic seeks max power point.</li>
-              <li><strong style="color:var(--ink)">HIL safety telemetry:</strong> Wokwi digital twins (Uno + MQ-2), interrupt-driven interlocks, audio/visual alarms.</li>
+              <li><strong style="color:var(--ink)">HiWonder MentorPi M1 (ROS2):</strong> Chassis assembly, battery subsystems, custom Pi 5 embedded Linux kernels; monocular vision + SLAM for indoor path planning and obstacle triage.</li>
+              <li><strong style="color:var(--ink)">UAV RF Telemetry Pipeline:</strong> Software-Defined Radio (SDR) spectral sensing capturing raw I/Q signal bursts across 2.4 GHz &amp; 5.8 GHz ISM bands to classify commercial flight controllers.</li>
+              <li><strong style="color:var(--ink)">Sensorless Solar Tracking:</strong> Dynamic closed-loop MPPT using photovoltaic panel voltage/current as sensor — zero fragile LDRs.</li>
+              <li><strong style="color:var(--ink)">HIL Gas Hazard Diagnostics:</strong> Wokwi digital twins with Arduino Uno + MQ-2, interrupt-driven safety interlocks, and calibrated ADC alert logic.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- AI -->
+    <!-- AI & RF -->
     <section class="section ai-sec" id="ai">
       <canvas id="neural" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow eyebrow-ai">04 // Machine Intelligence</p>
-          <span class="sec-index">MODELS.DEPLOYED — INT8 · ONNX · EDGE</span>
+          <p class="eyebrow eyebrow-ai">04 // Applied AI &amp; RF Intelligence</p>
+          <span class="sec-index">EDGE SILICON · SPECTRAL SENSING · INT8</span>
         </div>
-        <h2 class="rv rv-d1" style="margin:12px 0 6px">Intelligence that runs<br /><span class="ai-grad">on the edge, not the cloud.</span></h2>
-        <p class="rv rv-d1" style="max-width:62ch">Custom-trained detection models, squeezed through INT8 quantization onto ARM silicon — peer-reviewed, published, and inferring in the real world with no discrete GPU in sight.</p>
+        <h2 class="rv rv-d1" style="margin:12px 0 6px">Intelligence that executes<br /><span class="ai-grad">on edge silicon, not the cloud.</span></h2>
+        <p class="rv rv-d1" style="max-width:64ch">From Software-Defined Radio (SDR) spectral classification of UAV telemetry to INT8-quantized edge computer vision on ARM processors — built for deterministic real-time execution.</p>
 
-        <div class="pipe rv rv-d1" aria-label="Edge AI deployment pipeline">
-          <div class="pipe-step"><span class="pipe-no">01</span><strong>TRAIN</strong><span>Custom YOLOv5 · retail checkout dataset</span></div>
+        <div class="pipe rv rv-d1" aria-label="Edge AI and RF sensing pipeline">
+          <div class="pipe-step"><span class="pipe-no">01</span><strong>SENSE</strong><span>SDR I/Q bursts &amp; monocular vision</span></div>
           <div class="pipe-link" aria-hidden="true"></div>
-          <div class="pipe-step"><span class="pipe-no">02</span><strong>QUANTIZE</strong><span>INT8 post-training · calibrated ranges</span></div>
+          <div class="pipe-step"><span class="pipe-no">02</span><strong>PROCESS</strong><span>FFT spectrograms &amp; YOLOv5 features</span></div>
           <div class="pipe-link" aria-hidden="true"></div>
-          <div class="pipe-step"><span class="pipe-no">03</span><strong>DEPLOY</strong><span>ONNX Runtime · Raspberry Pi ARM</span></div>
+          <div class="pipe-step"><span class="pipe-no">03</span><strong>QUANTIZE</strong><span>INT8 PTQ calibrated on ARM silicon</span></div>
           <div class="pipe-link" aria-hidden="true"></div>
-          <div class="pipe-step live"><span class="pipe-no">04</span><strong>SERVE</strong><span>Sub-second inference · no GPU</span></div>
+          <div class="pipe-step live"><span class="pipe-no">04</span><strong>EXECUTE</strong><span>Sub-second inference · zero cloud latency</span></div>
         </div>
 
         <div class="grid-2" style="margin-top:16px">
           <div class="card rv">
             <p class="pillar-no ai-mono">PRECISION TRADEOFF — MEASURED</p>
-            <h3>Why INT8 wins on the floor</h3>
+            <h3>Why INT8 quantization wins on the floor</h3>
             <div class="quant">
               <div class="q-row"><span class="q-lbl">FP32 baseline</span><span class="q-track"><span class="q-fill q-fp" data-w="100"></span></span><span class="q-val">32-bit</span></div>
               <div class="q-row"><span class="q-lbl">INT8 deployed</span><span class="q-track"><span class="q-fill q-int" data-w="25"></span></span><span class="q-val">8-bit · 4× smaller</span></div>
             </div>
-            <p class="stack"><strong>Result:</strong> &lt;1% mAP degradation for 4× weight compression — verified in IEEE Xplore Doc 10627276.</p>
+            <p class="stack"><strong>Result:</strong> &lt;1% mAP degradation for 4× weight compression on ARM hardware — verified in IEEE Xplore Doc ID: 10627276.</p>
           </div>
           <div class="card rv rv-d1">
-            <p class="pillar-no ai-mono">INFERENCE PROFILE</p>
-            <h3>Checkout vision, untethered</h3>
+            <p class="pillar-no ai-mono">RF SPECTRAL SENSING</p>
+            <h3>Software-Defined Radio UAV Telemetry</h3>
             <ul class="tight">
-              <li><strong style="color:var(--ink)">Automated retail checkout</strong> — camera-to-decision pipeline on embedded hardware.</li>
-              <li><strong style="color:var(--ink)">ARM-only execution</strong> — ONNX Runtime graphs tuned for Pi-class silicon.</li>
-              <li><strong style="color:var(--ink)">Deterministic latency</strong> — sub-second frames with zero cloud round-trips.</li>
+              <li><strong style="color:var(--ink)">Spectral burst interception</strong> — monitors 2.4 GHz and 5.8 GHz ISM bands for UAV flight controller bursts.</li>
+              <li><strong style="color:var(--ink)">Spectrogram feature extraction</strong> — raw I/Q signal decomposition isolating low-power telemetry from ambient noise.</li>
+              <li><strong style="color:var(--ink)">Neural classification</strong> — lightweight ML models distinguishing drone links from Wi-Fi and Bluetooth interference.</li>
             </ul>
-            <p style="margin-top:14px"><a class="btn btn-secondary btn-sm" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">Read the paper ↗</a></p>
+            <p style="margin-top:14px"><a class="btn btn-secondary btn-sm" href="https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">View RF telemetry presentation ↗</a></p>
           </div>
         </div>
         <div class="chips rv">
-          <span class="chip">YOLOv5</span><span class="chip">PyTorch</span><span class="chip">INT8 PTQ</span><span class="chip">ONNX Runtime</span><span class="chip">OpenCV</span><span class="chip">ARM / Pi 5</span><span class="chip">mAP eval</span>
+          <span class="chip">SDR (Software-Defined Radio)</span><span class="chip">YOLOv5</span><span class="chip">INT8 PTQ</span><span class="chip">ONNX Runtime</span><span class="chip">OpenCV</span><span class="chip">Fast Fourier Transform (FFT)</span><span class="chip">I/Q Signal Parsing</span><span class="chip">TensorFlow &amp; Scikit-Learn</span>
         </div>
       </div>
     </section>
 
-    <!-- TRAJECTORY -->
+    <!-- TRAJECTORY & EXPERIENCE -->
     <section class="section" id="trajectory">
       <canvas class="bg-canvas" id="fx-trajectory" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow">05 // Trajectory &amp; Edge Assets</p>
-          <span class="sec-index">LOG.2019 → PRESENT</span>
+          <p class="eyebrow">05 // Professional Experience &amp; Internships</p>
+          <span class="sec-index">TIMELINE — PRODUCTION &amp; ACADEMIC LOG</span>
         </div>
-        <h2 class="rv rv-d1" style="margin:12px 0 6px">Where I've been deployed.</h2>
-        <div class="grid-2" style="margin-top:24px">
-          <div class="card rv"><h3>cardsfinders.com</h3><p class="meta">FOUNDER · JUL 2026 → PRESENT</p><p>Global edge platform on Cloudflare Pages + Workers. Edge DNS, mail routing, sub-second TTFB, zero server runtime cost. <a href="https://cardsfinders.com" target="_blank" rel="noopener noreferrer">Visit ↗</a></p></div>
-          <div class="card rv rv-d1"><h3>myuselessweb.com</h3><p class="meta">CREATOR · JAN 2024 → PRESENT</p><p>Minimalist high-traffic discovery engine on Cloudflare edge — consistent &lt;50ms responses. <a href="https://myuselessweb.com" target="_blank" rel="noopener noreferrer">Visit ↗</a></p></div>
-        </div>
+        <h2 class="rv rv-d1" style="margin:12px 0 6px">Where I've been forward deployed.</h2>
+        <p class="rv rv-d1" style="max-width:64ch">From industrial manufacturing plant floors and serverless cloud architectures to academic leadership in control systems laboratories.</p>
+
         <div class="timeline">
-          <div class="t-item rv"><p class="t-when">Aug 2026 → Present · Bengaluru</p><div class="card" style="margin-top:10px"><h3>Wakefit Innovations — Systems &amp; Automation Intern (PGET)</h3><p>Embedded in manufacturing + NPL ops; shipped client-side schema engines that cleared floor backlogs.</p></div></div>
-          <div class="t-item rv"><p class="t-when">Aug 2025 → Present · Prayagraj</p><div class="card" style="margin-top:10px"><h3>MNNIT Allahabad — Graduate Teaching Assistant</h3><p>Control Systems + Instrumentation labs for 100+ undergrads. State feedback, root locus, HIL testbenches.</p></div></div>
-          <div class="t-item rv"><p class="t-when">May 2023 → Jul 2023 · Remote</p><div class="card" style="margin-top:10px"><h3>AICTE (AWS) — Cloud &amp; MLOps Intern</h3><p>Serverless ETL (S3 triggers + Lambda, ~99.9% uptime); SageMaker endpoints.</p></div></div>
-          <div class="t-item rv"><p class="t-when">Dec 2023 → Feb 2024 · Nagpur</p><div class="card" style="margin-top:10px"><h3>Sharon Innovations (RCOEM TBI) — IoT &amp; Embedded Intern</h3><p>ESP32/Arduino sensor nodes, ADC calibration, I2C/SPI/UART debugging.</p></div></div>
-          <div class="t-item rv"><p class="t-when">Jun 2022 → Jul 2022 · Nagpur</p><div class="card" style="margin-top:10px"><h3>UCN Cable Network — Network &amp; Hardware Intern</h3><p>ODF config, managed switches/routers, SNR audits, fiber continuity.</p></div></div>
+          <!-- Wakefit -->
+          <div class="t-item rv">
+            <p class="t-when">August 2026 → Present · Bengaluru / Hosur, India</p>
+            <div class="card" style="margin-top:10px">
+              <span class="tag live"><i></i>Active Field Deployment</span>
+              <h3>Wakefit Innovations Ltd. — Systems Automation Intern (PGET)</h3>
+              <p class="meta">Live Systems: <a href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer">npl-automation.pages.dev</a> · <a href="https://image-sequence-renamer.pages.dev/" target="_blank" rel="noopener noreferrer">image-sequence-renamer.pages.dev</a></p>
+              <ul class="tight">
+                <li><strong style="color:var(--ink)">Combinatorial Schema Engine:</strong> Architected and deployed production client-side application (<code>npl-automation.pages.dev</code>) on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and New Product Launch (NPL) schema logic across complex seater variants and dynamic colorways.</li>
+                <li><strong style="color:var(--ink)">Process Latency Compression:</strong> Eliminated multi-day manual ERP spreadsheet reconciliation bottlenecks by implementing recursive client-side parsing algorithms, compressing end-to-end BOM derivation from 72+ operational hours into deterministic sub-minute runs with sub-50ms execution latency.</li>
+                <li><strong style="color:var(--ink)">Industrial Guardrails &amp; Schema Isolation:</strong> Authored formal system constraints (<code>AGENTS.md</code>) and deterministic validation guardrails, preventing parameter collisions, duplicate SKU generation, and upstream ERP data ingestion errors across active manufacturing assembly lines.</li>
+                <li><strong style="color:var(--ink)">Zero-Compute Infrastructure:</strong> Engineered the entire schema pipeline to execute strictly client-side with 100% data isolation and zero server compute overhead, eliminating cloud infrastructure maintenance and ensuring uninterrupted offline plant-floor readiness.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- MNNIT Allahabad TA -->
+          <div class="t-item rv">
+            <p class="t-when">2025 → Present · Prayagraj, India</p>
+            <div class="card" style="margin-top:10px">
+              <h3>Motilal Nehru National Institute of Technology (MNNIT) Allahabad — Graduate Teaching Assistant</h3>
+              <p class="meta">Control Systems &amp; Instrumentation Laboratory Tutorials</p>
+              <ul class="tight">
+                <li>Serving as Teaching Assistant for undergraduate control systems lectures and laboratory tutorials for 100+ students.</li>
+                <li>Conducting practical sessions on high-order dynamic systems, state-space modeling, multivariable feedback control, and real-time embedded signal processing.</li>
+                <li>Mentoring students on root locus design, frequency-domain compensators, and hardware-in-the-loop testbenches.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- AICTE AWS -->
+          <div class="t-item rv">
+            <p class="t-when">May 2023 → July 2023 · Remote, India</p>
+            <div class="card" style="margin-top:10px">
+              <h3>AICTE Virtual Internship — AWS Cloud Intern / AI Developer</h3>
+              <p class="meta">Cloud Migration · Serverless ETL · SageMaker MLOps</p>
+              <ul class="tight">
+                <li><strong style="color:var(--ink)">Distributed Cloud Migration:</strong> Architected and executed migration of local machine learning workflows and structured datasets to AWS infrastructure, configuring EC2 instances, security groups, and IAM role policies.</li>
+                <li><strong style="color:var(--ink)">Event-Driven Serverless Pipelines:</strong> Designed asynchronous, serverless ETL data pipelines using AWS Lambda triggered by Amazon S3 storage events, automating ingestion, validation, and real-time preprocessing with zero idle compute costs.</li>
+                <li><strong style="color:var(--ink)">Production Model Deployment &amp; MLOps:</strong> Managed full model training lifecycles and deployed hosted inference endpoints using AWS SageMaker (XGBoost, Linear Learner) for scalable real-time inference against production datasets.</li>
+                <li><strong style="color:var(--ink)">Cloud Security &amp; Scalability:</strong> Implemented CloudWatch monitoring, automated alerts, and resource scaling policies to ensure continuous endpoint availability.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- UCN Cable Networks -->
+          <div class="t-item rv">
+            <p class="t-when">March 2023 → April 2023 · Nagpur, India</p>
+            <div class="card" style="margin-top:10px">
+              <h3>UCN Cable Networks — Computer Networking Intern</h3>
+              <p class="meta">Enterprise Routing Hardware · Switch Topologies · Diagnostics</p>
+              <ul class="tight">
+                <li><strong style="color:var(--ink)">Network Infrastructure &amp; Routing Topology:</strong> Configured and provisioned enterprise routing hardware, managed Layer 2 and Layer 3 (L2/L3) network switches, and established static and dynamic routing topologies across regional distribution points.</li>
+                <li><strong style="color:var(--ink)">Subnet Architecture &amp; Protocol Management:</strong> Implemented IPv4 CIDR subnetting, VLAN segmentation, and DHCP/DNS server configurations to isolate operational traffic and optimize bandwidth allocation.</li>
+                <li><strong style="color:var(--ink)">Physical &amp; Data Link Diagnostics:</strong> Conducted physical Layer 1 and Layer 2 troubleshooting using packet-capture analyzers and cable-fault testers, identifying signal attenuation, packet drops, and MTU mismatch bottlenecks.</li>
+                <li><strong style="color:var(--ink)">Network Reliability &amp; Uptime Assurance:</strong> Built and deployed automated network monitoring check-scripts to trace gateway latency, resolve broadcast storms, and maintain high-availability network operations.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- RCOEM TBI Foundation Cell -->
+          <div class="t-item rv">
+            <p class="t-when">January 2021 → February 2022 · Nagpur, India</p>
+            <div class="card" style="margin-top:10px">
+              <h3>RCOEM TBI Foundation Cell (Sharon Innovations) — IoT Systems &amp; Embedded Firmware Intern</h3>
+              <p class="meta">Microcontrollers · Serial Protocols (UART, SPI, I2C) · Sensor Interfacing</p>
+              <ul class="tight">
+                <li><strong style="color:var(--ink)">IoT Firmware &amp; Hardware Interfacing:</strong> Developed embedded firmware and sensor interfacing routines across microcontrollers and IoT development boards for connected hardware products incubated under Sharon Innovations.</li>
+                <li><strong style="color:var(--ink)">Telemetry &amp; Protocol Integration:</strong> Integrated serial communication protocols (UART, SPI, I2C) to link environmental and operational sensors with edge communication modules, ensuring low-power telemetry transmission with zero packet loss.</li>
+                <li><strong style="color:var(--ink)">Hardware-in-the-Loop Debugging:</strong> Built internal test automation scripts and hardware debugging routines to profile voltage stability, sensor drift, and signal noise across early prototype iterations.</li>
+                <li><strong style="color:var(--ink)">Prototype Stabilization:</strong> Resolved hardware-software integration bottlenecks across partner ventures, increasing overall prototype operational reliability prior to pilot field trials.</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="grid-2" style="margin-top:20px">
-          <div class="card rv edu-card"><img class="edu-logo" src={`${base}logos/mnnit.png`} alt="MNNIT Allahabad logo" loading="lazy" /><div><h3>M.Tech — Control &amp; Instrumentation</h3><p class="meta">MNNIT ALLAHABAD · 2025 → 2027</p></div></div>
-          <div class="card rv rv-d1 edu-card"><img class="edu-logo" src={`${base}logos/rcoem-color.png`} alt="RCOEM Nagpur logo" loading="lazy" /><div><h3>B.Tech — Electronics &amp; Communication</h3><p class="meta">RCOEM NAGPUR · 2021 → 2024</p></div></div>
+
+        <!-- EDUCATION & PEDIGREE -->
+        <div style="margin-top:36px">
+          <div class="sec-head rv" style="margin-bottom:16px">
+            <p class="eyebrow" style="color:var(--accent)">Academic Pedigree</p>
+            <span class="sec-index">INSTITUTIONAL ANCHORS</span>
+          </div>
+          <div class="grid-2" style="margin-top:16px">
+            <div class="card rv edu-card">
+              <img class="edu-logo" src={`${base}logos/mnnit.png`} alt="MNNIT Allahabad logo" loading="lazy" />
+              <div>
+                <h3>Master of Technology (M.Tech) in Control and Instrumentation</h3>
+                <p class="meta">MOTILAL NEHRU NATIONAL INSTITUTE OF TECHNOLOGY (MNNIT) ALLAHABAD · 2025 → PRESENT</p>
+                <p style="font-size:0.83rem;margin-top:6px;color:var(--body)"><strong>Specialization:</strong> High-order dynamic systems, state-space modeling, multivariable feedback control, and real-time embedded signal processing.</p>
+                <p style="font-size:0.8rem;margin-top:4px;color:var(--mute)"><strong>Coursework &amp; Leadership:</strong> NPTEL "Introduction to Multi-Agent Systems" (IIT Certification) · Graduate Teaching Assistant for undergraduate control systems lectures &amp; labs.</p>
+              </div>
+            </div>
+            <div class="card rv rv-d1 edu-card">
+              <img class="edu-logo" src={`${base}logos/rcoem-color.png`} alt="RCOEM Nagpur logo" loading="lazy" />
+              <div>
+                <h3>Bachelor of Technology (B.Tech) in Electronics and Communication Engineering</h3>
+                <p class="meta">SHRI RAMDEOBABA COLLEGE OF ENGINEERING AND MANAGEMENT (RCOEM), NAGPUR · 2020 → 2024</p>
+                <p style="font-size:0.83rem;margin-top:6px;color:var(--body)"><strong>Core Foundations:</strong> Microprocessors &amp; Microcontrollers, Digital Signal Processing (DSP), RF &amp; Microwave Systems, Embedded Hardware Design, and Communication Networks.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -329,15 +600,15 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <p class="eyebrow eyebrow-agent">06 // Agent Interface</p>
           <span class="sec-index">AGENT.READY — MCP · LLM · RAG</span>
         </div>
-        <h2 class="rv rv-d1" style="margin:12px 0 6px">Built for humans.<br /><span class="agent-grad">Grounded for agents.</span></h2>
-        <p class="rv rv-d1" style="max-width:62ch">Every claim on this page is mirrored in deterministic machine-readable files — so AI assistants quote facts instead of hallucinating. Plug this site straight into your agent, RAG pipeline, or MCP host.</p>
+        <h2 class="rv rv-d1" style="margin:12px 0 6px">Built for humans.<br /><span class="agent-grad">Grounded for AI agents.</span></h2>
+        <p class="rv rv-d1" style="max-width:64ch">Every claim on this page is mirrored in deterministic machine-readable files — so AI assistants, RAG pipelines, and MCP hosts quote facts instead of hallucinating.</p>
 
         <div class="grid-2" style="margin-top:28px">
           <div class="card agent-card rv">
             <p class="pillar-no agent-mono">GET /llms.txt</p>
             <h3>Agent context file</h3>
             <p class="meta">PLAIN-TEXT GROUND TRUTH · UPDATED WITH EVERY DEPLOY</p>
-            <p style="margin-top:10px">Bio, deployments, IEEE paper, hardware invariants — in one crawlable file. Point any agent here first.</p>
+            <p style="margin-top:10px">Executive summary, verified deployments, IEEE paper, SDR RF sensing, and hardware invariants in one crawlable file. Point any agent here first.</p>
             <div class="agent-row">
               <code class="agent-url" id="url-llms">/llms.txt</code>
               <button class="copy-btn" data-copy={`${base}llms.txt`} type="button">Copy URL</button>
@@ -348,7 +619,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
             <p class="pillar-no agent-mono">GET /api/profile.json</p>
             <h3>Structured profile API</h3>
             <p class="meta">JSON-SCHEMA · DETERMINISTIC · NO AUTH</p>
-            <p style="margin-top:10px">Typed contact, education, publications, and live deployments — ready for tool calls and structured extraction.</p>
+            <p style="margin-top:10px">Typed contact, education, core competencies, experience highlights, and 9 flagship projects — ready for tool calls and structured extraction.</p>
             <div class="agent-row">
               <code class="agent-url" id="url-json">/api/profile.json</code>
               <button class="copy-btn" data-copy={`${base}api/profile.json`} type="button">Copy URL</button>
@@ -358,13 +629,18 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         </div>
 
         <div class="card agent-card rv" style="margin-top:16px">
-          <p class="pillar-no agent-mono">PROMPT PACK — COPY · PASTE · DEPLOY</p>
+          <p class="pillar-no agent-mono">PROMPT PACK — COPY · PASTE · GROUND</p>
           <h3>Ground any assistant in 10 seconds</h3>
-          <p>Paste into ChatGPT, Claude, or your field agent to brief it on this profile before asking questions.</p>
-          <pre class="agent-pre" id="prompt-pack">You are briefing on Kshitij Ashok Sawarkar — Forward Deployed Systems &amp; Robotics Engineer (M.Tech Control &amp; Instrumentation, MNNIT Allahabad).
+          <p>Paste into ChatGPT, Claude, or your field agent to brief it on this technical profile before asking questions.</p>
+          <pre class="agent-pre" id="prompt-pack">You are briefing on Kshitij Ashok Sawarkar — Autonomous Robotics, Embedded Systems &amp; Forward Deployed Engineering (M.Tech Control &amp; Instrumentation, MNNIT Allahabad | B.Tech ECE, RCOEM Nagpur).
 Ground truth: fetch /llms.txt and /api/profile.json on this site before answering.
-Key facts: IEEE Xplore Doc 10627276 (INT8 YOLOv5 on Raspberry Pi, &lt;1% mAP loss) · sub-50ms BOM schema engine at npl-automation.pages.dev · ROS2 MentorPi M1 + SLAM · open for on-site APAC commissioning.
-Rules: cite the IEEE doc ID for research claims · link the live system for deployment claims · never invent Arduino/RFID in the vision pipeline.</pre>
+Key facts:
+- Lead author of IEEE Xplore Doc 10627276: "Automated Object Detection and Billing Architecture for Smart Retail Systems" (INT8 YOLOv5 on Raspberry Pi, &lt;1% mAP loss, sub-second inference).
+- Systems Automation Intern (PGET) at Wakefit Innovations Ltd. (Bengaluru / Hosur): architected production client-side schema engine at npl-automation.pages.dev (&lt;50ms latency, compressed 72+ hour manual ERP reconciliation into sub-minute runs).
+- SDR spectral sensing pipeline for real-time drone detection across 2.4/5.8 GHz ISM bands.
+- ROS2 HiWonder MentorPi M1 autonomous mobile robot with monocular vision and SLAM.
+- Sensorless dual-axis photovoltaic solar tracker using panel voltage directly (no external LDRs).
+Rules: cite the IEEE doc ID 10627276 for research claims; link npl-automation.pages.dev for Wakefit deployment; never invent Arduino/RFID in the edge vision pipeline.</pre>
           <div class="agent-row">
             <button class="copy-btn" data-copy-target="prompt-pack" type="button">Copy prompt pack</button>
             <span class="meta" id="copy-status" role="status" aria-live="polite"></span>
@@ -381,12 +657,13 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
           <div class="agent-log" id="agent-log" role="log" aria-label="Site agent conversation" aria-live="polite"></div>
           <div class="agent-chips">
             <button type="button" data-ask="What did Kshitij publish on IEEE?">IEEE paper?</button>
-            <button type="button" data-ask="Show me the live production systems.">Live systems?</button>
-            <button type="button" data-ask="What is his robotics experience?">Robotics?</button>
-            <button type="button" data-ask="How do I contact him for a deployment?">Contact?</button>
+            <button type="button" data-ask="What is his Wakefit NPL experience?">Wakefit NPL?</button>
+            <button type="button" data-ask="Explain the Drone RF detection pipeline.">Drone RF SDR?</button>
+            <button type="button" data-ask="What is his autonomous robotics experience?">Robotics &amp; ROS2?</button>
+            <button type="button" data-ask="How do I contact him for field deployment?">Contact?</button>
           </div>
           <form class="agent-form" id="agent-form">
-            <input id="agent-input" type="text" placeholder="Ask the site agent… (e.g. “edge AI stack?”)" autocomplete="off" maxlength="200" aria-label="Ask the site agent" />
+            <input id="agent-input" type="text" placeholder="Ask the site agent… (e.g. “drone detection pipeline?”)" autocomplete="off" maxlength="200" aria-label="Ask the site agent" />
             <button class="btn btn-primary btn-sm" type="submit">Send →</button>
           </form>
         </div>
@@ -403,20 +680,23 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
         </div>
         <h2 class="rv rv-d1" style="margin:12px 0 24px">Establish the link.</h2>
         <div class="terminal rv rv-d1" role="region" aria-label="Contact terminal">
-          <div class="term-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="meta" style="margin-left:8px">kshitij@field-ops:~</span></div>
+          <div class="term-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="meta" style="margin-left:8px">kshitij@forward-deployed:~</span></div>
           <div class="term-body">
             <div><span class="prompt">$</span> <span id="term-type"></span><span class="cursor" aria-hidden="true"></span></div>
             <div style="margin-top:14px">├─ email&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:kshitijsawarkar333@gmail.com">kshitijsawarkar333@gmail.com</a></div>
-            <div>├─ linkedin <a href="https://linkedin.com/in/kshitijas" target="_blank" rel="noopener noreferrer">linkedin.com/in/kshitijas</a></div>
+            <div>├─ phone&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+919823252972">+91-9823252972</a></div>
+            <div>├─ linkedin <a href="https://www.linkedin.com/in/kshitijas/" target="_blank" rel="noopener noreferrer">linkedin.com/in/kshitijas</a></div>
             <div>├─ github&nbsp;&nbsp;<a href="https://github.com/KshitijSawarkar" target="_blank" rel="noopener noreferrer">github.com/KshitijSawarkar</a></div>
-            <div>├─ base&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bengaluru / Nagpur, India</div>
+            <div>├─ base&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bengaluru / Hosur, India</div>
+            <div>├─ portfolio <a href="https://kshitijsawarkar.github.io/portfolio/#top">kshitijsawarkar.github.io/portfolio</a></div>
             <div>└─ agents&nbsp;&nbsp;&nbsp;[<a href={`${base}llms.txt`}>/llms.txt</a>] · [<a href={`${base}api/profile.json`}>/api/profile.json</a>]</div>
-            <div style="margin-top:14px"><span class="prompt">$</span> status → <span style="color:var(--accent)">OPEN for on-site commissioning sprints · AMR rollouts · floor automation</span></div>
+            <div style="margin-top:14px"><span class="prompt">$</span> status → <span style="color:var(--accent)">OPEN for on-site engineering sprints · AMR rollouts · floor automation</span></div>
           </div>
         </div>
         <div class="cta-row rv">
           <a class="btn btn-primary" href="mailto:kshitijsawarkar333@gmail.com">Email me →</a>
-          <a class="btn btn-secondary" href="https://linkedin.com/in/kshitijas" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="btn btn-secondary" href="tel:+919823252972">Call +91-9823252972</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/kshitijas/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
           <a class="btn btn-secondary" href="https://github.com/KshitijSawarkar" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
@@ -425,7 +705,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
 
   <footer class="site-footer">
     <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
-      <span>© 2026 KSHITIJ SAWARKAR · FDE OPS CONSOLE v3.1 · AGENT-NATIVE · AI-READY</span>
+      <span>© 2026 KSHITIJ ASHOK SAWARKAR · AUTONOMOUS ROBOTICS, EMBEDDED SYSTEMS &amp; FDE</span>
       <span>BUILT WITH ASTRO · <a href={`${base}llms.txt`}>llms.txt</a> · <a href={`${base}api/profile.json`}>profile.json</a></span>
     </div>
   </footer>
@@ -443,10 +723,11 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
 
     // 2 — hero typer
     const phrases = [
-      'ros2 bringup… AMR localized. map calibrated.',
-      'INT8 quantized YOLOv5… inferring on edge, no cloud.',
-      'schema engine validated 12,408 rows in 41ms.',
-      'closed-loop stable. poles in LHP. commissioning GO.'
+      'ros2 bringup… MentorPi M1 localized. nodes initialized.',
+      'SDR pipeline… 2.4/5.8GHz UAV RF spectral bursts classified.',
+      'sub-50ms schema engine… BOM derived with zero server overhead.',
+      'INT8 quantized YOLOv5… edge inference on Raspberry Pi silicon.',
+      'closed-loop multivariable feedback… state-space stable.'
     ];
     const typer = document.getElementById('typer');
     let pi = 0, ci = 0, del = false;
@@ -463,19 +744,26 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
 
     // 3 — terminal typer
     const termEl = document.getElementById('term-type');
-    const termMsg = 'uplink --establish --field commissioning';
+    const termMsg = 'uplink --establish --target field-commissioning';
     let ti = 0;
     function termLoop() {
       if (!termEl) return;
       termEl.textContent = termMsg.slice(0, ti++);
       if (ti <= termMsg.length + 30) setTimeout(termLoop, ti <= termMsg.length ? 55 : 120);
     }
-    if (!reduceMotion) { const io0 = new IntersectionObserver((e) => { if (e[0].isIntersecting) { termLoop(); io0.disconnect(); } }, { threshold: 0.4 }); const term = document.querySelector('.terminal'); if (term) io0.observe(term); }
-    else if (termEl) termEl.textContent = termMsg;
+    if (!reduceMotion) {
+      const io0 = new IntersectionObserver((e) => {
+        if (e[0].isIntersecting) { termLoop(); io0.disconnect(); }
+      }, { threshold: 0.4 });
+      const term = document.querySelector('.terminal');
+      if (term) io0.observe(term);
+    } else if (termEl) termEl.textContent = termMsg;
 
     // 4 — scroll reveal
     const io = new IntersectionObserver((entries) => {
-      entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+      entries.forEach((en) => {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.rv').forEach((el) => io.observe(el));
 
@@ -514,23 +802,23 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       function size() {
         const r = cv.parentElement.getBoundingClientRect();
         w = cv.width = r.width; h = cv.height = r.height;
-        pts = Array.from({ length: 70 }, () => ({ x: Math.random() * w, y: Math.random() * h, r: Math.random() * 1.8 + 0.4, s: Math.random() * 0.4 + 0.1 }));
+        pts = Array.from({ length: 70 }, () => ({
+          x: Math.random() * w, y: Math.random() * h,
+          r: Math.random() * 1.8 + 0.4, s: Math.random() * 0.4 + 0.1
+        }));
       }
       size(); window.addEventListener('resize', size);
       const cx = () => w * 0.78, cy = () => h * 0.42;
       (function draw() {
         t += 0.012;
         ctx.clearRect(0, 0, w, h);
-        // dots drift
         ctx.fillStyle = 'rgba(148,184,255,0.35)';
         pts.forEach((p) => { p.y -= p.s; if (p.y < 0) p.y = h; ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 7); ctx.fill(); });
-        // radar rings
         const R = Math.min(w, h) * 0.32;
         for (let i = 1; i <= 3; i++) {
           ctx.beginPath(); ctx.arc(cx(), cy(), (R / 3) * i, 0, 7);
           ctx.strokeStyle = 'rgba(61,255,143,0.16)'; ctx.lineWidth = 1; ctx.stroke();
         }
-        // sweep
         ctx.save();
         ctx.translate(cx(), cy()); ctx.rotate(t);
         const g = ctx.createLinearGradient(0, 0, R, 0);
@@ -538,9 +826,8 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
         ctx.strokeStyle = g; ctx.lineWidth = 2;
         ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(R, 0); ctx.stroke();
         ctx.restore();
-        // blips
         const blips = [[0.5, 1.2], [1.9, 2.6], [3.4, 0.6], [4.4, 2.0]];
-        blips.forEach(([a, rr], i) => {
+        blips.forEach(([a, rr]) => {
           const d = ((t * 1.2 + a) % (Math.PI * 2));
           const alpha = Math.max(0, 1 - d / 4);
           const bx = cx() + Math.cos(a) * (R / 3) * rr * 0.55, by = cy() + Math.sin(a) * (R / 3) * rr * 0.55;
@@ -566,7 +853,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       fills.forEach((f) => qio.observe(f));
     })();
 
-    // 8c — neural network canvas (layered forward-flow)
+    // 8c — neural network canvas
     (function () {
       const cv = document.getElementById('neural');
       if (!cv || reduceMotion) return;
@@ -608,7 +895,6 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
           nd.x = nd.bx + Math.sin(tick * nd.sp * 60 + nd.ph) * 7;
           nd.y = nd.by + Math.cos(tick * nd.sp * 50 + nd.ph) * 9;
         });
-        // edges: each node links to all nodes in next layer
         nodes.forEach((a) => {
           nodes.forEach((b) => {
             if (b.li !== a.li + 1) return;
@@ -616,7 +902,6 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
             ctx.strokeStyle = `rgba(${a.c},0.13)`; ctx.lineWidth = 1; ctx.stroke();
           });
         });
-        // pulses travel layer to layer
         pulses = pulses.filter((p) => p.t <= 1.6);
         pulses.forEach((p) => {
           p.t += 0.03;
@@ -630,7 +915,6 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
           ctx.beginPath(); ctx.arc(x, y, 3, 0, 7);
           ctx.fillStyle = 'rgba(61,255,143,0.95)'; ctx.shadowColor = '#3dff8f'; ctx.shadowBlur = 14; ctx.fill(); ctx.shadowBlur = 0;
         });
-        // nodes
         nodes.forEach((nd) => {
           ctx.beginPath(); ctx.arc(nd.x, nd.y, nd.r, 0, 7);
           ctx.fillStyle = `rgba(${nd.c},0.85)`; ctx.shadowColor = `rgb(${nd.c})`; ctx.shadowBlur = 10; ctx.fill(); ctx.shadowBlur = 0;
@@ -639,7 +923,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       })();
     })();
 
-    // 8d — per-section fx engine (paints only while visible)
+    // 8d — per-section fx engine
     function fx(id, setup) {
       const cv = document.getElementById(id);
       if (!cv || reduceMotion) return;
@@ -662,7 +946,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       })();
     }
 
-    // PILLARS — telemetry waveforms (control-systems signal traces)
+    // PILLARS — telemetry waveforms
     fx('fx-pillars', () => {
       let t = 0;
       const traces = [
@@ -685,7 +969,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       };
     });
 
-    // VAULT — binary data rain (live systems streaming)
+    // VAULT — binary data rain
     fx('fx-vault', () => {
       let cols = [];
       const resize = (w, h) => {
@@ -709,7 +993,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       };
     });
 
-    // RESEARCH — orbital electrons (hardware + physics)
+    // RESEARCH — orbital electronics
     fx('fx-research', () => {
       let t = 0;
       return {
@@ -739,7 +1023,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       };
     });
 
-    // TRAJECTORY — forward stream (journey in motion)
+    // TRAJECTORY — forward stream
     fx('fx-trajectory', () => {
       let parts = [];
       const resize = (w, h) => {
@@ -765,7 +1049,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       };
     });
 
-    // AGENTS — constellation mesh (agent swarm talking)
+    // AGENTS — constellation mesh
     fx('fx-agents', () => {
       let pts = [];
       const resize = (w, h) => {
@@ -801,7 +1085,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       };
     });
 
-    // CONTACT — uplink beacon (signal leaving the site)
+    // CONTACT — uplink beacon
     fx('fx-contact', () => {
       let rings = [], sparks = [], t = 0;
       return {
@@ -834,8 +1118,9 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       if (!el || reduceMotion) return;
       const msgs = [
         'SYS.ONLINE — Wakefit NPL Ops · MNNIT M.Tech',
-        'AMR_01 LOCALIZED · covariance nominal',
-        'EDGE INFER 212ms · INT8 · no cloud',
+        'UAV RF SENSING 2.4/5.8 GHz · SDR pipeline active',
+        'MENTORPI M1 LOCALIZED · ROS2 nodes nominal',
+        'EDGE INFER INT8 · <1% mAP loss · IEEE 10627276',
         'SCHEMA ENGINE 41ms · 0 leaks · 0 drift'
       ];
       let i = 0;
@@ -865,7 +1150,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       });
     })();
 
-    // 8e3 — projects dashboard (auto-rotating carousel)
+    // 8e3 — projects dashboard (auto-rotating carousel with 6 items)
     (function () {
       const dash = document.getElementById('dash');
       const track = document.getElementById('dash-track');
@@ -875,7 +1160,14 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       const bar = document.getElementById('dash-bar');
       if (!dash || !track || !view || !cur || !nameEl || !bar) return;
       const thumbs = Array.from(document.querySelectorAll('.dash-thumb'));
-      const names = ['BOM Schema Engine', 'CardsFinders Platform', 'Repair Pricing Engine', 'MyUselessWeb Engine', 'Asset Ingestion Engine'];
+      const names = [
+        'BOM Schema Engine',
+        'Drone RF Classification',
+        'MentorPi M1 Robot',
+        'CardsFinders Platform',
+        'Asset Ingestion Engine',
+        'Smart Shopping Cart'
+      ];
       const N = names.length, DUR = 6000;
       let idx = 0, timer = null, inView = false;
       function paintBar() {
@@ -928,7 +1220,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       new IntersectionObserver((e) => { inView = e[0].isIntersecting; inView ? restart() : stop(); }, { threshold: 0.15 }).observe(dash);
     })();
 
-    // 9 — copy buttons (agent URLs + prompt pack)
+    // 9 — copy buttons
     (function () {
       const status = document.getElementById('copy-status');
       async function copyText(text, btn) {
@@ -963,25 +1255,27 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       });
     })();
 
-    // 10 — site agent (local rule-based demo, grounded in page facts)
+    // 10 — site agent (grounded in latest facts from /llms.txt)
     (function () {
       const log = document.getElementById('agent-log');
       const form = document.getElementById('agent-form');
       const input = document.getElementById('agent-input');
       if (!log || !form || !input) return;
       const KB = [
-        { k: ['ieee', 'paper', 'publish', 'research', 'yolo', 'quantiz', 'edge vision', 'retail'], a: 'Lead-author <b>IEEE Xplore Doc 10627276</b> (Mar 2026): quantized YOLOv5 on Raspberry Pi via ONNX Runtime INT8 — &lt;1% mAP loss, sub-second inference, no discrete GPU. <a href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener">Verify ↗</a>' },
-        { k: ['live', 'production', 'system', 'deploy', 'vault', 'project', 'bom', 'schema', 'npl', 'cardsfinder', 'uselessweb'], a: 'Five live builds rotate on the <b>02 // Vault</b> dashboard: <b>BOM schema engine</b> (&lt;50ms) · <b>asset ingestion engine</b> (&gt;80% faster) · <b>repair pricing engine</b> (margin guardrail) · <b>CardsFinders</b> (cardsfinders.com) · <b>MyUselessWeb</b> (myuselessweb.com). Every slide is clickable.' },
-        { k: ['robot', 'ros', 'slam', 'amr', 'mentorpi', 'embedded', 'hardware', 'solar', 'hil'], a: 'Robotics: <b>HiWonder MentorPi M1</b> on ROS2 + Pi 5 (SLAM, monocular vision) · sensorless solar tracking (PV-voltage sensing, no LDRs) · HIL twins with interrupt-driven safety interlocks.' },
-        { k: ['contact', 'email', 'hire', 'commission', 'deploy him', 'reach', 'phone', 'linkedin'], a: 'Open for on-site APAC sprints → <b>kshitijsawarkar333@gmail.com</b> · <a href="https://linkedin.com/in/kshitijas" target="_blank" rel="noopener">LinkedIn</a> · response &lt;24h. Jump to <b>07 // Contact</b> to establish the link.' },
-        { k: ['stack', 'tech', 'skill', 'typescript', 'cloudflare', 'matlab'], a: 'Core stack: <b>ROS2 · YOLOv5 INT8 · ONNX · TypeScript · Cloudflare edge · FastAPI · MATLAB/Simulink · ESP32/CAN/I2C</b>. Four pillars in <b>01 // Systems</b>.' },
-        { k: ['educat', 'mtech', 'mnnit', 'degree', 'college', 'btech', 'study'], a: '<b>M.Tech Control &amp; Instrumentation, MNNIT Allahabad (2025–27)</b> + Graduate TA for 100+ students · B.Tech ECE, RCOEM Nagpur (2021–24).' },
-        { k: ['wakefit', 'work', 'job', 'intern', 'experience', 'trajectory'], a: 'Now: <b>Wakefit Systems &amp; Automation Intern</b> (NPL ops, Bengaluru) + MNNIT TA. Previously: AICTE/AWS MLOps, Sharon IoT, UCN networks. Full log in <b>04 // Trajectory</b>.' },
-        { k: ['agent', 'llm', 'mcp', 'rag', 'prompt', 'api', 'json', 'ground'], a: 'This site is agent-native: <b>GET /llms.txt</b> for context, <b>GET /api/profile.json</b> for typed data, plus the copy-paste <b>prompt pack</b> above. Facts only — no hallucination.' },
-        { k: ['who', 'about', 'kshitij', 'summary', 'introduce'], a: '<b>Kshitij Ashok Sawarkar</b> — Forward Deployed Systems &amp; Robotics Engineer. Floor automation that survives contact with reality: sub-50ms engines, INT8 edge vision, ROS2 commissioning.' },
-        { k: ['hi', 'hello', 'hey', 'namaste'], a: 'Uplink established. Ask about the <b>IEEE paper</b>, <b>live systems</b>, <b>robotics</b>, or <b>contact</b> — or use the quick chips above.' }
+        { k: ['ieee', 'paper', 'publish', 'research', 'yolo', 'quantiz', 'edge vision', 'retail', 'smart cart'], a: 'Lead Author on <b>IEEE Xplore Doc ID: 10627276</b> (<i>Automated Object Detection and Billing Architecture for Smart Retail Systems</i>): INT8 post-training quantization on ARM Raspberry Pi with &lt;1% mAP degradation and sub-second inference. <a href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener">Verify on IEEE ↗</a>' },
+        { k: ['wakefit', 'npl', 'schema', 'bom', 'work', 'job', 'intern'], a: '<b>Wakefit Innovations Ltd.</b> (Aug 2026 – Present, Bengaluru / Hosur): Systems Automation Intern (PGET). Built <a href="https://npl-automation.pages.dev/" target="_blank" rel="noopener">npl-automation.pages.dev</a> on Cloudflare Pages, compressing 72+ operational hours into deterministic sub-minute runs with &lt;50ms latency.' },
+        { k: ['drone', 'rf', 'sdr', 'spectrogram', 'uav', 'telemetry', 'signal', 'radio'], a: '<b>Real-Time Drone Detection &amp; RF Classification:</b> Automated edge spectral sensing pipeline intercepting UAV flight controller communications across 2.4 GHz &amp; 5.8 GHz ISM bands via SDR, FFT spectrograms, and lightweight neural classification. <a href="https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing" target="_blank" rel="noopener">Presentation ↗</a>' },
+        { k: ['robot', 'ros', 'slam', 'amr', 'mentorpi', 'embedded', 'hardware', 'solar', 'tracker', 'gas', 'wokwi'], a: '<b>Robotics &amp; Embedded:</b> HiWonder MentorPi M1 on ROS2 + Pi 5 (<a href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener">Inspection ↗</a>) · Sensorless solar tracking using PV panel voltage directly · Gas hazard detection on Arduino + MQ-2 (<a href="https://wokwi.com/projects/453321379118788609" target="_blank" rel="noopener">Wokwi ↗</a>).' },
+        { k: ['trendguard', 'quant', 'trading', 'risk', 'finance'], a: '<b>TrendGuard-200:</b> Quantitative signal generation engine in Python (NumPy/Pandas) across 8-year OHLC data, achieving a 72.7% win rate with dynamic position sizing and moving averages (21, 50, 200 SMA).' },
+        { k: ['live', 'production', 'system', 'deploy', 'vault', 'project', 'cardsfinder', 'asset', 'renamer'], a: 'Nine verified engineering systems across <b>02 // Deployments</b>: BOM schema engine (&lt;50ms) · Drone RF SDR pipeline · MentorPi M1 AMR · CardsFinders · Asset renamer · Smart shopping cart (IEEE) · TrendGuard-200 · Sensorless solar tracker · Gas safety detector.' },
+        { k: ['educat', 'mtech', 'mnnit', 'degree', 'college', 'btech', 'rcoem'], a: '<b>M.Tech in Control and Instrumentation</b> from MNNIT Allahabad (2025–Present) &amp; Graduate Teaching Assistant · <b>B.Tech in ECE</b> from RCOEM Nagpur (2020–2024).' },
+        { k: ['contact', 'email', 'phone', 'hire', 'commission', 'deploy', 'reach', 'linkedin', 'github'], a: 'Based in <b>Bengaluru / Hosur, India</b> · Available for on-site engineering sprints · Email: <b>kshitijsawarkar333@gmail.com</b> · Phone: <b>+91-9823252972</b> · <a href="https://www.linkedin.com/in/kshitijas/" target="_blank" rel="noopener">LinkedIn ↗</a> · <a href="https://github.com/KshitijSawarkar" target="_blank" rel="noopener">GitHub ↗</a>.' },
+        { k: ['stack', 'tech', 'skill', 'competencies'], a: '<b>4 Technical Domains:</b> 1. Autonomous Robotics &amp; Embedded (ROS2, CAN, UART, SPI, I2C, HIL) · 2. Applied AI &amp; Edge Perception (YOLOv5 INT8, OpenCV) · 3. RF Telemetry &amp; Signal Processing (SDR, FFT spectrograms) · 4. Production Systems &amp; Cloud (Cloudflare Pages, AWS SageMaker/Lambda).' },
+        { k: ['agent', 'llm', 'mcp', 'rag', 'prompt', 'api', 'json', 'ground'], a: 'This site is agent-native: <b>GET /llms.txt</b> for plain-text ground truth, <b>GET /api/profile.json</b> for typed JSON data, plus the copy-paste <b>Prompt Pack</b> above.' },
+        { k: ['who', 'about', 'kshitij', 'summary', 'introduce'], a: '<b>Kshitij Ashok Sawarkar</b> — Autonomous Robotics, Embedded Systems &amp; Forward Deployed Engineering. M.Tech Control &amp; Instrumentation (MNNIT) · B.Tech ECE (RCOEM) · Lead author IEEE Xplore 10627276 · Wakefit NPL automation.' },
+        { k: ['hi', 'hello', 'hey', 'namaste'], a: 'Uplink established. Ask about the <b>IEEE paper</b>, <b>Wakefit NPL</b>, <b>Drone RF SDR</b>, <b>MentorPi ROS2</b>, or <b>contact</b>.' }
       ];
-      const FALLBACK = 'Grounded answer unavailable for that query — I only answer from <b>/llms.txt</b>. Try: <b>IEEE paper?</b> · <b>live systems?</b> · <b>robotics?</b> · <b>contact?</b>';
+      const FALLBACK = 'Grounded answer unavailable for that query — I only answer from <b>/llms.txt</b>. Try: <b>IEEE paper?</b> · <b>Wakefit NPL?</b> · <b>Drone RF SDR?</b> · <b>Robotics &amp; ROS2?</b> · <b>Contact?</b>';
       function addMsg(html, who) {
         const d = document.createElement('div');
         d.className = 'agent-msg ' + who;
@@ -998,8 +1292,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
       let greeted = false;
       function greet() {
         if (greeted) return; greeted = true;
-        const hello = addMsg('Link established. I answer only from this site\u2019s ground truth (<b>/llms.txt</b> + <b>/api/profile.json</b>). What do you need?', 'bot');
-        if (reduceMotion) return;
+        addMsg('Link established. I answer strictly from this site\u2019s ground truth (<b>/llms.txt</b> + <b>/api/profile.json</b>). Ask anything about Kshitij\u2019s systems, research, or experience.', 'bot');
       }
       const gio = new IntersectionObserver((e) => { if (e[0].isIntersecting) { greet(); gio.disconnect(); } }, { threshold: 0.3 });
       gio.observe(log);
@@ -1015,7 +1308,7 @@ Rules: cite the IEEE doc ID for research claims · link the live system for depl
         t.innerHTML = '<i></i><i></i><i></i>';
         log.appendChild(t);
         log.scrollTop = log.scrollHeight;
-        setTimeout(() => { t.remove(); addMsg(answer(query), 'bot'); }, 650 + Math.random() * 500);
+        setTimeout(() => { t.remove(); addMsg(answer(query), 'bot'); }, 550 + Math.random() * 400);
       }
       form.addEventListener('submit', (e) => { e.preventDefault(); ask(input.value); });
       document.querySelectorAll('[data-ask]').forEach((b) => b.addEventListener('click', () => ask(b.getAttribute('data-ask') || '')));

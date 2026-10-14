@@ -1,30 +1,65 @@
-# Kshitij Ashok Sawarkar — Forward Deployed Systems & Robotics Engineer
-> M.Tech Candidate in Control & Instrumentation, MNNIT Allahabad. Specialized in AMR commissioning, edge computer vision quantization, and deterministic systems automation.
+# Kshitij Ashok Sawarkar — Autonomous Robotics, Embedded Systems & Forward Deployed Engineering
+> M.Tech in Control and Instrumentation from MNNIT Allahabad | B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Autonomous systems, deterministic edge runtimes, real-time computer vision, SDR RF spectral sensing, and industrial automation.
 
 ## Core Coordinates
 - Name: Kshitij Ashok Sawarkar
-- Current Location: Bengaluru, India (Field deployable regionally/APAC)
+- Current Location: Bengaluru / Hosur, India
 - Email: kshitijsawarkar333@gmail.com
-- LinkedIn: https://linkedin.com/in/kshitijas
+- Phone: +91-9823252972
+- LinkedIn: https://www.linkedin.com/in/kshitijas/
 - GitHub: https://github.com/KshitijSawarkar
+- Portfolio: https://kshitijsawarkar.github.io/portfolio/#top
 
-## Academic & Institutional Anchor
-- M.Tech: Control & Instrumentation, Motilal Nehru National Institute of Technology (MNNIT) Allahabad (2025–2027)
-- B.Tech: Electronics & Communication Engineering, RCOEM Nagpur (2021–2024)
-- Academic Appointment: Graduate Teaching Assistant for undergraduate Control Systems & Instrumentation (100+ students)
+## Executive Summary
+Autonomous systems and forward-deployed automation engineer with an M.Tech in Control and Instrumentation from MNNIT Allahabad and a B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Operates at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial systems automation. Lead author of peer-reviewed edge-perception research published in IEEE Xplore (Document ID: 10627276). Proven track record of delivering production-grade client-side engines executing under 50ms latency (npl-automation.pages.dev), software-defined radio (SDR) spectral sensing pipelines for UAV RF classification, and ROS2 embedded robotics control stacks.
 
-## Verified Production Deployments
-- Finished Goods & BOM Schema Engine: https://npl-automation.pages.dev/ (<50ms execution, client-side recursive validation, 100% data privacy)
-- Batch Asset Ingestion Utility: https://image-sequence-renamer.pages.dev/ (>80% latency cut, zero server compute overhead)
-- Deterministic Repair Cost Engine: https://kshitijsawarkar.github.io/Wakefit_Repair_Calculator/ (Defensive margin protection)
-- Sovereign Edge Properties: https://cardsfinders.com, https://myuselessweb.com
+## Core Technical Competencies
+- Autonomous Robotics & Embedded: ROS2 (composition nodes, lifecycle management), Embedded Linux, Microcontrollers (Raspberry Pi, Arduino), Serial Protocols (CAN, UART, SPI, I2C), Sensor Synchronization (LiDAR, Monocular Vision, IMU), Hardware-in-the-Loop (HIL).
+- Applied AI & Edge Perception: Real-Time Computer Vision (YOLOv5, OpenCV), Model Quantization (INT8), Edge Compute Optimization, Spectral Feature Extraction, Machine Learning (TensorFlow, Keras, Scikit-Learn).
+- RF Telemetry & Signal Processing: Software-Defined Radio (SDR), RF Signal Classification, Spectrogram Analysis, IQ Signal Parsing, UAV Flight Controller Telemetry Interception.
+- Production Systems & Cloud: Cloudflare Pages, Deterministic Parsing Algorithms, Client-Side Runtime Optimization, AWS (EC2, Lambda, S3, SageMaker), RESTful APIs, Git, Docker, Shell Scripting.
+
+## Education & Academic Pedigree
+- Master of Technology (M.Tech) in Control and Instrumentation | Motilal Nehru National Institute of Technology (MNNIT) Allahabad (2025 – Present)
+  - Specialization: High-order dynamic systems, state-space modeling, multivariable feedback control, and real-time embedded signal processing.
+  - Academic Leadership: Teaching Assistant for undergraduate control systems lectures and laboratory tutorials.
+  - Coursework: NPTEL "Introduction to Multi-Agent Systems" (IIT Certification).
+- Bachelor of Technology (B.Tech) in Electronics and Communication Engineering | Shri Ramdeobaba College of Engineering and Management (RCOEM), Nagpur (2020 – 2024)
+  - Core Foundations: Microprocessors & Microcontrollers, Digital Signal Processing (DSP), RF & Microwave Systems, Embedded Hardware Design, and Communication Networks.
+
+## Professional Experience & Internships
+- Wakefit Innovations Ltd. | Systems Automation Intern – PGET | August 2026 – Present | Bengaluru / Hosur, India
+  - Live Systems: https://npl-automation.pages.dev/ | https://image-sequence-renamer.pages.dev/
+  - Combinatorial Schema Engine: Architected and deployed production client-side application on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and NPL schema logic across complex seater variants and dynamic colorways.
+  - Process Latency Compression: Eliminated multi-day manual ERP spreadsheet reconciliation bottlenecks using recursive client-side parsing algorithms, compressing BOM derivation from 72+ operational hours into deterministic sub-minute runs with sub-50ms latency.
+  - Industrial Guardrails & Schema Isolation: Authored formal system constraints (AGENTS.md) and deterministic validation guardrails preventing parameter collisions, duplicate SKU generation, and upstream ERP ingestion errors.
+  - Zero-Compute Infrastructure: Engineered client-side execution with 100% data isolation and zero server compute overhead.
+- AICTE Virtual Internship | AWS Cloud Intern / AI Developer | May 2023 – July 2023 | Remote, India
+  - Distributed Cloud Migration: Migrated local ML workflows and structured datasets to AWS EC2, configuring security groups and IAM policies.
+  - Event-Driven Serverless Pipelines: Built asynchronous ETL pipelines using AWS Lambda triggered by Amazon S3 storage events.
+  - Production Model Deployment & MLOps: Managed training lifecycles and deployed hosted inference endpoints using AWS SageMaker (XGBoost, Linear Learner).
+  - Cloud Security & Scalability: Implemented CloudWatch monitoring, automated alerts, and auto-scaling policies.
+- RCOEM TBI Foundation Cell (Sharon Innovations) | IoT Systems & Embedded Firmware Intern | January 2021 – February 2022 | Nagpur, India
+  - Embedded firmware & sensor interfacing across microcontrollers and IoT dev boards.
+  - Integrated serial communication protocols (UART, SPI, I2C) for low-power telemetry transmission with zero packet loss.
+  - Built internal test automation scripts and HIL debugging routines to profile voltage stability, sensor drift, and noise.
+- UCN Cable Networks | Computer Networking Intern | March 2023 – April 2023 | Nagpur, India
+  - Enterprise routing hardware & L2/L3 switch provisioning; static and dynamic routing topologies.
+  - IPv4 CIDR subnetting, VLAN segmentation, DHCP/DNS server configurations.
+  - Physical Layer 1 & 2 troubleshooting with packet-capture analyzers and cable-fault testers; automated network latency check-scripts.
+
+## Flagship Technical Projects & Production Deployments
+- Real-Time Drone Detection & RF Signal Classification: Automated edge spectral sensing pipeline intercepting UAV flight controller communications across 2.4 GHz & 5.8 GHz ISM bands via SDR, FFT spectrograms, and lightweight neural classification. Telemetry: https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing
+- Manufacturing Schema & BOM Automation Engine (NPL Automation): Client-side schema engine deployed on Cloudflare Pages (<50ms execution, zero server overhead, recursive validation). Live: https://npl-automation.pages.dev/
+- Smart Shopping Cart: Real-Time Edge Object Detection: Custom retail dataset fine-tuned YOLOv5 on Raspberry Pi with INT8 quantization; published in IEEE Xplore (Doc ID: 10627276). https://ieeexplore.ieee.org/document/10627276
+- HiWonder MentorPi M1 Autonomous Robotics Platform: AMR powered by Raspberry Pi 5 running ROS2, custom publisher/subscriber nodes, PWM motor loops, monocular vision, and SLAM navigation. Hardware Telemetry: https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing
+- TrendGuard-200 Multi-Asset Quantitative Risk Engine: Vectorized backtesting engine in Python (NumPy/Pandas) across 8-year OHLC dataset achieving 72.7% win rate with dynamic position sizing and multi-timeframe moving averages.
+- CardsFinders Financial Tool Suite: Global edge-delivered comparison platform on Cloudflare Pages with edge DNS and mail routing. Live: https://cardsfinders.com/
+- Event-Driven Web Experiments & Utilities (Image Sequence Renamer): Industrial in-browser batch asset management tool on Cloudflare Pages. Live: https://image-sequence-renamer.pages.dev/
+- Photovoltaic Sensorless Solar Tracker: Closed-loop dual-axis solar tracking using intrinsic panel voltage/current as sensor (NO external LDRs) with dynamic MPPT. Architecture: https://docs.google.com/presentation/d/1WsoxJpkOGv4GCKoAZFYMt03jj_0Yq4AvVkb0T4s2bPY/edit?usp=sharing | Demo: https://drive.google.com/file/d/1fcZVVkoQ_b0vqO3GWKNmk0JH5dNND53V/view?usp=sharing
+- Gas Detection Safety System: Embedded gas hazard detection with Arduino Uno and MQ-2 sensor, ADC thresholding, and alarm actuation. Wokwi Simulation: https://wokwi.com/projects/453321379118788609
 
 ## Peer-Reviewed Research
-- Title: Automated Edge Vision & Retail Checkout System using Quantized YOLOv5 on Embedded Hardware
-- Publisher: IEEE Xplore | Document ID: 10627276
-- Technical Method: INT8 Post-Training Quantization via ONNX Runtime on Raspberry Pi (<1% mAP degradation, sub-second inference)
-- Invariant Note: Uses Raspberry Pi and YOLOv5; does NOT use Arduino or RFID.
-
-## Robotics & Embedded Systems
-- HiWonder MentorPi M1: ROS2 on Raspberry Pi 5 with SLAM navigation and monocular camera integration.
-- Sensorless Solar Tracking: Closed-loop actuation using photovoltaic voltage directly (NO external LDR sensors).
+- Title: Automated Object Detection and Billing Architecture for Smart Retail Systems
+- Publisher: IEEE Xplore | Document ID: 10627276 | URL: https://ieeexplore.ieee.org/document/10627276
+- Research Focus: Real-time edge inference, constrained ARM compute optimization, INT8 quantization tradeoffs, and embedded computer vision pipelines under thermal boundaries.

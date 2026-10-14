@@ -129,6 +129,9 @@ section[id] { scroll-margin-top: 84px; }
 .sec-index { font-family: var(--mono); font-size: 0.74rem; color: var(--mute); letter-spacing: 0.14em; }
 .grid-2 { display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 780px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
+.grid-3 { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 768px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1040px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 26px; position: relative; overflow: hidden; backdrop-filter: blur(8px); transition: transform .25s ease, border-color .25s, box-shadow .25s; }
 .card::before { content: ""; position: absolute; inset: 0; background: radial-gradient(400px 160px at var(--mx, 50%) var(--my, 0%), rgba(61,255,143,0.09), transparent 70%); opacity: 0; transition: opacity .3s; pointer-events: none; }
 .card:hover::before { opacity: 1; }
