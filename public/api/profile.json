@@ -1,40 +1,46 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "Kshitij Ashok Sawarkar",
-  "title": "Autonomous Robotics, Embedded Systems & Forward Deployed Engineering",
+  "title": "Forward Deployed Systems & Autonomous Robotics Engineer",
+  "specialization": [
+    "Autonomous Mobile Robots (AMR)",
+    "Edge Computer Vision",
+    "Deterministic Schema Runtimes"
+  ],
   "location": "Bengaluru / Hosur, India",
   "contact": {
     "email": "kshitijsawarkar333@gmail.com",
     "phone": "+91-9823252972",
     "linkedin": "https://www.linkedin.com/in/kshitijas/",
     "github": "https://github.com/KshitijSawarkar",
-    "portfolio": "https://kshitijsawarkar.github.io/portfolio/#top"
+    "portfolio": "https://kshitijsawarkar.github.io/portfolio/"
   },
-  "summary": "Autonomous systems and forward-deployed automation engineer with an M.Tech in Control and Instrumentation from MNNIT Allahabad and a B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Operates at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial systems automation. Lead author of peer-reviewed edge-perception research published in IEEE Xplore (Document ID: 10627276). Proven track record of delivering production-grade client-side engines executing under 50ms latency (npl-automation.pages.dev), software-defined radio (SDR) spectral sensing pipelines for UAV RF classification, and ROS2 embedded robotics control stacks.",
+  "summary": "Autonomous systems and forward-deployed automation engineer with an M.Tech in Control and Instrumentation from MNNIT Allahabad and a B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Operates at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial systems automation. Lead author of peer-reviewed edge-perception research published in IEEE Xplore (Document ID: 10627276). Proven track record of architecting production-grade client-side engines executing under 50ms latency (npl-automation.pages.dev), software-defined radio (SDR) spectral sensing pipelines for UAV RF classification, and ROS2 embedded robotics control stacks.",
   "core_competencies": {
     "autonomous_robotics_and_embedded": [
       "ROS2 (composition nodes, lifecycle management)",
       "Embedded Linux",
       "Microcontrollers (Raspberry Pi, Arduino)",
-      "Serial Protocols (CAN, UART, SPI, I2C)",
-      "Sensor Synchronization (LiDAR, Monocular Vision, IMU)",
-      "Hardware-in-the-Loop (HIL)"
+      "Serial Communication (CAN, UART, SPI, I2C)",
+      "Sensor Synchronization (2D LiDAR, Monocular Vision, IMU)",
+      "Hardware-in-the-Loop (HIL) testing"
     ],
     "applied_ai_and_edge_perception": [
       "Real-Time Computer Vision (YOLOv5, OpenCV)",
       "Model Quantization (INT8)",
-      "Edge Compute Optimization",
+      "ARM Edge Compute Optimization",
       "Spectral Feature Extraction",
       "Machine Learning (TensorFlow, Keras, Scikit-Learn)"
     ],
     "rf_telemetry_and_signal_processing": [
       "Software-Defined Radio (SDR)",
       "RF Signal Classification",
-      "Spectrogram Analysis",
-      "IQ Signal Parsing",
-      "UAV Flight Controller Telemetry Interception"
+      "Spectrogram Generation",
+      "I/Q Signal Parsing",
+      "Fast Fourier Transforms (FFT)",
+      "Commercial UAV Telemetry Interception"
     ],
-    "production_systems_and_cloud": [
+    "production_systems_and_cloud_runtimes": [
       "Cloudflare Pages",
       "Deterministic Parsing Algorithms",
       "Client-Side Runtime Optimization",
@@ -51,14 +57,14 @@
       "degree": "Master of Technology (M.Tech) in Control and Instrumentation",
       "period": "2025 – Present",
       "specialization": "High-order dynamic systems, state-space modeling, multivariable feedback control, and real-time embedded signal processing.",
-      "academic_leadership": "Serving as Teaching Assistant for undergraduate control systems lectures and laboratory tutorials.",
-      "coursework": "NPTEL Introduction to Multi-Agent Systems (IIT Certification)"
+      "academic_responsibility": "Teaching Assistant for undergraduate control systems lectures, tutorials, and laboratory sessions.",
+      "advanced_certification": "NPTEL Introduction to Multi-Agent Systems (IIT Certification)"
     },
     {
       "institution": "Shri Ramdeobaba College of Engineering and Management (RCOEM), Nagpur",
       "degree": "Bachelor of Technology (B.Tech) in Electronics and Communication Engineering",
       "period": "2020 – 2024",
-      "foundations": "Microprocessors & Microcontrollers, Digital Signal Processing (DSP), RF & Microwave Systems, Embedded Hardware Design, and Communication Networks."
+      "core_foundations": "Microprocessors & Microcontrollers, Digital Signal Processing (DSP), RF & Microwave Systems, Embedded Hardware Design, Communication Networks."
     }
   ],
   "experience": [
@@ -67,15 +73,15 @@
       "location": "Bengaluru / Hosur, India",
       "role": "Systems Automation Intern – PGET",
       "period": "August 2026 – Present",
-      "live_systems": [
+      "artifacts": [
         "https://npl-automation.pages.dev/",
         "https://image-sequence-renamer.pages.dev/"
       ],
       "highlights": [
-        "Architected and deployed a production client-side application (npl-automation.pages.dev) on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and New Product Launch (NPL) schema logic across complex seater variants and dynamic colorways.",
-        "Eliminated multi-day manual ERP spreadsheet reconciliation bottlenecks by implementing recursive client-side parsing algorithms, compressing end-to-end BOM derivation from 72+ operational hours into deterministic sub-minute runs with sub-50ms execution latency.",
-        "Authored formal system constraints (AGENTS.md) and deterministic validation guardrails, preventing parameter collisions, duplicate SKU generation, and upstream ERP data ingestion errors across active manufacturing assembly lines.",
-        "Engineered the entire schema pipeline to execute strictly client-side with 100% data isolation and zero server compute overhead, eliminating cloud infrastructure maintenance and ensuring uninterrupted offline plant-floor readiness."
+        "Combinatorial Schema Engine: Architected and deployed a production client-side engine (npl-automation.pages.dev) on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and New Product Launch (NPL) parameter trees across dynamic seater variants and colorways.",
+        "Latency & Complexity Compression: Designed recursive client-side parsing algorithms, compressing end-to-end BOM derivation from 72+ operational hours of manual ERP reconciliation into deterministic sub-minute runs with sub-50ms execution latency.",
+        "Deterministic Guardrails (FDE Spec): Authored formal operational constraints (AGENTS.md) and validation guardrails, preventing parameter collisions, duplicate SKU assignments, and upstream ERP ingestion corruption across active factory lines.",
+        "Zero-Compute Footprint: Structured the engine to execute 100% client-side with zero cloud compute costs and full data isolation, maintaining complete operational readiness without network dependency."
       ]
     },
     {
@@ -83,11 +89,12 @@
       "location": "Remote, India",
       "role": "AWS Cloud Intern / AI Developer",
       "period": "May 2023 – July 2023",
+      "accreditation": "AICTE NEAT Cell & AWS Academy (Certificate ID: 6d18deba5a7b05eac91dc74ba3592785)",
       "highlights": [
-        "Architected and executed the migration of local machine learning workflows and structured datasets to AWS infrastructure, configuring EC2 instances, security groups, and IAM role policies for distributed execution.",
-        "Designed asynchronous, serverless ETL data pipelines using AWS Lambda triggered by Amazon S3 bucket storage events, automating data ingestion, validation, and real-time preprocessing with zero idle compute costs.",
-        "Managed full model training lifecycles and deployed hosted inference endpoints using AWS SageMaker, optimizing distributed algorithms (XGBoost, Linear Learner) for scalable real-time inference against production datasets.",
-        "Implemented CloudWatch monitoring, automated alerts, and resource scaling policies to ensure continuous endpoint availability while preventing resource waste."
+        "Distributed Cloud Migration: Migrated local ML workflows and datasets to AWS infrastructure, provisioning EC2 instances, security groups, and IAM policies for distributed processing.",
+        "Serverless Event-Driven Pipelines: Built asynchronous ETL data pipelines using AWS Lambda triggered by Amazon S3 storage events, automating ingestion, validation, and preprocessing with zero idle server overhead.",
+        "Hosted Model Inference: Trained and deployed predictive model endpoints using AWS SageMaker (XGBoost, Linear Learner), tuning hyperparameter configurations for scalable real-time inference.",
+        "Infrastructure Monitoring: Configured CloudWatch metrics, automated threshold alerts, and autoscaling policies to maintain high endpoint availability."
       ]
     },
     {
@@ -95,18 +102,20 @@
       "location": "Nagpur, India",
       "role": "IoT Systems & Embedded Firmware Intern",
       "period": "January 2021 – February 2022",
+      "accreditation": "RCOEM Technology Business Incubators Foundation",
       "highlights": [
-        "Developed embedded firmware and sensor interfacing routines across microcontrollers and IoT development boards for connected hardware products incubated under Sharon Innovations.",
-        "Integrated serial communication protocols (UART, SPI, I2C) to link environmental and operational sensors with edge communication modules, ensuring low-power telemetry transmission with zero packet loss.",
-        "Built internal test automation scripts and hardware debugging routines to profile voltage stability, sensor drift, and signal noise across early prototype iterations.",
-        "Resolved hardware-software integration bottlenecks across partner ventures, increasing overall prototype operational reliability prior to pilot field trials."
+        "Embedded Firmware & Bus Interfacing: Developed low-level firmware and sensor interfacing routines across microcontrollers and IoT dev boards for connected hardware products under Sharon Innovations.",
+        "Protocol Integration: Integrated serial protocols (UART, SPI, I2C) to bridge physical environmental transducers with edge communication modules, ensuring low-power telemetry transmission with zero packet drop.",
+        "Hardware-in-the-Loop Diagnostics: Programmed diagnostic test scripts and HIL debugging routines to profile voltage stability, sensor drift, and signal noise across physical prototype iterations.",
+        "Field Deployment Stabilization: Resolved board-level hardware-software bottlenecks, stabilizing early prototypes for commercial pilot validation."
       ]
     },
     {
-      "company": "UCN Cable Networks",
+      "company": "UCN Cable Network Pvt. Ltd.",
       "location": "Nagpur, India",
       "role": "Computer Networking Intern",
       "period": "March 2023 – April 2023",
+      "accreditation": "UCN Cable Network",
       "highlights": [
         "Configured and provisioned enterprise routing hardware, managed Layer 2 and Layer 3 (L2/L3) network switches, and established static and dynamic routing topologies across regional distribution points.",
         "Implemented IPv4 CIDR subnetting, VLAN segmentation, and DHCP/DNS server configurations to isolate operational traffic and optimize bandwidth allocation across mixed client networks.",
@@ -152,10 +161,10 @@
     },
     {
       "name": "HiWonder MentorPi M1 Autonomous Robotics Platform",
-      "stack": ["Raspberry Pi 5", "ROS2", "Computer Vision", "Robotics Telemetry"],
+      "stack": ["Raspberry Pi 5", "ROS2 Humble", "2D LiDAR", "OpenCV", "Robotics Telemetry"],
       "telemetry_url": "https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing",
       "highlights": [
-        "Programmed and tuned an autonomous mobile robot (AMR) unit powered by a Raspberry Pi 5 single-board computer running Robot Operating System 2 (ROS2).",
+        "Programmed and tuned an autonomous mobile robot (AMR) unit powered by a Raspberry Pi 5 single-board computer running Robot Operating System 2 (ROS2 Humble).",
         "Configured modular ROS2 publisher/subscriber nodes for real-time motor actuation, PWM driver loops, and telemetry streaming on embedded Linux.",
         "Interfaced onboard monocular camera feeds with OpenCV pipelines for visual marker tracking, target acquisition, and spatial orientation."
       ]

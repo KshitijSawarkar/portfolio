@@ -1,65 +1,95 @@
-# Kshitij Ashok Sawarkar — Autonomous Robotics, Embedded Systems & Forward Deployed Engineering
-> M.Tech in Control and Instrumentation from MNNIT Allahabad | B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Autonomous systems, deterministic edge runtimes, real-time computer vision, SDR RF spectral sensing, and industrial automation.
+# Kshitij Ashok Sawarkar — Forward Deployed Systems & Autonomous Robotics Engineer
+> Specialization: Autonomous Mobile Robots (AMR), Edge Computer Vision, Deterministic Schema Runtimes. M.Tech in Control & Instrumentation (MNNIT Allahabad) | B.Tech in ECE (RCOEM Nagpur).
 
-## Core Coordinates
+## Core Coordinates & Identity Telemetry
 - Name: Kshitij Ashok Sawarkar
+- Title: Forward Deployed Systems & Autonomous Robotics Engineer
+- Specialization: Autonomous Mobile Robots (AMR), Edge Computer Vision, Deterministic Schema Runtimes
 - Current Location: Bengaluru / Hosur, India
-- Email: kshitijsawarkar333@gmail.com
 - Phone: +91-9823252972
-- LinkedIn: https://www.linkedin.com/in/kshitijas/
+- Email: kshitijsawarkar333@gmail.com
 - GitHub: https://github.com/KshitijSawarkar
-- Portfolio: https://kshitijsawarkar.github.io/portfolio/#top
+- LinkedIn: https://www.linkedin.com/in/kshitijas/
+- Portfolio: https://kshitijsawarkar.github.io/portfolio/
+
+## Primary CTAs & Verification Anchors
+- View IEEE Research (Doc ID: 10627276): https://ieeexplore.ieee.org/document/10627276
+- Live Industrial Engine (npl-automation.pages.dev): https://npl-automation.pages.dev/
+- Hardware Telemetry (MentorPi M1): https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing
 
 ## Executive Summary
-Autonomous systems and forward-deployed automation engineer with an M.Tech in Control and Instrumentation from MNNIT Allahabad and a B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Operates at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial systems automation. Lead author of peer-reviewed edge-perception research published in IEEE Xplore (Document ID: 10627276). Proven track record of delivering production-grade client-side engines executing under 50ms latency (npl-automation.pages.dev), software-defined radio (SDR) spectral sensing pipelines for UAV RF classification, and ROS2 embedded robotics control stacks.
+Autonomous systems and forward-deployed automation engineer with an M.Tech in Control and Instrumentation from MNNIT Allahabad and a B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Operates at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial systems automation. Lead author of peer-reviewed edge-perception research published in IEEE Xplore (Document ID: 10627276). Proven track record of architecting production-grade client-side engines executing under 50ms latency (npl-automation.pages.dev), software-defined radio (SDR) spectral sensing pipelines for UAV RF classification, and ROS2 embedded robotics control stacks.
 
-## Core Technical Competencies
-- Autonomous Robotics & Embedded: ROS2 (composition nodes, lifecycle management), Embedded Linux, Microcontrollers (Raspberry Pi, Arduino), Serial Protocols (CAN, UART, SPI, I2C), Sensor Synchronization (LiDAR, Monocular Vision, IMU), Hardware-in-the-Loop (HIL).
-- Applied AI & Edge Perception: Real-Time Computer Vision (YOLOv5, OpenCV), Model Quantization (INT8), Edge Compute Optimization, Spectral Feature Extraction, Machine Learning (TensorFlow, Keras, Scikit-Learn).
-- RF Telemetry & Signal Processing: Software-Defined Radio (SDR), RF Signal Classification, Spectrogram Analysis, IQ Signal Parsing, UAV Flight Controller Telemetry Interception.
-- Production Systems & Cloud: Cloudflare Pages, Deterministic Parsing Algorithms, Client-Side Runtime Optimization, AWS (EC2, Lambda, S3, SageMaker), RESTful APIs, Git, Docker, Shell Scripting.
+## Core Technical Competencies (Taxonomy Filter Pillars)
+1. Autonomous Robotics & Embedded:
+   ROS2 (composition nodes, lifecycle management), Embedded Linux, Microcontrollers (Raspberry Pi, Arduino), Serial Communication (CAN, UART, SPI, I2C), Sensor Synchronization (2D LiDAR, Monocular Vision, IMU), Hardware-in-the-Loop (HIL) testing.
 
-## Education & Academic Pedigree
-- Master of Technology (M.Tech) in Control and Instrumentation | Motilal Nehru National Institute of Technology (MNNIT) Allahabad (2025 – Present)
+2. Applied AI & Edge Perception:
+   Real-Time Computer Vision (YOLOv5, OpenCV), Model Quantization (INT8), ARM Edge Compute Optimization, Spectral Feature Extraction, Machine Learning (TensorFlow, Keras, Scikit-Learn).
+
+3. RF Telemetry & Signal Processing:
+   Software-Defined Radio (SDR), RF Signal Classification, Spectrogram Generation, I/Q Signal Parsing, Fast Fourier Transforms (FFT), Commercial UAV Telemetry Interception.
+
+4. Production Systems & Cloud Runtimes:
+   Cloudflare Pages, Deterministic Parsing Algorithms, Client-Side Runtime Optimization, AWS (EC2, Lambda, S3, SageMaker), RESTful APIs, Git, Docker, Shell Scripting.
+
+## Academic Pedigree & Research Credentials
+- Master of Technology (M.Tech) in Control and Instrumentation
+  Motilal Nehru National Institute of Technology (MNNIT) Allahabad | 2025 – Present
   - Specialization: High-order dynamic systems, state-space modeling, multivariable feedback control, and real-time embedded signal processing.
-  - Academic Leadership: Teaching Assistant for undergraduate control systems lectures and laboratory tutorials.
-  - Coursework: NPTEL "Introduction to Multi-Agent Systems" (IIT Certification).
-- Bachelor of Technology (B.Tech) in Electronics and Communication Engineering | Shri Ramdeobaba College of Engineering and Management (RCOEM), Nagpur (2020 – 2024)
-  - Core Foundations: Microprocessors & Microcontrollers, Digital Signal Processing (DSP), RF & Microwave Systems, Embedded Hardware Design, and Communication Networks.
+  - Academic Responsibility: Teaching Assistant for undergraduate control systems lectures, tutorials, and laboratory sessions.
+  - Advanced Certification: NPTEL "Introduction to Multi-Agent Systems" (IIT Certification).
 
-## Professional Experience & Internships
-- Wakefit Innovations Ltd. | Systems Automation Intern – PGET | August 2026 – Present | Bengaluru / Hosur, India
-  - Live Systems: https://npl-automation.pages.dev/ | https://image-sequence-renamer.pages.dev/
-  - Combinatorial Schema Engine: Architected and deployed production client-side application on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and NPL schema logic across complex seater variants and dynamic colorways.
-  - Process Latency Compression: Eliminated multi-day manual ERP spreadsheet reconciliation bottlenecks using recursive client-side parsing algorithms, compressing BOM derivation from 72+ operational hours into deterministic sub-minute runs with sub-50ms latency.
-  - Industrial Guardrails & Schema Isolation: Authored formal system constraints (AGENTS.md) and deterministic validation guardrails preventing parameter collisions, duplicate SKU generation, and upstream ERP ingestion errors.
-  - Zero-Compute Infrastructure: Engineered client-side execution with 100% data isolation and zero server compute overhead.
-- AICTE Virtual Internship | AWS Cloud Intern / AI Developer | May 2023 – July 2023 | Remote, India
-  - Distributed Cloud Migration: Migrated local ML workflows and structured datasets to AWS EC2, configuring security groups and IAM policies.
-  - Event-Driven Serverless Pipelines: Built asynchronous ETL pipelines using AWS Lambda triggered by Amazon S3 storage events.
-  - Production Model Deployment & MLOps: Managed training lifecycles and deployed hosted inference endpoints using AWS SageMaker (XGBoost, Linear Learner).
-  - Cloud Security & Scalability: Implemented CloudWatch monitoring, automated alerts, and auto-scaling policies.
-- RCOEM TBI Foundation Cell (Sharon Innovations) | IoT Systems & Embedded Firmware Intern | January 2021 – February 2022 | Nagpur, India
-  - Embedded firmware & sensor interfacing across microcontrollers and IoT dev boards.
-  - Integrated serial communication protocols (UART, SPI, I2C) for low-power telemetry transmission with zero packet loss.
-  - Built internal test automation scripts and HIL debugging routines to profile voltage stability, sensor drift, and noise.
-- UCN Cable Networks | Computer Networking Intern | March 2023 – April 2023 | Nagpur, India
-  - Enterprise routing hardware & L2/L3 switch provisioning; static and dynamic routing topologies.
-  - IPv4 CIDR subnetting, VLAN segmentation, DHCP/DNS server configurations.
-  - Physical Layer 1 & 2 troubleshooting with packet-capture analyzers and cable-fault testers; automated network latency check-scripts.
+- Bachelor of Technology (B.Tech) in Electronics and Communication Engineering
+  Shri Ramdeobaba College of Engineering and Management (RCOEM), Nagpur | 2020 – 2024
+  - Core Foundations: Microprocessors & Microcontrollers, Digital Signal Processing (DSP), RF & Microwave Systems, Embedded Hardware Design, Communication Networks.
+
+- Lead Author — IEEE Xplore Peer-Reviewed Publication
+  Title: "Automated Object Detection and Billing Architecture for Smart Retail Systems"
+  Publication Venue: IEEE Xplore | Document ID: 10627276
+  URL: https://ieeexplore.ieee.org/document/10627276
+  Focus: Real-time edge inference, constrained ARM compute optimization, INT8 quantization tradeoffs, and embedded computer vision pipelines under thermal boundaries.
+
+## Production Experience & Industrial Field Deployments
+- Wakefit Innovations Ltd. | Bengaluru / Hosur, India
+  Systems Automation Intern – PGET | August 2026 – Present
+  Artifacts: https://npl-automation.pages.dev/ | https://image-sequence-renamer.pages.dev/
+  - Combinatorial Schema Engine: Architected and deployed a production client-side engine (npl-automation.pages.dev) on Cloudflare Pages, automating multi-tier Finished Goods (FG) code generation and New Product Launch (NPL) parameter trees across dynamic seater variants and colorways.
+  - Latency & Complexity Compression: Designed recursive client-side parsing algorithms, compressing end-to-end BOM derivation from 72+ operational hours of manual ERP reconciliation into deterministic sub-minute runs with sub-50ms execution latency.
+  - Deterministic Guardrails (FDE Spec): Authored formal operational constraints (AGENTS.md) and validation guardrails, preventing parameter collisions, duplicate SKU assignments, and upstream ERP ingestion corruption across active factory lines.
+  - Zero-Compute Footprint: Structured the engine to execute 100% client-side with zero cloud compute costs and full data isolation, maintaining complete operational readiness without network dependency.
+
+- AICTE Virtual Internship | Remote, India
+  AWS Cloud Intern / AI Developer | May 2023 – July 2023
+  Accreditation: AICTE NEAT Cell & AWS Academy (Certificate ID: 6d18deba5a7b05eac91dc74ba3592785)
+  - Distributed Cloud Migration: Migrated local ML workflows and datasets to AWS infrastructure, provisioning EC2 instances, security groups, and IAM policies for distributed processing.
+  - Serverless Event-Driven Pipelines: Built asynchronous ETL data pipelines using AWS Lambda triggered by Amazon S3 storage events, automating ingestion, validation, and preprocessing with zero idle server overhead.
+  - Hosted Model Inference: Trained and deployed predictive model endpoints using AWS SageMaker (XGBoost, Linear Learner), tuning hyperparameter configurations for scalable real-time inference.
+  - Infrastructure Monitoring: Configured CloudWatch metrics, automated threshold alerts, and autoscaling policies to maintain high endpoint availability.
+
+- RCOEM TBI Foundation Cell (Sharon Innovations) | Nagpur, India
+  IoT Systems & Embedded Firmware Intern | January 2021 – February 2022
+  Accreditation: RCOEM Technology Business Incubators Foundation
+  - Embedded Firmware & Bus Interfacing: Developed low-level firmware and sensor interfacing routines across microcontrollers and IoT dev boards for connected hardware products under Sharon Innovations.
+  - Protocol Integration: Integrated serial protocols (UART, SPI, I2C) to bridge physical environmental transducers with edge communication modules, ensuring low-power telemetry transmission with zero packet drop.
+  - Hardware-in-the-Loop Diagnostics: Programmed diagnostic test scripts and HIL debugging routines to profile voltage stability, sensor drift, and signal noise across physical prototype iterations.
+  - Field Deployment Stabilization: Resolved board-level hardware-software bottlenecks, stabilizing early prototypes for commercial pilot validation.
+
+- UCN Cable Network Pvt. Ltd. | Nagpur, India
+  Computer Networking Intern | March 2023 – April 2023
+  Accreditation: UCN Cable Network
+  - Configured and provisioned enterprise routing hardware, managed Layer 2 and Layer 3 (L2/L3) network switches, and established static and dynamic routing topologies.
+  - Implemented IPv4 CIDR subnetting, VLAN segmentation, and DHCP/DNS server configurations.
+  - Conducted physical Layer 1 and Layer 2 troubleshooting with packet-capture analyzers and cable-fault testers.
+  - Built and deployed automated network monitoring check-scripts to trace gateway latency and resolve broadcast storms.
 
 ## Flagship Technical Projects & Production Deployments
-- Real-Time Drone Detection & RF Signal Classification: Automated edge spectral sensing pipeline intercepting UAV flight controller communications across 2.4 GHz & 5.8 GHz ISM bands via SDR, FFT spectrograms, and lightweight neural classification. Telemetry: https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing
+- Real-Time Drone Detection & RF Signal Classification: Automated edge spectral sensing pipeline intercepting UAV flight controller bursts across 2.4 GHz & 5.8 GHz ISM bands via SDR, FFT spectrograms, and lightweight neural classification. Presentation: https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing
 - Manufacturing Schema & BOM Automation Engine (NPL Automation): Client-side schema engine deployed on Cloudflare Pages (<50ms execution, zero server overhead, recursive validation). Live: https://npl-automation.pages.dev/
 - Smart Shopping Cart: Real-Time Edge Object Detection: Custom retail dataset fine-tuned YOLOv5 on Raspberry Pi with INT8 quantization; published in IEEE Xplore (Doc ID: 10627276). https://ieeexplore.ieee.org/document/10627276
-- HiWonder MentorPi M1 Autonomous Robotics Platform: AMR powered by Raspberry Pi 5 running ROS2, custom publisher/subscriber nodes, PWM motor loops, monocular vision, and SLAM navigation. Hardware Telemetry: https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing
+- HiWonder MentorPi M1 Autonomous Robotics Platform: AMR powered by Raspberry Pi 5 running ROS2 Humble, 2D LiDAR, OpenCV, motor actuation loops, and SLAM navigation. Hardware Telemetry: https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing
 - TrendGuard-200 Multi-Asset Quantitative Risk Engine: Vectorized backtesting engine in Python (NumPy/Pandas) across 8-year OHLC dataset achieving 72.7% win rate with dynamic position sizing and multi-timeframe moving averages.
 - CardsFinders Financial Tool Suite: Global edge-delivered comparison platform on Cloudflare Pages with edge DNS and mail routing. Live: https://cardsfinders.com/
 - Event-Driven Web Experiments & Utilities (Image Sequence Renamer): Industrial in-browser batch asset management tool on Cloudflare Pages. Live: https://image-sequence-renamer.pages.dev/
 - Photovoltaic Sensorless Solar Tracker: Closed-loop dual-axis solar tracking using intrinsic panel voltage/current as sensor (NO external LDRs) with dynamic MPPT. Architecture: https://docs.google.com/presentation/d/1WsoxJpkOGv4GCKoAZFYMt03jj_0Yq4AvVkb0T4s2bPY/edit?usp=sharing | Demo: https://drive.google.com/file/d/1fcZVVkoQ_b0vqO3GWKNmk0JH5dNND53V/view?usp=sharing
 - Gas Detection Safety System: Embedded gas hazard detection with Arduino Uno and MQ-2 sensor, ADC thresholding, and alarm actuation. Wokwi Simulation: https://wokwi.com/projects/453321379118788609
-
-## Peer-Reviewed Research
-- Title: Automated Object Detection and Billing Architecture for Smart Retail Systems
-- Publisher: IEEE Xplore | Document ID: 10627276 | URL: https://ieeexplore.ieee.org/document/10627276
-- Research Focus: Real-time edge inference, constrained ARM compute optimization, INT8 quantization tradeoffs, and embedded computer vision pipelines under thermal boundaries.
