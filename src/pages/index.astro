@@ -95,7 +95,6 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>
             Open Resume (PDF) ↗
           </a>
-          <a class="btn btn-secondary" href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Hardware Telemetry (MentorPi M1 AMR) ↗</a>
           <a class="btn btn-secondary" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer">Live Industrial FDE Engine (npl-automation) ↗</a>
           <a class="btn btn-secondary" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">View IEEE Research (Doc ID: 10627276) ↗</a>
         </div>
@@ -174,10 +173,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
             <div class="dash-track" id="dash-track">
               <!-- Slide 1: MentorPi M1 Robot (AMR / ROS2) -->
               <article class="dash-slide" aria-label="1 of 6: MentorPi M1 Autonomous Robot">
-                <a class="preview dash-media" href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Open MentorPi Chassis Video" tabindex="-1">
-                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">mentorpi-m1.ros2</span><span class="pv-open">↗</span></span>
+                <div class="preview dash-media" aria-label="MentorPi Chassis Hardware Bench Photo">
+                  <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">mentorpi-m1.ros2</span><span class="pv-open" style="font-size:0.75rem;letter-spacing:0.04em;color:var(--accent)">● BENCH VERIFIED</span></span>
                   <span class="pv-shot-wrap"><img class="pv-shot pv-contain" src={`${base}previews/mentorpi.png`} alt="HiWonder MentorPi M1 Autonomous Mobile Robot" loading="lazy" /><span class="pv-live"><i></i>ROBOTICS BENCH</span></span>
-                </a>
+                </div>
                 <div class="dash-info">
                   <span class="tag live"><i></i>ROS2 on Pi 5</span><span class="tag">AMR Commissioning</span>
                   <h3>HiWonder MentorPi M1 Autonomous Robotics Platform</h3>
@@ -189,7 +188,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
                     <li>Bench-tested sensor synchronization across 2D LiDAR, IMU, and motor encoders for indoor SLAM map generation and obstacle triage.</li>
                   </ul>
                   <p class="stack"><strong>Stack:</strong> Raspberry Pi 5 · ROS2 Humble · 2D LiDAR · Computer Vision · Robotics Telemetry · SLAM</p>
-                  <p style="margin-top:14px"><a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Inspect chassis &amp; telemetry ↗</a></p>
+                  <div style="margin-top:14px;display:flex;gap:8px;flex-wrap:wrap"><span class="tag live"><i></i>Bench-Commissioned Hardware</span><span class="tag">ROS2 Humble Stack Verified</span></div>
                 </div>
               </article>
 
@@ -329,7 +328,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
                 <li>Configured modular ROS2 publisher/subscriber nodes for motor actuation, PWM loops, and telemetry streaming.</li>
                 <li>Interfaced monocular camera feeds with OpenCV for visual marker tracking, target acquisition, and spatial orientation.</li>
               </ul>
-              <p class="stack"><strong>Hardware Inspection:</strong> <a href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Chassis &amp; Sensor Assembly ↗</a></p>
+              <p class="stack"><strong>Hardware Stack:</strong> Raspberry Pi 5 · ROS2 Humble · 2D LiDAR · OpenCV Vision · State-Space Control</p>
             </div>
 
             <!-- 2. NPL Automation -->
@@ -1444,7 +1443,7 @@ Rules: cite the IEEE doc ID 10627276 for research claims; link npl-automation.pa
         { k: ['ieee', 'paper', 'publish', 'research', 'yolo', 'quantiz', 'edge vision', 'retail', 'smart cart'], a: 'Lead Author on <b>IEEE Xplore Doc ID: 10627276</b> (<i>Automated Object Detection and Billing Architecture for Smart Retail Systems</i>): INT8 post-training quantization on ARM Raspberry Pi with &lt;1% mAP degradation and sub-second inference. <a href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener">Verify on IEEE ↗</a>' },
         { k: ['wakefit', 'npl', 'schema', 'bom', 'work', 'job', 'intern'], a: '<b>Wakefit Innovations Ltd.</b> (Aug 2026 – Present, Bengaluru / Hosur): Systems Automation Intern (PGET). Built <a href="https://npl-automation.pages.dev/" target="_blank" rel="noopener">npl-automation.pages.dev</a> on Cloudflare Pages, compressing 72+ operational hours into deterministic sub-minute runs with &lt;50ms latency.' },
         { k: ['drone', 'rf', 'sdr', 'spectrogram', 'uav', 'telemetry', 'signal', 'radio'], a: '<b>Real-Time Drone Detection &amp; RF Classification:</b> Automated edge spectral sensing pipeline intercepting UAV flight controller communications across 2.4 GHz &amp; 5.8 GHz ISM bands via SDR, FFT spectrograms, and lightweight neural classification. <a href="https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing" target="_blank" rel="noopener">Presentation ↗</a>' },
-        { k: ['robot', 'ros', 'slam', 'amr', 'mentorpi', 'embedded', 'hardware', 'solar', 'tracker', 'gas', 'wokwi'], a: '<b>Robotics &amp; Embedded:</b> HiWonder MentorPi M1 on ROS2 + Pi 5 (<a href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener">Inspection ↗</a>) · Sensorless solar tracking using PV panel voltage directly · Gas hazard detection on Arduino + MQ-2 (<a href="https://wokwi.com/projects/453321379118788609" target="_blank" rel="noopener">Wokwi ↗</a>).' },
+        { k: ['robot', 'ros', 'slam', 'amr', 'mentorpi', 'embedded', 'hardware', 'solar', 'tracker', 'gas', 'wokwi'], a: '<b>Robotics &amp; Embedded:</b> HiWonder MentorPi M1 on ROS2 + Pi 5 (2D LiDAR, monocular vision, indoor SLAM) · Sensorless solar tracking using PV panel voltage directly · Gas hazard detection on Arduino + MQ-2 (<a href="https://wokwi.com/projects/453321379118788609" target="_blank" rel="noopener">Wokwi ↗</a>).' },
         { k: ['resume', 'cv', 'pdf', 'dossier', 'download', 'file'], a: 'Official <b>Forward Deployed Engineering Resume (PDF)</b> opens directly: <a href="resume/Kshitij_FDE_Role.pdf" target="_blank" rel="noopener"><b>Open Kshitij_FDE_Role.pdf Directly ↗</b></a> · <a href="resume/Kshitij_FDE_Role.pdf" download="Kshitij_Sawarkar_Resume_FDE.pdf">Download PDF (130 KB) ↓</a>' },
         { k: ['trendguard', 'quant', 'trading', 'risk', 'finance'], a: '<b>TrendGuard-200:</b> Quantitative signal generation engine in Python (NumPy/Pandas) across 8-year OHLC data, achieving a 72.7% win rate with dynamic position sizing and moving averages (21, 50, 200 SMA).' },
         { k: ['live', 'production', 'system', 'deploy', 'vault', 'project', 'cardsfinder', 'asset', 'renamer'], a: 'Nine verified engineering systems across <b>02 // Deployments</b>: BOM schema engine (&lt;50ms) · Drone RF SDR pipeline · MentorPi M1 AMR · CardsFinders · Asset renamer · Smart shopping cart (IEEE) · TrendGuard-200 · Sensorless solar tracker · Gas safety detector.' },

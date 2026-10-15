@@ -131,7 +131,6 @@
       "name": "HiWonder MentorPi M1 Autonomous Robotics Platform",
       "image": "previews/mentorpi.png",
       "stack": ["Raspberry Pi 5", "ROS2 Humble", "2D LiDAR", "OpenCV", "Robotics Telemetry"],
-      "telemetry_url": "https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing",
       "highlights": [
         "Programmed and tuned an autonomous mobile robot (AMR) unit powered by a Raspberry Pi 5 single-board computer running Robot Operating System 2 (ROS2 Humble).",
         "Configured modular ROS2 publisher/subscriber nodes for real-time motor actuation, PWM driver loops, and telemetry streaming on embedded Linux.",

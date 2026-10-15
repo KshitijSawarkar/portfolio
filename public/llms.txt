@@ -17,7 +17,6 @@
 - Direct Resume Download (PDF): https://kshitijsawarkar.github.io/portfolio/resume/Kshitij_FDE_Role.pdf
 - View IEEE Research (Doc ID: 10627276): https://ieeexplore.ieee.org/document/10627276
 - Live Industrial Engine (npl-automation.pages.dev): https://npl-automation.pages.dev/
-- Hardware Telemetry (MentorPi M1): https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing
 
 ## Executive Summary
 Autonomous systems and forward-deployed automation engineer with an M.Tech in Control and Instrumentation from MNNIT Allahabad and a B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Operates at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial systems automation. Lead author of peer-reviewed edge-perception research published in IEEE Xplore (Document ID: 10627276). Proven track record of architecting production-grade client-side engines executing under 50ms latency (npl-automation.pages.dev), software-defined radio (SDR) spectral sensing pipelines for UAV RF classification, and ROS2 embedded robotics control stacks.
@@ -86,7 +85,7 @@ Autonomous systems and forward-deployed automation engineer with an M.Tech in Co
   - Built and deployed automated network monitoring check-scripts to trace gateway latency and resolve broadcast storms.
 
 ## Flagship Technical Projects & Production Deployments
-- HiWonder MentorPi M1 Autonomous Robotics Platform: AMR powered by Raspberry Pi 5 running ROS2 Humble, 2D LiDAR, OpenCV, motor actuation loops, and SLAM indoor navigation. Hardware Telemetry: https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing
+- HiWonder MentorPi M1 Autonomous Robotics Platform: AMR powered by Raspberry Pi 5 running ROS2 Humble, 2D LiDAR, OpenCV, motor actuation loops, and SLAM indoor navigation.
 - Manufacturing Schema & BOM Automation Engine (NPL Automation): Forward-deployed industrial client-side schema engine deployed on Cloudflare Pages (<50ms execution, zero server overhead, AGENTS.md guardrails). Live: https://npl-automation.pages.dev/
 - Real-Time Drone Detection & RF Signal Classification: Automated edge spectral sensing pipeline intercepting UAV flight controller bursts across 2.4 GHz & 5.8 GHz ISM bands via SDR, FFT spectrograms, and lightweight neural classification. Presentation: https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing
 - Smart Shopping Cart: Real-Time Edge Object Detection: Custom retail dataset fine-tuned YOLOv5 on Raspberry Pi with INT8 quantization; published as Lead Author in IEEE Xplore (Doc ID: 10627276). https://ieeexplore.ieee.org/document/10627276
