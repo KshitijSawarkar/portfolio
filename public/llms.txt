@@ -13,6 +13,8 @@
 - Portfolio: https://kshitijsawarkar.github.io/portfolio/
 
 ## Primary CTAs & Verification Anchors
+- Direct Resume (PDF): https://kshitijsawarkar.github.io/portfolio/resume/Kshitij_FDE_Role.pdf
+- Direct Resume Download (PDF): https://kshitijsawarkar.github.io/portfolio/resume/Kshitij_FDE_Role.pdf
 - View IEEE Research (Doc ID: 10627276): https://ieeexplore.ieee.org/document/10627276
 - Live Industrial Engine (npl-automation.pages.dev): https://npl-automation.pages.dev/
 - Hardware Telemetry (MentorPi M1): https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing

@@ -1,0 +1,72 @@
+---
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const pdfPath = `${base}resume/Kshitij_FDE_Role.pdf`;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content={`0;url=${pdfPath}`} />
+    <title>Opening Resume — Kshitij Ashok Sawarkar</title>
+    <script is:inline define:vars={{ pdfPath }}>
+      window.location.replace(pdfPath);
+    </script>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #05070d;
+        color: #eef3ff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+        padding: 20px;
+      }
+      .loader {
+        width: 44px;
+        height: 44px;
+        border: 3px solid rgba(61, 255, 143, 0.2);
+        border-top-color: #3dff8f;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      a {
+        color: #41e6ff;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #3dff8f;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: linear-gradient(135deg, #3dff8f, #41e6ff);
+        color: #04120a;
+        font-weight: 700;
+        padding: 12px 22px;
+        border-radius: 10px;
+        font-size: 0.95rem;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true"></div>
+    <h1 style="font-size:1.3rem;margin:0">Opening Resume Directly…</h1>
+    <p style="color:#a8b3cc;font-size:0.95rem;margin:0;max-width:480px">
+      Redirecting to <code>Kshitij_FDE_Role.pdf</code>. If it doesn't open automatically, click below:
+    </p>
+    <a class="btn" href={pdfPath}>
+      Open Resume PDF Directly ↗
+    </a>
+  </body>
+</html>

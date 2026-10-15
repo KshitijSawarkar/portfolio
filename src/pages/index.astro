@@ -18,13 +18,15 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <a href="#research">03 Research</a>
           <a href="#ai">04 AI &amp; RF</a>
           <a href="#trajectory">05 Experience</a>
-          <a href="#agents">06 Agents</a>
-          <a href="#contact">07 Contact</a>
+          <a href="#dossier">06 Dossier</a>
+          <a href="#agents">07 Agents</a>
+          <a href="#contact">08 Contact</a>
+          <a href={`${base}resume/Kshitij_FDE_Role.pdf`} target="_blank" rel="noopener noreferrer" class="nav-resume-btn" title="Open Kshitij's Resume PDF directly">📁 Resume (PDF) ↗</a>
           <button class="theme-btn" id="theme-btn" type="button" aria-pressed="false" aria-label="Switch to day mode" title="Toggle day / night"><span id="theme-icon" aria-hidden="true">☾</span></button>
           <span class="clock" id="clock" aria-hidden="true">--:--:-- IST</span>
         </nav>
       </div>
-      <div class="machine-strip"><span><b>▸ AI GROUND TRUTH</b> GET <a href={`${base}llms.txt`}>/llms.txt</a> · GET <a href={`${base}api/profile.json`}>/api/profile.json</a></span><span style="margin-left:auto" id="build-tag">BUILD STABLE · EDGE-DEPLOYED</span></div>
+      <div class="machine-strip"><span><b>▸ AI GROUND TRUTH</b> GET <a href={`${base}llms.txt`}>/llms.txt</a> · GET <a href={`${base}api/profile.json`}>/api/profile.json</a> · GET <a href={`${base}resume/Kshitij_FDE_Role.pdf`} target="_blank" rel="noopener noreferrer">/resume (PDF) ↗</a></span><span style="margin-left:auto" id="build-tag">BUILD STABLE · EDGE-DEPLOYED</span></div>
     </div>
   </header>
 
@@ -57,6 +59,11 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
             <span class="contact-strip-sub">Response &lt;24h · Available for field deployments</span>
           </div>
           <div class="contact-badges">
+            <a class="contact-badge contact-badge-resume" href={`${base}resume/Kshitij_FDE_Role.pdf`} target="_blank" rel="noopener noreferrer" title="Open Kshitij's Resume PDF directly">
+              <svg class="badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span class="badge-text">Resume (PDF · 130KB)</span>
+              <span class="badge-arrow" aria-hidden="true">↗</span>
+            </a>
             <a class="contact-badge" href="mailto:kshitijsawarkar333@gmail.com" title="Send email to Kshitij Ashok Sawarkar">
               <svg class="badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               <span class="badge-text">kshitijsawarkar333@gmail.com</span>
@@ -84,7 +91,11 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           </div>
         </div>
         <div class="cta-row rv rv-d3">
-          <a class="btn btn-primary" href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Hardware Telemetry (MentorPi M1 AMR) ↗</a>
+          <a class="btn btn-primary" href={`${base}resume/Kshitij_FDE_Role.pdf`} target="_blank" rel="noopener noreferrer" title="Open Kshitij's Resume PDF directly">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>
+            Open Resume (PDF) ↗
+          </a>
+          <a class="btn btn-secondary" href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Hardware Telemetry (MentorPi M1 AMR) ↗</a>
           <a class="btn btn-secondary" href="https://npl-automation.pages.dev/" target="_blank" rel="noopener noreferrer">Live Industrial FDE Engine (npl-automation) ↗</a>
           <a class="btn btn-secondary" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer">View IEEE Research (Doc ID: 10627276) ↗</a>
         </div>
@@ -227,7 +238,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
               <article class="dash-slide" aria-label="4 of 6: Smart Shopping Cart">
                 <a class="preview dash-media" href="https://ieeexplore.ieee.org/document/10627276" target="_blank" rel="noopener noreferrer" aria-label="Open IEEE Xplore publication" tabindex="-1">
                   <span class="pv-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="pv-url">ieee.org/document/10627276</span><span class="pv-open">↗</span></span>
-                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/repair.png`} alt="Smart Shopping Cart Edge Vision Architecture" loading="lazy" /><span class="pv-live"><i></i>IEEE PEER-REVIEWED</span></span>
+                  <span class="pv-shot-wrap"><img class="pv-shot" src={`${base}previews/smart-cart.jpg`} alt="Smart Shopping Cart Edge Vision Architecture" loading="lazy" /><span class="pv-live"><i></i>IEEE PEER-REVIEWED</span></span>
                 </a>
                 <div class="dash-info">
                   <span class="tag live"><i></i>IEEE Xplore Doc 10627276</span><span class="tag">&lt;1% mAP loss</span>
@@ -295,7 +306,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
             <button class="dash-thumb" type="button" data-i="0" aria-current="true" aria-label="Show MentorPi M1 Robot"><img class="contain" src={`${base}previews/mentorpi.png`} alt="" loading="lazy" /><span>01 · MentorPi ROS2</span></button>
             <button class="dash-thumb" type="button" data-i="1" aria-current="false" aria-label="Show BOM Schema Engine"><img src={`${base}previews/bom.png`} alt="" loading="lazy" /><span>02 · BOM Engine (FDE)</span></button>
             <button class="dash-thumb" type="button" data-i="2" aria-current="false" aria-label="Show Drone RF Classification"><img src={`${base}previews/drone-rf.jpg`} alt="" loading="lazy" /><span>03 · Drone RF SDR</span></button>
-            <button class="dash-thumb" type="button" data-i="3" aria-current="false" aria-label="Show Smart Shopping Cart"><img src={`${base}previews/repair.png`} alt="" loading="lazy" /><span>04 · Edge Vision (IEEE)</span></button>
+            <button class="dash-thumb" type="button" data-i="3" aria-current="false" aria-label="Show Smart Shopping Cart"><img src={`${base}previews/smart-cart.jpg`} alt="" loading="lazy" /><span>04 · Smart Shopping Cart (IEEE)</span></button>
             <button class="dash-thumb" type="button" data-i="4" aria-current="false" aria-label="Show Closed-Loop Solar Tracker"><img src={`${base}previews/solar-tracker.jpg`} alt="" loading="lazy" /><span>05 · Solar Tracker</span></button>
             <button class="dash-thumb" type="button" data-i="5" aria-current="false" aria-label="Show Industrial Plant Utility"><img src={`${base}previews/assets.png`} alt="" loading="lazy" /><span>06 · Plant Ingestion</span></button>
           </div>
@@ -634,12 +645,114 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       </div>
     </section>
 
+    <!-- DOSSIER & RESUME FOLDER -->
+    <section class="section" id="dossier">
+      <canvas class="bg-canvas" id="fx-dossier" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <div class="sec-head rv">
+          <p class="eyebrow">06 // Candidate Dossier &amp; Resume Folder</p>
+          <span class="sec-index">DIRECTORY — /resume/Kshitij_FDE_Role.pdf · VERIFIED</span>
+        </div>
+        <h2 class="rv rv-d1" style="margin:12px 0 6px">Forward Deployed Engineering Dossier &amp; Resume.</h2>
+        <p class="rv rv-d1" style="max-width:64ch">Directly download or view the verified 2-page curriculum vitae formatted for Forward Deployed Systems, Autonomous Mobile Robots (AMR), and Edge Infrastructure engineering.</p>
+
+        <div class="dossier-folder rv rv-d1">
+          <div class="folder-tabs">
+            <a class="folder-tab active" href={`${base}resume/Kshitij_FDE_Role.pdf`} target="_blank" rel="noopener noreferrer"><span class="tab-dot" aria-hidden="true"></span>📁 Kshitij_FDE_Role.pdf ↗</a>
+            <a class="folder-tab" href={`${base}resume/Kshitij_FDE_Role.pdf`} download="Kshitij_Sawarkar_Resume_FDE.pdf">📥 Download PDF (130 KB)</a>
+          </div>
+
+          <div class="dossier-body">
+            <div class="dossier-header-strip">
+              <div class="dossier-titles">
+                <span class="tag live"><i></i>ACTIVE FIELD DOSSIER</span>
+                <span class="tag">PDF · 2 Pages · 130 KB</span>
+                <span class="tag">Target: FDE &amp; AMR Systems</span>
+                <h3 style="margin-top:8px">Kshitij Ashok Sawarkar — Official Resume</h3>
+                <p>Forward Deployed Systems &amp; Autonomous Robotics Engineer · M.Tech Control &amp; Instrumentation, MNNIT Allahabad</p>
+              </div>
+              <div class="dossier-actions">
+                <a class="btn btn-primary" href={`${base}resume/Kshitij_FDE_Role.pdf`} target="_blank" rel="noopener noreferrer" title="Open resume PDF directly in browser">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Open Resume Directly (PDF) ↗
+                </a>
+                <a class="btn btn-secondary" href={`${base}resume/Kshitij_FDE_Role.pdf`} download="Kshitij_Sawarkar_Resume_FDE.pdf" title="Download resume PDF directly">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Download PDF (130 KB) ↓
+                </a>
+              </div>
+            </div>
+
+            <div class="dossier-preview-grid">
+              <div class="dossier-frame-wrap">
+                <div class="pv-bar">
+                  <i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>
+                  <span class="pv-url">resume / Kshitij_FDE_Role.pdf</span>
+                  <a href={`${base}resume/Kshitij_FDE_Role.pdf`} target="_blank" rel="noopener noreferrer" class="pv-open" style="color:var(--accent);font-weight:700">OPEN DIRECTLY ↗</a>
+                </div>
+                <div class="dossier-file-card">
+                  <div class="dossier-pdf-icon-wrap">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                      <path d="M9 13h6"/>
+                      <path d="M9 17h6"/>
+                      <path d="M9 9h1"/>
+                    </svg>
+                    <span class="dossier-pdf-badge">PDF</span>
+                  </div>
+                  <div class="dossier-file-details">
+                    <h4 class="dossier-file-name">Kshitij_FDE_Role.pdf</h4>
+                    <p class="dossier-file-meta">Portable Document Format · 130 KB · 2 Pages · Official CV</p>
+                    <p class="dossier-file-desc">Official resume uploaded directly from Certificates folder, formatted for Forward Deployed Engineering, Autonomous Mobile Robotics, and Edge Systems.</p>
+                  </div>
+                  <div class="dossier-file-btns">
+                    <a class="btn btn-primary" href={`${base}resume/Kshitij_FDE_Role.pdf`} target="_blank" rel="noopener noreferrer">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                      Open My Resume Directly ↗
+                    </a>
+                    <a class="btn btn-secondary" href={`${base}resume/Kshitij_FDE_Role.pdf`} download="Kshitij_Sawarkar_Resume_FDE.pdf">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                      Download PDF (130 KB) ↓
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dossier-info-cards">
+                <div class="dossier-info-card">
+                  <span class="tag live"><i></i>Core Technical Competencies</span>
+                  <h4>Forward Deployed &amp; Embedded Linux</h4>
+                  <p>ROS2 (nodes, lifecycle, pub/sub), Raspberry Pi 5, Arduino, CAN bus, UART, SPI, I2C, 2D LiDAR SLAM, Monocular Vision, YOLOv5 INT8, SDR RF Telemetry, Cloudflare Pages, AWS (EC2, Lambda, S3, SageMaker).</p>
+                </div>
+                <div class="dossier-info-card">
+                  <span class="tag">Active Production Track Record</span>
+                  <h4>Wakefit Innovations — Forward Deployed Systems</h4>
+                  <p>Architected client-side schema engine (<code>npl-automation.pages.dev</code>) executing in &lt;50ms, compressing 72-hour ERP reconciliation loops. Authored operational guardrails (<code>AGENTS.md</code>) preventing factory line halts.</p>
+                </div>
+                <div class="dossier-info-card">
+                  <span class="tag">Peer-Reviewed Research</span>
+                  <h4>Lead Author, IEEE Xplore (Doc ID: 10627276)</h4>
+                  <p>Published edge computer vision research for Smart Retail Systems: INT8 parameter quantization on ARM Raspberry Pi with &lt;1% mAP degradation and sub-second inference.</p>
+                </div>
+                <div class="dossier-info-card">
+                  <span class="tag">Academic Foundations</span>
+                  <h4>MNNIT Allahabad &amp; RCOEM Nagpur</h4>
+                  <p>M.Tech in Control and Instrumentation (MNNIT Allahabad) · B.Tech in Electronics &amp; Communication Engineering (RCOEM Nagpur).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- AGENTS -->
     <section class="section agents" id="agents">
       <canvas class="bg-canvas" id="fx-agents" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow eyebrow-agent">06 // Agent Interface</p>
+          <p class="eyebrow eyebrow-agent">07 // Agent Interface</p>
           <span class="sec-index">AGENT.READY — MCP · LLM · RAG</span>
         </div>
         <h2 class="rv rv-d1" style="margin:12px 0 6px">Built for humans.<br /><span class="agent-grad">Grounded for AI agents.</span></h2>
@@ -701,12 +814,13 @@ Rules: cite the IEEE doc ID 10627276 for research claims; link npl-automation.pa
           <div class="agent-chips">
             <button type="button" data-ask="What did Kshitij publish on IEEE?">IEEE paper?</button>
             <button type="button" data-ask="What is his Wakefit NPL experience?">Wakefit NPL?</button>
+            <button type="button" data-ask="Where can I download his resume?">Resume PDF?</button>
             <button type="button" data-ask="Explain the Drone RF detection pipeline.">Drone RF SDR?</button>
             <button type="button" data-ask="What is his autonomous robotics experience?">Robotics &amp; ROS2?</button>
             <button type="button" data-ask="How do I contact him for field deployment?">Contact?</button>
           </div>
           <form class="agent-form" id="agent-form">
-            <input id="agent-input" type="text" placeholder="Ask the site agent… (e.g. “drone detection pipeline?”)" autocomplete="off" maxlength="200" aria-label="Ask the site agent" />
+            <input id="agent-input" type="text" placeholder="Ask the site agent… (e.g. “where can I download his resume?”)" autocomplete="off" maxlength="200" aria-label="Ask the site agent" />
             <button class="btn btn-primary btn-sm" type="submit">Send →</button>
           </form>
         </div>
@@ -718,7 +832,7 @@ Rules: cite the IEEE doc ID 10627276 for research claims; link npl-automation.pa
       <canvas class="bg-canvas" id="fx-contact" aria-hidden="true"></canvas>
       <div class="wrap">
         <div class="sec-head rv">
-          <p class="eyebrow">07 // Direct Commissioning Inbound</p>
+          <p class="eyebrow">08 // Direct Commissioning Inbound</p>
           <span class="sec-index">CH.OPEN — RESPONSE &lt;24H</span>
         </div>
         <h2 class="rv rv-d1" style="margin:12px 0 24px">Establish the link.</h2>
@@ -728,6 +842,7 @@ Rules: cite the IEEE doc ID 10627276 for research claims; link npl-automation.pa
             <div><span class="prompt">$</span> <span id="term-type"></span><span class="cursor" aria-hidden="true"></span></div>
             <div style="margin-top:14px">├─ email&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:kshitijsawarkar333@gmail.com">kshitijsawarkar333@gmail.com</a></div>
             <div>├─ phone&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+919823252972">+91-9823252972</a></div>
+            <div>├─ resume&nbsp;&nbsp;&nbsp;<a href={`${base}resume/Kshitij_FDE_Role.pdf`} target="_blank" rel="noopener noreferrer">kshitijsawarkar.github.io/portfolio/resume/Kshitij_FDE_Role.pdf ↗</a> · <a href={`${base}resume/Kshitij_FDE_Role.pdf`} download="Kshitij_Sawarkar_Resume_FDE.pdf">[Download 130KB]</a></div>
             <div>├─ linkedin <a href="https://www.linkedin.com/in/kshitijas/" target="_blank" rel="noopener noreferrer">linkedin.com/in/kshitijas</a></div>
             <div>├─ github&nbsp;&nbsp;<a href="https://github.com/KshitijSawarkar" target="_blank" rel="noopener noreferrer">github.com/KshitijSawarkar</a></div>
             <div>├─ base&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bengaluru / Hosur, India</div>
@@ -1092,6 +1207,27 @@ Rules: cite the IEEE doc ID 10627276 for research claims; link npl-automation.pa
       };
     });
 
+    // DOSSIER — telemetry radar scan
+    fx('fx-dossier', () => {
+      let scanY = 0;
+      return {
+        draw(ctx, w, h) {
+          scanY = (scanY + 1.2) % h;
+          const g = ctx.createLinearGradient(0, scanY - 30, 0, scanY);
+          g.addColorStop(0, 'rgba(65,230,255,0)');
+          g.addColorStop(1, 'rgba(65,230,255,0.09)');
+          ctx.fillStyle = g;
+          ctx.fillRect(0, scanY - 30, w, 30);
+          ctx.strokeStyle = 'rgba(65,230,255,0.22)';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(0, scanY);
+          ctx.lineTo(w, scanY);
+          ctx.stroke();
+        }
+      };
+    });
+
     // AGENTS — constellation mesh
     fx('fx-agents', () => {
       let pts = [];
@@ -1207,7 +1343,7 @@ Rules: cite the IEEE doc ID 10627276 for research claims; link npl-automation.pa
         'MentorPi M1 AMR (ROS2)',
         'BOM Schema Engine (FDE)',
         'Drone RF Classification',
-        'Edge Vision (IEEE 10627276)',
+        'Smart Shopping Cart (IEEE)',
         'Sensorless Solar Tracker',
         'Plant Ingestion Utility'
       ];
@@ -1309,6 +1445,7 @@ Rules: cite the IEEE doc ID 10627276 for research claims; link npl-automation.pa
         { k: ['wakefit', 'npl', 'schema', 'bom', 'work', 'job', 'intern'], a: '<b>Wakefit Innovations Ltd.</b> (Aug 2026 – Present, Bengaluru / Hosur): Systems Automation Intern (PGET). Built <a href="https://npl-automation.pages.dev/" target="_blank" rel="noopener">npl-automation.pages.dev</a> on Cloudflare Pages, compressing 72+ operational hours into deterministic sub-minute runs with &lt;50ms latency.' },
         { k: ['drone', 'rf', 'sdr', 'spectrogram', 'uav', 'telemetry', 'signal', 'radio'], a: '<b>Real-Time Drone Detection &amp; RF Classification:</b> Automated edge spectral sensing pipeline intercepting UAV flight controller communications across 2.4 GHz &amp; 5.8 GHz ISM bands via SDR, FFT spectrograms, and lightweight neural classification. <a href="https://docs.google.com/presentation/d/1IMEy7h-iVUmmVrr2GoM_qS5AJWuqM7LC51hbWQ7Y5Rg/edit?usp=sharing" target="_blank" rel="noopener">Presentation ↗</a>' },
         { k: ['robot', 'ros', 'slam', 'amr', 'mentorpi', 'embedded', 'hardware', 'solar', 'tracker', 'gas', 'wokwi'], a: '<b>Robotics &amp; Embedded:</b> HiWonder MentorPi M1 on ROS2 + Pi 5 (<a href="https://drive.google.com/file/d/1OSRXNmmUL0gwdElcF-1Ftl1Xcxfa-7rT/view?usp=sharing" target="_blank" rel="noopener">Inspection ↗</a>) · Sensorless solar tracking using PV panel voltage directly · Gas hazard detection on Arduino + MQ-2 (<a href="https://wokwi.com/projects/453321379118788609" target="_blank" rel="noopener">Wokwi ↗</a>).' },
+        { k: ['resume', 'cv', 'pdf', 'dossier', 'download', 'file'], a: 'Official <b>Forward Deployed Engineering Resume (PDF)</b> opens directly: <a href="resume/Kshitij_FDE_Role.pdf" target="_blank" rel="noopener"><b>Open Kshitij_FDE_Role.pdf Directly ↗</b></a> · <a href="resume/Kshitij_FDE_Role.pdf" download="Kshitij_Sawarkar_Resume_FDE.pdf">Download PDF (130 KB) ↓</a>' },
         { k: ['trendguard', 'quant', 'trading', 'risk', 'finance'], a: '<b>TrendGuard-200:</b> Quantitative signal generation engine in Python (NumPy/Pandas) across 8-year OHLC data, achieving a 72.7% win rate with dynamic position sizing and moving averages (21, 50, 200 SMA).' },
         { k: ['live', 'production', 'system', 'deploy', 'vault', 'project', 'cardsfinder', 'asset', 'renamer'], a: 'Nine verified engineering systems across <b>02 // Deployments</b>: BOM schema engine (&lt;50ms) · Drone RF SDR pipeline · MentorPi M1 AMR · CardsFinders · Asset renamer · Smart shopping cart (IEEE) · TrendGuard-200 · Sensorless solar tracker · Gas safety detector.' },
         { k: ['educat', 'mtech', 'mnnit', 'degree', 'college', 'btech', 'rcoem'], a: '<b>M.Tech in Control and Instrumentation</b> from MNNIT Allahabad (2025–Present) &amp; Graduate Teaching Assistant · <b>B.Tech in ECE</b> from RCOEM Nagpur (2020–2024).' },

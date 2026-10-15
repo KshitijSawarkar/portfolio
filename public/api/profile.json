@@ -13,7 +13,9 @@
     "phone": "+91-9823252972",
     "linkedin": "https://www.linkedin.com/in/kshitijas/",
     "github": "https://github.com/KshitijSawarkar",
-    "portfolio": "https://kshitijsawarkar.github.io/portfolio/"
+    "portfolio": "https://kshitijsawarkar.github.io/portfolio/",
+    "resume": "https://kshitijsawarkar.github.io/portfolio/resume/Kshitij_FDE_Role.pdf",
+    "resume_pdf": "https://kshitijsawarkar.github.io/portfolio/resume/Kshitij_FDE_Role.pdf"
   },
   "summary": "Autonomous systems and forward-deployed automation engineer with an M.Tech in Control and Instrumentation from MNNIT Allahabad and a B.Tech in Electronics and Communication Engineering from RCOEM Nagpur. Operates at the intersection of embedded hardware, deterministic edge runtimes, real-time computer vision, and industrial systems automation. Lead author of peer-reviewed edge-perception research published in IEEE Xplore (Document ID: 10627276). Proven track record of architecting production-grade client-side engines executing under 50ms latency (npl-automation.pages.dev), software-defined radio (SDR) spectral sensing pipelines for UAV RF classification, and ROS2 embedded robotics control stacks.",
   "core_competencies": {
@@ -161,6 +163,7 @@
     },
     {
       "name": "Smart Shopping Cart: Real-Time Edge Object Detection",
+      "image": "previews/smart-cart.jpg",
       "stack": ["Raspberry Pi", "YOLOv5", "OpenCV", "INT8 Quantization", "Python"],
       "publication_url": "https://ieeexplore.ieee.org/document/10627276",
       "document_id": "10627276",
